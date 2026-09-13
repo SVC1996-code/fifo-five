@@ -1,0 +1,22 @@
+{
+  "scope": "Independent verification of three fixtures only; not full-game/AI verification.",
+  "passedCases": 3,
+  "checks": [
+    {
+      "id": "false-five-after-expiry",
+      "passed": true,
+      "verified": "Legal 12-ply prefix; apparent five disappears to four after deletion."
+    },
+    {
+      "id": "expiry-lock",
+      "passed": true,
+      "verifiedXReplies": 24,
+      "verified": "Every legal X move is non-winning and lets O win at (2,2)."
+    },
+    {
+      "id": "expiry-lock-counterexample",
+      "passed": true,
+      "verified": "O's own oldest attack stone expires; filling the gap is not a win."
+    }
+  ]
+}

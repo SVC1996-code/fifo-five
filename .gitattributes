@@ -1,0 +1,11 @@
+* text=auto
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.css text eol=lf
+*.log text eol=lf
+*.png binary
+# Preserve the exact executed-source bytes used by research hashes.
+experiments/results/p3/sources/*.txt -text

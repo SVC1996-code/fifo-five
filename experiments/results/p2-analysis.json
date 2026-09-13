@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-09-13T08:35:10.033Z",
+  "completedExecutions": 18,
+  "globalUniqueTrajectories": 12,
+  "current": {
+    "complete": true,
+    "completed": 12,
+    "uniqueTrajectories": 12,
+    "summaries": [
+      {
+        "pair": [
+          "normal",
+          "tactical"
+        ],
+        "completed": 6,
+        "uniqueTrajectories": 6,
+        "all": {
+          "agentAWin": 3,
+          "agentBWin": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 3,
+          "ambiguous-role-assignment": 0
+        },
+        "deduplicated": {
+          "agentAWin": 3,
+          "agentBWin": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 3,
+          "ambiguous-role-assignment": 0
+        }
+      },
+      {
+        "pair": [
+          "hard",
+          "normal"
+        ],
+        "completed": 6,
+        "uniqueTrajectories": 6,
+        "all": {
+          "agentAWin": 1,
+          "agentBWin": 1,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 4,
+          "ambiguous-role-assignment": 0
+        },
+        "deduplicated": {
+          "agentAWin": 1,
+          "agentBWin": 1,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 4,
+          "ambiguous-role-assignment": 0
+        }
+      }
+    ]
+  },
+  "baseline": {
+    "completed": 6,
+    "stopReason": "Bounded pilot: retained the six completed normal-vs-tactical games for paired before/after comparison. The six planned baseline hard-vs-normal games were not completed; an in-flight game was interrupted and is not counted."
+  },
+  "pairedBeforeAfter": [
+    {
+      "id": "normal-vs-tactical/central-four/20260913/false",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    },
+    {
+      "id": "normal-vs-tactical/central-four/20260913/true",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    },
+    {
+      "id": "normal-vs-tactical/off-centre-six/20260913/false",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    },
+    {
+      "id": "normal-vs-tactical/off-centre-six/20260913/true",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    },
+    {
+      "id": "normal-vs-tactical/edge-six/20260913/false",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    },
+    {
+      "id": "normal-vs-tactical/edge-six/20260913/true",
+      "sameTrajectory": true,
+      "sameDecisions": true
+    }
+  ],
+  "tacticalAudit": {
+    "beforeMistakes": 0,
+    "afterMistakes": 0,
+    "scope": "Generated moves only: stable one-ply wins and one-ply safe replies. No full multi-ply oracle."
+  },
+  "rawHashes": {
+    "strength-baseline": "0bec1af7d2219a9e278e9abf05c19a534c270b92657c96790d47e3458c253812",
+    "strength-current": "761b0a43857c96410df0e4695aaa4a526e2c67bfc9f357b89ed9893b63c9fc32",
+    "timing-baseline": "f45a17d951eb3c617475b3cf2d17367ebe7fcf789db3d93b5ac50d121e55b023",
+    "timing-current": "e61f27a7ec244bc04188f5d6e6514648a63cbb7c9c1da389f7b6a852b2c788c0"
+  },
+  "note": "Exact trajectory duplicates are not additional independent samples. Distinct trajectories and role-swapped openings are correlated; these are pilot results, not fairness/solving evidence. Conflicting agent attribution for duplicate traces is counted separately."
+}

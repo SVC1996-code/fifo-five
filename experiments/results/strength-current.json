@@ -1,0 +1,6814 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-13T08:20:37.595Z",
+  "version": "fifo-ab-1-order-cache",
+  "sourceHash": "416d310dfccd67ee6aaf2c6f7e13be6b1d5a3ab4ce10230d18e1fb4486019bf3",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 H 260 w/ Radeon 780M Graphics",
+    "logicalCpus": 16,
+    "memoryBytes": 33602605056
+  },
+  "complete": true,
+  "plannedGames": 12,
+  "completedGames": 12,
+  "uniqueTrajectories": 12,
+  "trajectoryDefinition": "SHA256 of canonical rules and full move sequence, independent of seed/agent label. Exact duplicates removed; symmetry-equivalent trajectories are not merged. Different traces are not automatically statistically independent.",
+  "summaries": [
+    {
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "completed": 6,
+      "uniqueTrajectories": 6,
+      "all": {
+        "agentAWin": 3,
+        "agentBWin": 0,
+        "repetition": 0,
+        "no-moves": 0,
+        "ply-limit": 0,
+        "cutoff": 3
+      },
+      "deduplicated": {
+        "agentAWin": 3,
+        "agentBWin": 0,
+        "repetition": 0,
+        "no-moves": 0,
+        "ply-limit": 0,
+        "cutoff": 3
+      }
+    },
+    {
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "completed": 6,
+      "uniqueTrajectories": 6,
+      "all": {
+        "agentAWin": 1,
+        "agentBWin": 1,
+        "repetition": 0,
+        "no-moves": 0,
+        "ply-limit": 0,
+        "cutoff": 4
+      },
+      "deduplicated": {
+        "agentAWin": 1,
+        "agentBWin": 1,
+        "repetition": 0,
+        "no-moves": 0,
+        "ply-limit": 0,
+        "cutoff": 4
+      }
+    }
+  ],
+  "games": [
+    {
+      "id": "normal-vs-tactical/central-four/20260913/false",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "central-four",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          9,
+          8,
+          1,
+          4,
+          25,
+          16,
+          13,
+          7,
+          10,
+          28,
+          32,
+          14,
+          21,
+          20,
+          26,
+          24,
+          15,
+          9,
+          11,
+          4
+        ]
+      },
+      "trajectoryHash": "ffbe11da36a61ae88e235768de55924958e57ba23210d97efde7725049fe99a7",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 4,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2048069366,
+            "maxDepth": 5
+          },
+          "move": 9,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 1024,
+          "elapsedMs": 2192.088,
+          "tacticalMs": 23.13160000000002,
+          "searchMs": 2168.9564,
+          "exhausted": true,
+          "pv": [
+            9,
+            24,
+            27,
+            8
+          ],
+          "score": -8.75,
+          "safeMoves": 32,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 5,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 407537831,
+            "maxDepth": 0
+          },
+          "move": 8,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 961,
+          "elapsedMs": 10.566299999999956,
+          "tacticalMs": 10.566299999999956,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            8
+          ],
+          "score": null,
+          "safeMoves": 31,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 1,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 1928.1289999999995,
+          "tacticalMs": 19.849099999999908,
+          "searchMs": 1908.2798999999995,
+          "exhausted": true,
+          "pv": [
+            1,
+            24,
+            25,
+            6
+          ],
+          "score": -2.600000000000003,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 0
+          },
+          "move": 4,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 841,
+          "elapsedMs": 10.4992000000002,
+          "tacticalMs": 10.4992000000002,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            4
+          ],
+          "score": null,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 2112.879000000001,
+          "tacticalMs": 18.9941000000008,
+          "searchMs": 2093.8849,
+          "exhausted": true,
+          "pv": [
+            25,
+            16,
+            13,
+            7
+          ],
+          "score": -12.550000000000004,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 0
+          },
+          "move": 16,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 729,
+          "elapsedMs": 13.994800000000396,
+          "tacticalMs": 13.994800000000396,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            16
+          ],
+          "score": null,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 2008.1892000000007,
+          "tacticalMs": 10.568900000000212,
+          "searchMs": 1997.6203000000005,
+          "exhausted": true,
+          "pv": [
+            13,
+            7,
+            10,
+            28
+          ],
+          "score": -0.16666666666667623,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 0
+          },
+          "move": 7,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 625,
+          "elapsedMs": 6.363400000000183,
+          "tacticalMs": 6.363400000000183,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            7
+          ],
+          "score": null,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 10,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1860.6332000000002,
+          "tacticalMs": 5.683600000000297,
+          "searchMs": 1854.9496,
+          "exhausted": true,
+          "pv": [
+            10,
+            26,
+            14,
+            11
+          ],
+          "score": -34.016666666666666,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 0
+          },
+          "move": 28,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 6.932700000001205,
+          "tacticalMs": 6.932700000001205,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            28
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 5
+          },
+          "move": 32,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1823.3593,
+          "tacticalMs": 6.973899999999048,
+          "searchMs": 1816.385400000001,
+          "exhausted": true,
+          "pv": [
+            32,
+            20,
+            21,
+            14
+          ],
+          "score": -2.1666666666666705,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 0
+          },
+          "move": 14,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 7.730299999999261,
+          "tacticalMs": 7.730299999999261,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            14
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 5,
+          "nodes": 6909,
+          "tacticalNodes": 600,
+          "elapsedMs": 2188.6741999999995,
+          "tacticalMs": 10.105999999999767,
+          "searchMs": 2178.5681999999997,
+          "exhausted": false,
+          "pv": [
+            21,
+            15,
+            34,
+            31,
+            20
+          ],
+          "score": 26.28333333333334,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 0
+          },
+          "move": 20,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 7.28150000000096,
+          "tacticalMs": 7.28150000000096,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            20
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 5
+          },
+          "move": 26,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2185.7069999999985,
+          "tacticalMs": 9.048699999999371,
+          "searchMs": 2176.658299999999,
+          "exhausted": true,
+          "pv": [
+            26,
+            31,
+            4,
+            15
+          ],
+          "score": -0.39999999999999947,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 0
+          },
+          "move": 24,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.819400000000314,
+          "tacticalMs": 8.819400000000314,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            24
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 5
+          },
+          "move": 15,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2035.2311999999984,
+          "tacticalMs": 10.285299999999552,
+          "searchMs": 2024.9458999999988,
+          "exhausted": true,
+          "pv": [
+            15,
+            6,
+            31,
+            12
+          ],
+          "score": -20.85833333333332,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 0
+          },
+          "move": 9,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 11.010699999998906,
+          "tacticalMs": 11.010699999998906,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            9
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 5
+          },
+          "move": 11,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2193.102500000001,
+          "tacticalMs": 9.577399999998306,
+          "searchMs": 2183.5251000000026,
+          "exhausted": true,
+          "pv": [
+            11,
+            16,
+            4,
+            6
+          ],
+          "score": -42.366666666666674,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 0
+          },
+          "move": 4,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.847600000000966,
+          "tacticalMs": 8.847600000000966,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            4
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "normal-vs-tactical/central-four/20260913/true",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "central-four",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          26,
+          8,
+          27,
+          28,
+          34,
+          7,
+          6,
+          13,
+          35,
+          14,
+          0,
+          20,
+          31,
+          19,
+          1,
+          15,
+          16,
+          21,
+          22,
+          28
+        ]
+      },
+      "trajectoryHash": "e73ebf722789f5971bc1ab717400690eab1d21f5b3633b5ee55f1fbc0ef6365c",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 4,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2048069366,
+            "maxDepth": 0
+          },
+          "move": 26,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 1024,
+          "elapsedMs": 12.076900000000023,
+          "tacticalMs": 12.076900000000023,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            26
+          ],
+          "score": null,
+          "safeMoves": 32,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 5,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 407537831,
+            "maxDepth": 5
+          },
+          "move": 8,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 961,
+          "elapsedMs": 2267.3515000000007,
+          "tacticalMs": 20.516200000001845,
+          "searchMs": 2246.835299999999,
+          "exhausted": true,
+          "pv": [
+            8,
+            27,
+            29,
+            1
+          ],
+          "score": -34.3,
+          "safeMoves": 31,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 0
+          },
+          "move": 27,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 900,
+          "elapsedMs": 12.00050000000192,
+          "tacticalMs": 12.00050000000192,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            27
+          ],
+          "score": null,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 28,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 1937.8066,
+          "tacticalMs": 12.166399999998248,
+          "searchMs": 1925.6402000000016,
+          "exhausted": true,
+          "pv": [
+            28,
+            1,
+            34,
+            4
+          ],
+          "score": -2.2466666666666626,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 0
+          },
+          "move": 34,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 784,
+          "elapsedMs": 10.922999999998865,
+          "tacticalMs": 10.922999999998865,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            34
+          ],
+          "score": null,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1995.1117999999988,
+          "tacticalMs": 8.747199999997974,
+          "searchMs": 1986.3646000000008,
+          "exhausted": true,
+          "pv": [
+            7,
+            6,
+            13,
+            35
+          ],
+          "score": 102.79999999999995,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 0
+          },
+          "move": 6,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 676,
+          "elapsedMs": 10.191399999999703,
+          "tacticalMs": 10.191399999999703,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            6
+          ],
+          "score": null,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 5,
+          "nodes": 2691,
+          "tacticalNodes": 303,
+          "elapsedMs": 713.1945999999989,
+          "tacticalMs": 4.638100000000122,
+          "searchMs": 708.5564999999988,
+          "exhausted": false,
+          "pv": [
+            13,
+            35,
+            14,
+            0,
+            19
+          ],
+          "score": 143,
+          "safeMoves": 1,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 0
+          },
+          "move": 35,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.81460000000152,
+          "tacticalMs": 8.81460000000152,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            35
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1876.2832999999991,
+          "tacticalMs": 7.284499999997934,
+          "searchMs": 1868.9988000000012,
+          "exhausted": true,
+          "pv": [
+            14,
+            0,
+            19,
+            25
+          ],
+          "score": 18.000000000000014,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 0
+          },
+          "move": 0,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 5.727600000001985,
+          "tacticalMs": 5.727600000001985,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            0
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1811.119300000002,
+          "tacticalMs": 5.482800000001589,
+          "searchMs": 1805.6365000000005,
+          "exhausted": true,
+          "pv": [
+            20,
+            25,
+            24,
+            15
+          ],
+          "score": 37.10833333333335,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 0
+          },
+          "move": 31,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 11.028700000002573,
+          "tacticalMs": 11.028700000002573,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            31
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 19,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2094.7923999999985,
+          "tacticalMs": 8.163199999999051,
+          "searchMs": 2086.6291999999994,
+          "exhausted": true,
+          "pv": [
+            19,
+            15,
+            1,
+            32
+          ],
+          "score": 36.38333333333331,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 0
+          },
+          "move": 1,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.116900000000896,
+          "tacticalMs": 8.116900000000896,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            1
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 15,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2104.041099999995,
+          "tacticalMs": 9.63239999999496,
+          "searchMs": 2094.4087,
+          "exhausted": true,
+          "pv": [
+            15,
+            16,
+            21,
+            22
+          ],
+          "score": 56.26666666666666,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 0
+          },
+          "move": 16,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 5.609900000003108,
+          "tacticalMs": 5.609900000003108,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            16
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1605.551999999996,
+          "tacticalMs": 6.887399999999616,
+          "searchMs": 1598.6645999999964,
+          "exhausted": true,
+          "pv": [
+            21,
+            22,
+            28,
+            9
+          ],
+          "score": 49.03333333333332,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 0
+          },
+          "move": 22,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 9.482100000001083,
+          "tacticalMs": 9.482100000001083,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            22
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 5
+          },
+          "move": 28,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2136.623799999994,
+          "tacticalMs": 7.4196999999985565,
+          "searchMs": 2129.2040999999954,
+          "exhausted": true,
+          "pv": [
+            28,
+            9,
+            25,
+            7
+          ],
+          "score": 27.833333333333346,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "normal-vs-tactical/off-centre-six/20260913/false",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "off-centre-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16,
+          25,
+          13,
+          21,
+          15,
+          14,
+          4,
+          20,
+          22,
+          8,
+          28,
+          26,
+          2,
+          32
+        ]
+      },
+      "trajectoryHash": "c3b329b4919665913fdb64f23428cfec79abc1fd13c3b8a1ba83e0c17b0d22b7",
+      "result": {
+        "kind": "win",
+        "winner": "X",
+        "line": [
+          8,
+          14,
+          20,
+          26,
+          32
+        ]
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 1935.8081999999995,
+          "tacticalMs": 12.856699999996636,
+          "searchMs": 1922.9515000000029,
+          "exhausted": true,
+          "pv": [
+            25,
+            13,
+            10,
+            8
+          ],
+          "score": -25.799999999999997,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 0
+          },
+          "move": 13,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 841,
+          "elapsedMs": 8.052100000000792,
+          "tacticalMs": 8.052100000000792,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            13
+          ],
+          "score": null,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 1440.1540000000023,
+          "tacticalMs": 12.438999999998487,
+          "searchMs": 1427.7150000000038,
+          "exhausted": true,
+          "pv": [
+            21,
+            14,
+            15,
+            20
+          ],
+          "score": -13.00000000000001,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 0
+          },
+          "move": 15,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 729,
+          "elapsedMs": 9.79790000000503,
+          "tacticalMs": 9.79790000000503,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            15
+          ],
+          "score": null,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 1992.697500000002,
+          "tacticalMs": 6.857499999998254,
+          "searchMs": 1985.8400000000038,
+          "exhausted": true,
+          "pv": [
+            14,
+            22,
+            4,
+            24
+          ],
+          "score": 0.29166666666666785,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 0
+          },
+          "move": 4,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 625,
+          "elapsedMs": 10.055999999996857,
+          "tacticalMs": 10.055999999996857,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            4
+          ],
+          "score": null,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1598.406799999997,
+          "tacticalMs": 9.736299999996845,
+          "searchMs": 1588.6705000000002,
+          "exhausted": true,
+          "pv": [
+            20,
+            22,
+            8,
+            28
+          ],
+          "score": 49.675000000000026,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 0
+          },
+          "move": 22,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.881399999998393,
+          "tacticalMs": 8.881399999998393,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            22
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 5
+          },
+          "move": 8,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1652.2855999999956,
+          "tacticalMs": 9.50119999999879,
+          "searchMs": 1642.7843999999968,
+          "exhausted": true,
+          "pv": [
+            8,
+            2,
+            28,
+            7
+          ],
+          "score": 45.15000000000002,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 0
+          },
+          "move": 28,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 6.763599999998405,
+          "tacticalMs": 6.763599999998405,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            28
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 5
+          },
+          "move": 26,
+          "depth": 5,
+          "nodes": 6015,
+          "tacticalNodes": 600,
+          "elapsedMs": 1505.5233000000007,
+          "tacticalMs": 9.465799999998126,
+          "searchMs": 1496.0575000000026,
+          "exhausted": false,
+          "pv": [
+            26,
+            2,
+            32
+          ],
+          "score": 1000000,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 0
+          },
+          "move": 2,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 112,
+          "elapsedMs": 2.0534000000043306,
+          "tacticalMs": 2.0534000000043306,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            2
+          ],
+          "score": null,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 5
+          },
+          "move": 32,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 24,
+          "elapsedMs": 0.4184000000022934,
+          "tacticalMs": 0.4184000000022934,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            32
+          ],
+          "score": 1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "normal-vs-tactical/off-centre-six/20260913/true",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "off-centre-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16,
+          10,
+          8,
+          25,
+          20,
+          14,
+          21,
+          31,
+          27,
+          13,
+          22,
+          7,
+          19,
+          18,
+          23
+        ]
+      },
+      "trajectoryHash": "b644e4476bb940e67a8c37f482106a6c625fd6899535a41bdea8624d2ec5b910",
+      "result": {
+        "kind": "win",
+        "winner": "O",
+        "line": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 0
+          },
+          "move": 10,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 900,
+          "elapsedMs": 18.934900000000198,
+          "tacticalMs": 18.934900000000198,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            10
+          ],
+          "score": null,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 8,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 1948.8678999999975,
+          "tacticalMs": 12.701300000000629,
+          "searchMs": 1936.1665999999968,
+          "exhausted": true,
+          "pv": [
+            8,
+            25,
+            20,
+            14
+          ],
+          "score": -82.69999999999999,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 0
+          },
+          "move": 25,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 784,
+          "elapsedMs": 12.077900000003865,
+          "tacticalMs": 12.077900000003865,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            25
+          ],
+          "score": null,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1895.4815999999992,
+          "tacticalMs": 10.625700000004144,
+          "searchMs": 1884.855899999995,
+          "exhausted": true,
+          "pv": [
+            20,
+            14,
+            31,
+            21
+          ],
+          "score": -30.51666666666667,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 0
+          },
+          "move": 14,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 676,
+          "elapsedMs": 10.619200000001001,
+          "tacticalMs": 10.619200000001001,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            14
+          ],
+          "score": null,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 625,
+          "elapsedMs": 1985.4268999999986,
+          "tacticalMs": 6.447899999999208,
+          "searchMs": 1978.9789999999994,
+          "exhausted": true,
+          "pv": [
+            21,
+            31,
+            13,
+            34
+          ],
+          "score": -22.433333333333334,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 0
+          },
+          "move": 31,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.861900000003516,
+          "tacticalMs": 8.861900000003516,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            31
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 3,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1682.7783999999956,
+          "tacticalMs": 8.998899999998685,
+          "searchMs": 1673.779499999997,
+          "exhausted": true,
+          "pv": [
+            27,
+            13,
+            15
+          ],
+          "score": 55.516666666666666,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 0
+          },
+          "move": 13,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 13.237799999995332,
+          "tacticalMs": 13.237799999995332,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            13
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 22,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1974.1101000000053,
+          "tacticalMs": 11.57680000000255,
+          "searchMs": 1962.5333000000028,
+          "exhausted": true,
+          "pv": [
+            22,
+            15,
+            19,
+            16
+          ],
+          "score": -5.599999999999795,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 0
+          },
+          "move": 7,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 9.029900000001362,
+          "tacticalMs": 9.029900000001362,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            7
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 19,
+          "depth": 5,
+          "nodes": 840,
+          "tacticalNodes": 380,
+          "elapsedMs": 150.10450000000128,
+          "tacticalMs": 6.220099999998638,
+          "searchMs": 143.88440000000264,
+          "exhausted": false,
+          "pv": [
+            19,
+            18,
+            23
+          ],
+          "score": 1000000,
+          "safeMoves": 1,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 0
+          },
+          "move": 18,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 371,
+          "elapsedMs": 6.705699999998615,
+          "tacticalMs": 6.705699999998615,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            18
+          ],
+          "score": null,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 23,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 24,
+          "elapsedMs": 0.35790000000270084,
+          "tacticalMs": 0.35790000000270084,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            23
+          ],
+          "score": 1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "normal-vs-tactical/edge-six/20260913/false",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "edge-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23,
+          14,
+          11,
+          17,
+          31,
+          26,
+          20,
+          25,
+          21,
+          27,
+          28,
+          7,
+          22,
+          19,
+          10,
+          13,
+          16,
+          1
+        ]
+      },
+      "trajectoryHash": "ac55f4d84b037173577260a151ab4b50395f488fef637390e591c9bab540048e",
+      "result": {
+        "kind": "win",
+        "winner": "X",
+        "line": [
+          1,
+          7,
+          13,
+          19,
+          25
+        ]
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 2021.9228999999978,
+          "tacticalMs": 14.0596000000005,
+          "searchMs": 2007.8632999999973,
+          "exhausted": true,
+          "pv": [
+            14,
+            21,
+            20,
+            26
+          ],
+          "score": -7.8000000000000025,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 0
+          },
+          "move": 11,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 841,
+          "elapsedMs": 12.053299999999581,
+          "tacticalMs": 12.053299999999581,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            11
+          ],
+          "score": null,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 17,
+          "depth": 3,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 1735.9337999999989,
+          "tacticalMs": 9.256600000000617,
+          "searchMs": 1726.6771999999983,
+          "exhausted": true,
+          "pv": [
+            17,
+            15,
+            20
+          ],
+          "score": 63.16666666666667,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 0
+          },
+          "move": 31,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 729,
+          "elapsedMs": 11.94210000000021,
+          "tacticalMs": 11.94210000000021,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            31
+          ],
+          "score": null,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 26,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 2172.0008000000016,
+          "tacticalMs": 11.160900000002584,
+          "searchMs": 2160.839899999999,
+          "exhausted": true,
+          "pv": [
+            26,
+            20,
+            21,
+            7
+          ],
+          "score": -4.416666666666667,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 0
+          },
+          "move": 20,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 625,
+          "elapsedMs": 10.587300000006508,
+          "tacticalMs": 10.587300000006508,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            20
+          ],
+          "score": null,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1476.2157000000007,
+          "tacticalMs": 7.4298000000053435,
+          "searchMs": 1468.7858999999953,
+          "exhausted": true,
+          "pv": [
+            25,
+            27,
+            13,
+            15
+          ],
+          "score": -30.333333333333332,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 0
+          },
+          "move": 21,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 5.882100000002538,
+          "tacticalMs": 5.882100000002538,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            21
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1814.333300000013,
+          "tacticalMs": 12.574500000002445,
+          "searchMs": 1801.7588000000105,
+          "exhausted": true,
+          "pv": [
+            27,
+            28,
+            22,
+            7
+          ],
+          "score": -25.65,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 0
+          },
+          "move": 28,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 14.645999999993364,
+          "tacticalMs": 14.645999999993364,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            28
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1823.0487999999896,
+          "tacticalMs": 15.82719999999972,
+          "searchMs": 1807.2215999999898,
+          "exhausted": true,
+          "pv": [
+            7,
+            22,
+            19,
+            10
+          ],
+          "score": -55.38333333333331,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 0
+          },
+          "move": 22,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 12.34649999999965,
+          "tacticalMs": 12.34649999999965,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            22
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 5
+          },
+          "move": 19,
+          "depth": 5,
+          "nodes": 6131,
+          "tacticalNodes": 600,
+          "elapsedMs": 2260.325100000002,
+          "tacticalMs": 10.819900000002235,
+          "searchMs": 2249.5051999999996,
+          "exhausted": false,
+          "pv": [
+            19,
+            13,
+            9,
+            10,
+            16
+          ],
+          "score": 8.95,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 0
+          },
+          "move": 10,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 15.991499999989173,
+          "tacticalMs": 15.991499999989173,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            10
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 5,
+          "nodes": 3944,
+          "tacticalNodes": 600,
+          "elapsedMs": 1370.3294999999925,
+          "tacticalMs": 11.56930000000284,
+          "searchMs": 1358.7601999999897,
+          "exhausted": false,
+          "pv": [
+            13,
+            16,
+            1
+          ],
+          "score": 1000000,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 0
+          },
+          "move": 16,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 89,
+          "elapsedMs": 1.0359999999927823,
+          "tacticalMs": 1.0359999999927823,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            16
+          ],
+          "score": null,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 5
+          },
+          "move": 1,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 24,
+          "elapsedMs": 0.19700000000011642,
+          "tacticalMs": 0.19700000000011642,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            1
+          ],
+          "score": 1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "normal-vs-tactical/edge-six/20260913/true",
+      "pair": [
+        "normal",
+        "tactical"
+      ],
+      "opening": {
+        "id": "edge-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "tactical",
+          "algorithm": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 0
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23,
+          1,
+          4,
+          6,
+          24,
+          14,
+          20,
+          15,
+          16,
+          22,
+          21,
+          8,
+          7,
+          29,
+          1,
+          11,
+          27,
+          17,
+          23
+        ]
+      },
+      "trajectoryHash": "43108acc91d23b115affd94e70ff68478be5ffc3d1da2f120c88bfbc39d41f2b",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 0
+          },
+          "move": 1,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 900,
+          "elapsedMs": 9.867899999997462,
+          "tacticalMs": 9.867899999997462,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            1
+          ],
+          "score": null,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 4,
+          "depth": 3,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 1932.8512999999948,
+          "tacticalMs": 8.402600000001257,
+          "searchMs": 1924.4486999999936,
+          "exhausted": true,
+          "pv": [
+            4,
+            14,
+            11
+          ],
+          "score": 35.000000000000014,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 0
+          },
+          "move": 6,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 784,
+          "elapsedMs": 8.785399999993388,
+          "tacticalMs": 8.785399999993388,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            6
+          ],
+          "score": null,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 24,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1860.7889999999898,
+          "tacticalMs": 11.75439999999071,
+          "searchMs": 1849.034599999999,
+          "exhausted": true,
+          "pv": [
+            24,
+            13,
+            15,
+            19
+          ],
+          "score": -51.499999999999986,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 0
+          },
+          "move": 14,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 676,
+          "elapsedMs": 6.19110000001092,
+          "tacticalMs": 6.19110000001092,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            14
+          ],
+          "score": null,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 625,
+          "elapsedMs": 1717.5341000000044,
+          "tacticalMs": 5.718399999997928,
+          "searchMs": 1711.8157000000065,
+          "exhausted": true,
+          "pv": [
+            20,
+            15,
+            22,
+            21
+          ],
+          "score": -66.67500000000001,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 0
+          },
+          "move": 15,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 8.936999999990803,
+          "tacticalMs": 8.936999999990803,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            15
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 16,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1985.7213000000047,
+          "tacticalMs": 9.07159999999567,
+          "searchMs": 1976.649700000009,
+          "exhausted": true,
+          "pv": [
+            16,
+            21,
+            28,
+            27
+          ],
+          "score": -55.69999999999999,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 0
+          },
+          "move": 22,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 7.373500000001513,
+          "tacticalMs": 7.373500000001513,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            22
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1711.9417000000103,
+          "tacticalMs": 9.196200000005774,
+          "searchMs": 1702.7455000000045,
+          "exhausted": true,
+          "pv": [
+            21,
+            29,
+            8,
+            11
+          ],
+          "score": -31.10833333333333,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 0
+          },
+          "move": 8,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 15.255600000004051,
+          "tacticalMs": 15.255600000004051,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            8
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1869.345399999991,
+          "tacticalMs": 11.338099999993574,
+          "searchMs": 1858.0072999999975,
+          "exhausted": true,
+          "pv": [
+            7,
+            31,
+            1,
+            34
+          ],
+          "score": 0.9166666666666714,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 0
+          },
+          "move": 29,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 7.63640000000305,
+          "tacticalMs": 7.63640000000305,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            29
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 1,
+          "depth": 5,
+          "nodes": 3189,
+          "tacticalNodes": 93,
+          "elapsedMs": 1030.7366000000038,
+          "tacticalMs": 1.0310000000026776,
+          "searchMs": 1029.7056000000011,
+          "exhausted": false,
+          "pv": [
+            1,
+            28,
+            31,
+            25,
+            26
+          ],
+          "score": 61.81666666666666,
+          "safeMoves": 1,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 0
+          },
+          "move": 11,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 5.446400000000722,
+          "tacticalMs": 5.446400000000722,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            11
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2154.0332999999955,
+          "tacticalMs": 5.424199999994016,
+          "searchMs": 2148.6091000000015,
+          "exhausted": true,
+          "pv": [
+            27,
+            9,
+            25,
+            17
+          ],
+          "score": 15.216666666666669,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "tactical",
+          "budget": {
+            "maxNodes": 0,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 0
+          },
+          "move": 17,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 600,
+          "elapsedMs": 5.6067000000039116,
+          "tacticalMs": 5.6067000000039116,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            17
+          ],
+          "score": null,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 5
+          },
+          "move": 23,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2058.2753999999986,
+          "tacticalMs": 7.365200000000186,
+          "searchMs": 2050.9101999999984,
+          "exhausted": true,
+          "pv": [
+            23,
+            19,
+            15,
+            9
+          ],
+          "score": 20.76666666666667,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/central-four/20260913/false",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "central-four",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          9,
+          8,
+          1,
+          19,
+          28,
+          22,
+          23,
+          25,
+          31,
+          14,
+          15,
+          26,
+          27,
+          7,
+          21,
+          9,
+          20,
+          10,
+          8,
+          13
+        ]
+      },
+      "trajectoryHash": "168137b80ed896724b990a946848997dcfab10f3e4b1334ab19cdb2db5a5d0f3",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 4,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2048069366,
+            "maxDepth": 8
+          },
+          "move": 9,
+          "depth": 4,
+          "nodes": 60000,
+          "tacticalNodes": 1024,
+          "elapsedMs": 11113.68729999999,
+          "tacticalMs": 15.690600000001723,
+          "searchMs": 11097.996699999989,
+          "exhausted": true,
+          "pv": [
+            9,
+            24,
+            27,
+            8
+          ],
+          "score": -8.75,
+          "safeMoves": 32,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 5,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 407537831,
+            "maxDepth": 5
+          },
+          "move": 8,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 961,
+          "elapsedMs": 1676.828999999998,
+          "tacticalMs": 10.528300000005402,
+          "searchMs": 1666.3006999999925,
+          "exhausted": true,
+          "pv": [
+            8,
+            34,
+            1,
+            22
+          ],
+          "score": -46.89999999999999,
+          "safeMoves": 31,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 8
+          },
+          "move": 1,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 900,
+          "elapsedMs": 10132.101999999999,
+          "tacticalMs": 7.243299999987357,
+          "searchMs": 10124.858700000012,
+          "exhausted": true,
+          "pv": [
+            1,
+            19,
+            34,
+            6,
+            31
+          ],
+          "score": 37.25333333333333,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 19,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 2238.700299999997,
+          "tacticalMs": 12.226999999998952,
+          "searchMs": 2226.473299999998,
+          "exhausted": true,
+          "pv": [
+            19,
+            34,
+            6,
+            31
+          ],
+          "score": -37.25333333333333,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 8
+          },
+          "move": 28,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 784,
+          "elapsedMs": 12016.567800000004,
+          "tacticalMs": 10.649600000004284,
+          "searchMs": 12005.9182,
+          "exhausted": true,
+          "pv": [
+            28,
+            22,
+            5,
+            2,
+            26
+          ],
+          "score": 15.33333333333334,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 22,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1588.4560999999958,
+          "tacticalMs": 7.76579999999376,
+          "searchMs": 1580.690300000002,
+          "exhausted": true,
+          "pv": [
+            22,
+            5,
+            2,
+            26
+          ],
+          "score": -15.33333333333334,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 8
+          },
+          "move": 23,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 676,
+          "elapsedMs": 10860.0377,
+          "tacticalMs": 8.169699999998556,
+          "searchMs": 10851.868000000002,
+          "exhausted": true,
+          "pv": [
+            23,
+            25,
+            5,
+            18,
+            17
+          ],
+          "score": 1.7083333333333321,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 625,
+          "elapsedMs": 1529.6900000000023,
+          "tacticalMs": 9.161300000007031,
+          "searchMs": 1520.5286999999953,
+          "exhausted": true,
+          "pv": [
+            25,
+            5,
+            18,
+            17
+          ],
+          "score": -1.7083333333333321,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 8
+          },
+          "move": 31,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9253.39379999999,
+          "tacticalMs": 8.377500000002328,
+          "searchMs": 9245.016299999988,
+          "exhausted": true,
+          "pv": [
+            31,
+            14,
+            11,
+            20,
+            21
+          ],
+          "score": 15.975000000000001,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1999.7924000000057,
+          "tacticalMs": 8.583400000003166,
+          "searchMs": 1991.2090000000026,
+          "exhausted": true,
+          "pv": [
+            14,
+            11,
+            20,
+            21
+          ],
+          "score": -15.975000000000001,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 8
+          },
+          "move": 15,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9980.6832,
+          "tacticalMs": 11.022200000006706,
+          "searchMs": 9969.660999999993,
+          "exhausted": true,
+          "pv": [
+            15,
+            26,
+            20,
+            27,
+            29
+          ],
+          "score": 21.516666666666666,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 26,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1940.3092999999935,
+          "tacticalMs": 6.28870000000461,
+          "searchMs": 1934.020599999989,
+          "exhausted": true,
+          "pv": [
+            26,
+            20,
+            27,
+            29
+          ],
+          "score": -21.516666666666666,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 8
+          },
+          "move": 27,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11992.6403,
+          "tacticalMs": 9.848700000002282,
+          "searchMs": 11982.791599999997,
+          "exhausted": true,
+          "pv": [
+            27,
+            7,
+            21,
+            9,
+            8
+          ],
+          "score": -17.233333333333334,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1778.168799999985,
+          "tacticalMs": 9.43849999998929,
+          "searchMs": 1768.7302999999956,
+          "exhausted": true,
+          "pv": [
+            7,
+            21,
+            9,
+            8
+          ],
+          "score": 17.233333333333334,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 8
+          },
+          "move": 21,
+          "depth": 6,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 21526.9424,
+          "tacticalMs": 5.714500000001863,
+          "searchMs": 21521.227899999998,
+          "exhausted": true,
+          "pv": [
+            21,
+            9,
+            8,
+            4,
+            22,
+            1
+          ],
+          "score": -14.375000000000004,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 9,
+          "depth": 5,
+          "nodes": 6016,
+          "tacticalNodes": 600,
+          "elapsedMs": 2294.4535000000033,
+          "tacticalMs": 14.182900000014342,
+          "searchMs": 2280.270599999989,
+          "exhausted": false,
+          "pv": [
+            9,
+            8,
+            4,
+            22,
+            1
+          ],
+          "score": 14.375000000000004,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 8
+          },
+          "move": 20,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 10215.616499999975,
+          "tacticalMs": 9.144099999975879,
+          "searchMs": 10206.472399999999,
+          "exhausted": true,
+          "pv": [
+            20,
+            10,
+            6,
+            34,
+            22
+          ],
+          "score": 57.33333333333334,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 5
+          },
+          "move": 10,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2372.1592999999993,
+          "tacticalMs": 9.986799999984214,
+          "searchMs": 2362.172500000015,
+          "exhausted": true,
+          "pv": [
+            10,
+            6,
+            34,
+            22
+          ],
+          "score": -57.33333333333334,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 8
+          },
+          "move": 8,
+          "depth": 6,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 13797.64810000002,
+          "tacticalMs": 11.598100000002887,
+          "searchMs": 13786.050000000017,
+          "exhausted": true,
+          "pv": [
+            8,
+            22,
+            16,
+            2,
+            14,
+            32
+          ],
+          "score": 43.03333333333333,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2097.174399999989,
+          "tacticalMs": 12.050599999987753,
+          "searchMs": 2085.123800000001,
+          "exhausted": true,
+          "pv": [
+            13,
+            19,
+            22,
+            16
+          ],
+          "score": -7.75,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/central-four/20260913/true",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "central-four",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          9,
+          26,
+          11,
+          28,
+          29,
+          7,
+          35,
+          0,
+          17,
+          14
+        ]
+      },
+      "trajectoryHash": "4ec197bda23896288bb0bc0c8c1ab51cc2c928597af12cc029b00b71b6eec8d5",
+      "result": {
+        "kind": "win",
+        "winner": "O",
+        "line": [
+          0,
+          7,
+          14,
+          21,
+          28
+        ]
+      },
+      "decisions": [
+        {
+          "ply": 4,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2048069366,
+            "maxDepth": 5
+          },
+          "move": 9,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 1024,
+          "elapsedMs": 2021.47080000001,
+          "tacticalMs": 15.093900000007125,
+          "searchMs": 2006.376900000003,
+          "exhausted": true,
+          "pv": [
+            9,
+            24,
+            27,
+            8
+          ],
+          "score": -8.75,
+          "safeMoves": 32,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 5,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 407537831,
+            "maxDepth": 8
+          },
+          "move": 26,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 961,
+          "elapsedMs": 10044.85579999999,
+          "tacticalMs": 7.562799999985145,
+          "searchMs": 10037.293000000005,
+          "exhausted": true,
+          "pv": [
+            26,
+            11,
+            29,
+            8,
+            7
+          ],
+          "score": 10.799999999999995,
+          "safeMoves": 31,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 11,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 2329.3608999999997,
+          "tacticalMs": 13.91290000002482,
+          "searchMs": 2315.447999999975,
+          "exhausted": true,
+          "pv": [
+            11,
+            29,
+            8,
+            7
+          ],
+          "score": -10.799999999999995,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 8
+          },
+          "move": 28,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 841,
+          "elapsedMs": 11298.007499999978,
+          "tacticalMs": 12.637799999996787,
+          "searchMs": 11285.369699999981,
+          "exhausted": true,
+          "pv": [
+            28,
+            25,
+            7,
+            35,
+            0
+          ],
+          "score": 17.84166666666667,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 29,
+          "depth": 3,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 1668.3336000000127,
+          "tacticalMs": 10.074400000012247,
+          "searchMs": 1658.2592000000004,
+          "exhausted": true,
+          "pv": [
+            29,
+            24,
+            17
+          ],
+          "score": 67.21,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 8
+          },
+          "move": 7,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 729,
+          "elapsedMs": 19400.491900000023,
+          "tacticalMs": 10.365400000009686,
+          "searchMs": 19390.126500000013,
+          "exhausted": true,
+          "pv": [
+            7,
+            35,
+            0,
+            17,
+            14
+          ],
+          "score": 1000000,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 35,
+          "depth": 3,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 1774.0427999999956,
+          "tacticalMs": 8.289999999979045,
+          "searchMs": 1765.7528000000166,
+          "exhausted": true,
+          "pv": [
+            35,
+            17,
+            0
+          ],
+          "score": -24.116666666666664,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 8
+          },
+          "move": 0,
+          "depth": 6,
+          "nodes": 60000,
+          "tacticalNodes": 625,
+          "elapsedMs": 10848.194900000002,
+          "tacticalMs": 10.489299999957439,
+          "searchMs": 10837.705600000045,
+          "exhausted": true,
+          "pv": [
+            0,
+            17,
+            14
+          ],
+          "score": 1000000,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 17,
+          "depth": 5,
+          "nodes": 449,
+          "tacticalNodes": 278,
+          "elapsedMs": 144.54220000002533,
+          "tacticalMs": 6.736800000013318,
+          "searchMs": 137.805400000012,
+          "exhausted": false,
+          "pv": [
+            17,
+            14
+          ],
+          "score": -1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 8
+          },
+          "move": 14,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 24,
+          "elapsedMs": 0.20500000001629815,
+          "tacticalMs": 0.20500000001629815,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            14
+          ],
+          "score": 1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/off-centre-six/20260913/false",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "off-centre-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16,
+          25,
+          13,
+          14,
+          20,
+          21,
+          27,
+          6,
+          7,
+          24,
+          12,
+          15,
+          29,
+          22,
+          28,
+          25,
+          10,
+          19,
+          13
+        ]
+      },
+      "trajectoryHash": "0338929064e068b7f789a856abb8e67706089fb122bf2da19f04abae88856fad",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 8
+          },
+          "move": 25,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 900,
+          "elapsedMs": 13509.171299999987,
+          "tacticalMs": 8.60740000003716,
+          "searchMs": 13500.56389999995,
+          "exhausted": true,
+          "pv": [
+            25,
+            13,
+            10,
+            15,
+            14
+          ],
+          "score": 82.69999999999999,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 1642.2596000000485,
+          "tacticalMs": 13.564899999997579,
+          "searchMs": 1628.694700000051,
+          "exhausted": true,
+          "pv": [
+            13,
+            10,
+            15,
+            14
+          ],
+          "score": -82.69999999999999,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 8
+          },
+          "move": 14,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 784,
+          "elapsedMs": 9636.951300000015,
+          "tacticalMs": 11.278600000019651,
+          "searchMs": 9625.672699999996,
+          "exhausted": true,
+          "pv": [
+            14,
+            20,
+            34,
+            4,
+            31
+          ],
+          "score": 14.066666666666666,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1912.8117999999668,
+          "tacticalMs": 16.949199999973644,
+          "searchMs": 1895.862599999993,
+          "exhausted": true,
+          "pv": [
+            20,
+            34,
+            4,
+            31
+          ],
+          "score": -14.066666666666666,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 8
+          },
+          "move": 21,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 676,
+          "elapsedMs": 8368.454700000002,
+          "tacticalMs": 13.285100000037346,
+          "searchMs": 8355.169599999965,
+          "exhausted": true,
+          "pv": [
+            21,
+            27,
+            6,
+            7,
+            24
+          ],
+          "score": 39.66666666666667,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 625,
+          "elapsedMs": 1701.1280999999726,
+          "tacticalMs": 14.95549999998184,
+          "searchMs": 1686.1725999999908,
+          "exhausted": true,
+          "pv": [
+            27,
+            6,
+            7,
+            24
+          ],
+          "score": -39.66666666666667,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 8
+          },
+          "move": 6,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9898.03230000002,
+          "tacticalMs": 13.903999999980442,
+          "searchMs": 9884.12830000004,
+          "exhausted": true,
+          "pv": [
+            6,
+            7,
+            24,
+            12,
+            4
+          ],
+          "score": 64.39166666666668,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1681.0771999999997,
+          "tacticalMs": 9.400000000023283,
+          "searchMs": 1671.6771999999764,
+          "exhausted": true,
+          "pv": [
+            7,
+            24,
+            12,
+            4
+          ],
+          "score": -64.39166666666668,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 8
+          },
+          "move": 24,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9388.452099999995,
+          "tacticalMs": 6.428200000023935,
+          "searchMs": 9382.023899999971,
+          "exhausted": true,
+          "pv": [
+            24,
+            12,
+            4,
+            19,
+            1
+          ],
+          "score": 12.116666666666672,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 12,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1701.2175999999745,
+          "tacticalMs": 6.306500000006054,
+          "searchMs": 1694.9110999999684,
+          "exhausted": true,
+          "pv": [
+            12,
+            4,
+            19,
+            1
+          ],
+          "score": -12.116666666666672,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 8
+          },
+          "move": 15,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9973.613799999992,
+          "tacticalMs": 9.263399999996182,
+          "searchMs": 9964.350399999996,
+          "exhausted": true,
+          "pv": [
+            15,
+            29,
+            4,
+            9,
+            10
+          ],
+          "score": 4.116666666666659,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 29,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1819.6183999999776,
+          "tacticalMs": 9.51469999999972,
+          "searchMs": 1810.1036999999778,
+          "exhausted": true,
+          "pv": [
+            29,
+            4,
+            9,
+            10
+          ],
+          "score": -4.116666666666659,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 8
+          },
+          "move": 22,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11726.797399999981,
+          "tacticalMs": 9.372499999997672,
+          "searchMs": 11717.424899999984,
+          "exhausted": true,
+          "pv": [
+            22,
+            28,
+            25,
+            14,
+            20
+          ],
+          "score": 23.475,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 28,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2235.6428000000305,
+          "tacticalMs": 9.445600000035483,
+          "searchMs": 2226.197199999995,
+          "exhausted": true,
+          "pv": [
+            28,
+            25,
+            14,
+            20
+          ],
+          "score": -23.475,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 8
+          },
+          "move": 25,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9383.272100000002,
+          "tacticalMs": 9.433799999998882,
+          "searchMs": 9373.838300000003,
+          "exhausted": true,
+          "pv": [
+            25,
+            10,
+            17,
+            9,
+            14
+          ],
+          "score": 49.26666666666668,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 5
+          },
+          "move": 10,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1783.3878999999724,
+          "tacticalMs": 9.339800000016112,
+          "searchMs": 1774.0480999999563,
+          "exhausted": true,
+          "pv": [
+            10,
+            17,
+            9,
+            14
+          ],
+          "score": -49.26666666666668,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 8
+          },
+          "move": 19,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11222.49940000003,
+          "tacticalMs": 10.440799999982119,
+          "searchMs": 11212.058600000048,
+          "exhausted": true,
+          "pv": [
+            19,
+            13,
+            14,
+            20,
+            9
+          ],
+          "score": 48,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2087.3148999999976,
+          "tacticalMs": 16.277000000001863,
+          "searchMs": 2071.0378999999957,
+          "exhausted": true,
+          "pv": [
+            13,
+            14,
+            20,
+            9
+          ],
+          "score": -48,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/off-centre-six/20260913/true",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "off-centre-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          28,
+          9,
+          26,
+          19,
+          16,
+          25,
+          13,
+          21,
+          34,
+          15,
+          8,
+          27,
+          10,
+          7,
+          9,
+          14,
+          17,
+          16,
+          20,
+          25,
+          21,
+          13,
+          15
+        ]
+      },
+      "trajectoryHash": "a157d90ac5d94ba265ee4f925fe41d3a3eea94e2ca435ab45d8d227fd45ea685",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 2043.051700000011,
+          "tacticalMs": 8.581999999994878,
+          "searchMs": 2034.469700000016,
+          "exhausted": true,
+          "pv": [
+            25,
+            13,
+            10,
+            8
+          ],
+          "score": -25.799999999999997,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 8
+          },
+          "move": 13,
+          "depth": 6,
+          "nodes": 60000,
+          "tacticalNodes": 841,
+          "elapsedMs": 11464.594299999997,
+          "tacticalMs": 15.90690000000177,
+          "searchMs": 11448.687399999995,
+          "exhausted": true,
+          "pv": [
+            13,
+            14,
+            20,
+            34,
+            4,
+            31
+          ],
+          "score": -14.066666666666666,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 1414.9457000000402,
+          "tacticalMs": 11.585200000030454,
+          "searchMs": 1403.3605000000098,
+          "exhausted": true,
+          "pv": [
+            21,
+            14,
+            15,
+            20
+          ],
+          "score": -13.00000000000001,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 8
+          },
+          "move": 34,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 729,
+          "elapsedMs": 9548.538600000029,
+          "tacticalMs": 8.54460000002291,
+          "searchMs": 9539.994000000006,
+          "exhausted": true,
+          "pv": [
+            34,
+            15,
+            22,
+            10,
+            20
+          ],
+          "score": 24.983333333333345,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 15,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 1631.1651999999885,
+          "tacticalMs": 10.427900000009686,
+          "searchMs": 1620.7372999999789,
+          "exhausted": true,
+          "pv": [
+            15,
+            22,
+            10,
+            20
+          ],
+          "score": -24.983333333333345,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 8
+          },
+          "move": 8,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 625,
+          "elapsedMs": 9927.52589999995,
+          "tacticalMs": 6.218899999978021,
+          "searchMs": 9921.306999999972,
+          "exhausted": true,
+          "pv": [
+            8,
+            27,
+            10,
+            7,
+            9
+          ],
+          "score": -37.758333333333326,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2219.8985000000102,
+          "tacticalMs": 10.037699999986216,
+          "searchMs": 2209.860800000024,
+          "exhausted": true,
+          "pv": [
+            27,
+            10,
+            7,
+            9
+          ],
+          "score": 37.758333333333326,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 8
+          },
+          "move": 10,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11749.65750000003,
+          "tacticalMs": 7.607900000002701,
+          "searchMs": 11742.049600000028,
+          "exhausted": true,
+          "pv": [
+            10,
+            7,
+            9,
+            22,
+            14
+          ],
+          "score": 11.333333333333327,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 2119.1443000000436,
+          "tacticalMs": 9.88990000000922,
+          "searchMs": 2109.2544000000344,
+          "exhausted": true,
+          "pv": [
+            7,
+            9,
+            22,
+            14
+          ],
+          "score": -11.333333333333327,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 8
+          },
+          "move": 9,
+          "depth": 6,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 10384.598500000022,
+          "tacticalMs": 8.798999999999069,
+          "searchMs": 10375.799500000023,
+          "exhausted": true,
+          "pv": [
+            9,
+            14,
+            28,
+            16,
+            12,
+            13
+          ],
+          "score": -94.76666666666667,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1630.4913000000524,
+          "tacticalMs": 8.461400000029244,
+          "searchMs": 1622.0299000000232,
+          "exhausted": true,
+          "pv": [
+            14,
+            28,
+            16,
+            12
+          ],
+          "score": 71.34166666666667,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 8
+          },
+          "move": 17,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 8402.714399999997,
+          "tacticalMs": 6.222000000008848,
+          "searchMs": 8396.492399999988,
+          "exhausted": true,
+          "pv": [
+            17,
+            16,
+            29,
+            23,
+            21
+          ],
+          "score": -29.683333333333337,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 5
+          },
+          "move": 16,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1634.6843000000226,
+          "tacticalMs": 10.609900000039488,
+          "searchMs": 1624.0743999999831,
+          "exhausted": true,
+          "pv": [
+            16,
+            29,
+            23,
+            21
+          ],
+          "score": 29.683333333333337,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 8
+          },
+          "move": 20,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9319.512099999993,
+          "tacticalMs": 6.3532000000122935,
+          "searchMs": 9313.15889999998,
+          "exhausted": true,
+          "pv": [
+            20,
+            25,
+            21,
+            22,
+            13
+          ],
+          "score": -3.5,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1961.8988000000245,
+          "tacticalMs": 10.070000000006985,
+          "searchMs": 1951.8288000000175,
+          "exhausted": true,
+          "pv": [
+            25,
+            21,
+            22,
+            13
+          ],
+          "score": 3.5,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 8
+          },
+          "move": 21,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9468.614500000025,
+          "tacticalMs": 9.29790000000503,
+          "searchMs": 9459.31660000002,
+          "exhausted": true,
+          "pv": [
+            21,
+            13,
+            15,
+            19,
+            27
+          ],
+          "score": 1.9000000000000101,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 5
+          },
+          "move": 13,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1850.6644000000088,
+          "tacticalMs": 9.989800000039395,
+          "searchMs": 1840.6745999999694,
+          "exhausted": true,
+          "pv": [
+            13,
+            15,
+            19,
+            27
+          ],
+          "score": -1.9000000000000101,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 8
+          },
+          "move": 15,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11398.86989999999,
+          "tacticalMs": 9.822600000014063,
+          "searchMs": 11389.047299999977,
+          "exhausted": true,
+          "pv": [
+            15,
+            3,
+            27,
+            33,
+            19
+          ],
+          "score": 113.73333333333332,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/edge-six/20260913/false",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "edge-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23
+        ]
+      },
+      "seed": 20260913,
+      "swapped": false,
+      "players": {
+        "X": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        },
+        "O": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23,
+          14,
+          15,
+          21,
+          20,
+          10,
+          28,
+          31,
+          26,
+          8,
+          7,
+          35,
+          0,
+          33,
+          14,
+          34,
+          21
+        ]
+      },
+      "trajectoryHash": "b87923f0b302eb71c7dbc07068e9d4a6c6946473c1fcfdf1cdd1887b89a6282b",
+      "result": {
+        "kind": "win",
+        "winner": "O",
+        "line": [
+          0,
+          7,
+          14,
+          21,
+          28
+        ]
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 8
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 60000,
+          "tacticalNodes": 900,
+          "elapsedMs": 8730.044999999984,
+          "tacticalMs": 13.473800000036135,
+          "searchMs": 8716.571199999948,
+          "exhausted": true,
+          "pv": [
+            14,
+            21,
+            20,
+            26
+          ],
+          "score": -7.8000000000000025,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 5
+          },
+          "move": 15,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 841,
+          "elapsedMs": 1656.547900000005,
+          "tacticalMs": 13.385899999993853,
+          "searchMs": 1643.1620000000112,
+          "exhausted": true,
+          "pv": [
+            15,
+            4,
+            9,
+            3
+          ],
+          "score": -35.40000000000001,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 8
+          },
+          "move": 21,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 784,
+          "elapsedMs": 8328.953300000052,
+          "tacticalMs": 11.402599999972153,
+          "searchMs": 8317.55070000008,
+          "exhausted": true,
+          "pv": [
+            21,
+            20,
+            24,
+            6,
+            28
+          ],
+          "score": 52.75833333333334,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 5
+          },
+          "move": 20,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 729,
+          "elapsedMs": 1564.0535999999847,
+          "tacticalMs": 10.895699999993667,
+          "searchMs": 1553.157899999991,
+          "exhausted": true,
+          "pv": [
+            20,
+            24,
+            6,
+            28
+          ],
+          "score": -52.75833333333334,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 8
+          },
+          "move": 10,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 676,
+          "elapsedMs": 8693.374899999937,
+          "tacticalMs": 10.333299999940209,
+          "searchMs": 8683.041599999997,
+          "exhausted": true,
+          "pv": [
+            10,
+            28,
+            11,
+            8,
+            26
+          ],
+          "score": 48.49999999999999,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 5
+          },
+          "move": 28,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 625,
+          "elapsedMs": 1745.2961999999825,
+          "tacticalMs": 12.65769999998156,
+          "searchMs": 1732.638500000001,
+          "exhausted": true,
+          "pv": [
+            28,
+            11,
+            8,
+            26
+          ],
+          "score": -48.49999999999999,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 8
+          },
+          "move": 31,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9462.625699999975,
+          "tacticalMs": 9.916100000031292,
+          "searchMs": 9452.709599999944,
+          "exhausted": true,
+          "pv": [
+            31,
+            26,
+            7,
+            25,
+            27
+          ],
+          "score": 32,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 5
+          },
+          "move": 26,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1384.4500999999,
+          "tacticalMs": 7.81809999991674,
+          "searchMs": 1376.6319999999832,
+          "exhausted": true,
+          "pv": [
+            26,
+            7,
+            25,
+            27
+          ],
+          "score": -32,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 8
+          },
+          "move": 8,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9810.694000000018,
+          "tacticalMs": 7.960000000079162,
+          "searchMs": 9802.733999999939,
+          "exhausted": true,
+          "pv": [
+            8,
+            7,
+            27,
+            35,
+            30
+          ],
+          "score": -1.3166666666666664,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 5
+          },
+          "move": 7,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1733.0583000000333,
+          "tacticalMs": 10.901399999973364,
+          "searchMs": 1722.15690000006,
+          "exhausted": true,
+          "pv": [
+            7,
+            27,
+            35,
+            30
+          ],
+          "score": 1.3166666666666664,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 8
+          },
+          "move": 35,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 10336.435699999915,
+          "tacticalMs": 8.908500000019558,
+          "searchMs": 10327.527199999895,
+          "exhausted": true,
+          "pv": [
+            35,
+            0,
+            33,
+            34,
+            14
+          ],
+          "score": -29.75,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 5
+          },
+          "move": 0,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1426.8040000000037,
+          "tacticalMs": 10.291399999987334,
+          "searchMs": 1416.5126000000164,
+          "exhausted": true,
+          "pv": [
+            0,
+            33,
+            34,
+            14
+          ],
+          "score": 29.75,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 8
+          },
+          "move": 33,
+          "depth": 7,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 12239.096300000092,
+          "tacticalMs": 9.409800000023097,
+          "searchMs": 12229.686500000069,
+          "exhausted": true,
+          "pv": [
+            33,
+            14,
+            34,
+            21
+          ],
+          "score": -1000000,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 5,
+          "nodes": 6741,
+          "tacticalNodes": 600,
+          "elapsedMs": 1503.9122999999672,
+          "tacticalMs": 10.391199999954551,
+          "searchMs": 1493.5211000000127,
+          "exhausted": false,
+          "pv": [
+            14,
+            34,
+            21
+          ],
+          "score": 1000000,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 8
+          },
+          "move": 34,
+          "depth": 8,
+          "nodes": 17579,
+          "tacticalNodes": 393,
+          "elapsedMs": 2420.8273000000045,
+          "tacticalMs": 6.413100000005215,
+          "searchMs": 2414.4141999999993,
+          "exhausted": false,
+          "pv": [
+            34,
+            21
+          ],
+          "score": -1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 0,
+          "nodes": 0,
+          "tacticalNodes": 24,
+          "elapsedMs": 0.38120000006165355,
+          "tacticalMs": 0.38120000006165355,
+          "searchMs": 0,
+          "exhausted": false,
+          "pv": [
+            21
+          ],
+          "score": 1000000,
+          "safeMoves": 0,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    },
+    {
+      "id": "hard-vs-normal/edge-six/20260913/true",
+      "pair": [
+        "hard",
+        "normal"
+      ],
+      "opening": {
+        "id": "edge-six",
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23
+        ]
+      },
+      "seed": 20260913,
+      "swapped": true,
+      "players": {
+        "X": {
+          "name": "normal",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 5
+          }
+        },
+        "O": {
+          "name": "hard",
+          "algorithm": "search",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1,
+            "maxDepth": 8
+          }
+        }
+      },
+      "cutoff": 24,
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          33,
+          12,
+          23,
+          14,
+          20,
+          21,
+          7,
+          25,
+          4,
+          16,
+          15,
+          8,
+          24,
+          28,
+          6,
+          18,
+          19,
+          22,
+          13,
+          27,
+          14
+        ]
+      },
+      "trajectoryHash": "748be0b78bb93749456a5c4644d62687c49341325e7f819bd2ed34777fc50756",
+      "result": {
+        "kind": "cutoff"
+      },
+      "decisions": [
+        {
+          "ply": 6,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3061973592,
+            "maxDepth": 5
+          },
+          "move": 14,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 900,
+          "elapsedMs": 1764.2175999999745,
+          "tacticalMs": 12.45809999993071,
+          "searchMs": 1751.7595000000438,
+          "exhausted": true,
+          "pv": [
+            14,
+            21,
+            20,
+            26
+          ],
+          "score": -7.8000000000000025,
+          "safeMoves": 30,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 7,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1421442057,
+            "maxDepth": 8
+          },
+          "move": 20,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 841,
+          "elapsedMs": 9312.008199999924,
+          "tacticalMs": 10.140099999960512,
+          "searchMs": 9301.868099999963,
+          "exhausted": true,
+          "pv": [
+            20,
+            21,
+            34,
+            31,
+            13
+          ],
+          "score": 29.208333333333332,
+          "safeMoves": 29,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 8,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 4075877818,
+            "maxDepth": 5
+          },
+          "move": 21,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 784,
+          "elapsedMs": 1741.2975999999326,
+          "tacticalMs": 12.867899999953806,
+          "searchMs": 1728.4296999999788,
+          "exhausted": true,
+          "pv": [
+            21,
+            34,
+            31,
+            13
+          ],
+          "score": -29.208333333333332,
+          "safeMoves": 28,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 9,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2435346283,
+            "maxDepth": 8
+          },
+          "move": 7,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 729,
+          "elapsedMs": 8220.580799999996,
+          "tacticalMs": 11.664899999974295,
+          "searchMs": 8208.915900000022,
+          "exhausted": true,
+          "pv": [
+            7,
+            25,
+            11,
+            29,
+            10
+          ],
+          "score": 31.133333333333333,
+          "safeMoves": 27,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 10,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 794814748,
+            "maxDepth": 5
+          },
+          "move": 25,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 676,
+          "elapsedMs": 1743.732500000042,
+          "tacticalMs": 10.388600000063889,
+          "searchMs": 1733.343899999978,
+          "exhausted": true,
+          "pv": [
+            25,
+            11,
+            29,
+            10
+          ],
+          "score": -31.133333333333333,
+          "safeMoves": 26,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 11,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3449250509,
+            "maxDepth": 8
+          },
+          "move": 4,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 625,
+          "elapsedMs": 8874.134199999971,
+          "tacticalMs": 9.292499999981374,
+          "searchMs": 8864.84169999999,
+          "exhausted": true,
+          "pv": [
+            4,
+            16,
+            15,
+            26,
+            11
+          ],
+          "score": 8.333333333333329,
+          "safeMoves": 25,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 12,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1808718974,
+            "maxDepth": 5
+          },
+          "move": 16,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1552.6007000000682,
+          "tacticalMs": 7.136900000041351,
+          "searchMs": 1545.4638000000268,
+          "exhausted": true,
+          "pv": [
+            16,
+            15,
+            26,
+            11
+          ],
+          "score": -8.333333333333329,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 13,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 168187439,
+            "maxDepth": 8
+          },
+          "move": 15,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 8471.842500000028,
+          "tacticalMs": 8.40769999998156,
+          "searchMs": 8463.434800000046,
+          "exhausted": true,
+          "pv": [
+            15,
+            8,
+            34,
+            26,
+            31
+          ],
+          "score": 8.641666666666659,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 14,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2822623200,
+            "maxDepth": 5
+          },
+          "move": 8,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1590.7569000000367,
+          "tacticalMs": 8.837300000013784,
+          "searchMs": 1581.919600000023,
+          "exhausted": true,
+          "pv": [
+            8,
+            34,
+            26,
+            31
+          ],
+          "score": -8.641666666666659,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 15,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 1182091665,
+            "maxDepth": 8
+          },
+          "move": 24,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 10890.746999999974,
+          "tacticalMs": 10.11159999994561,
+          "searchMs": 10880.635400000028,
+          "exhausted": true,
+          "pv": [
+            24,
+            28,
+            1,
+            3,
+            14
+          ],
+          "score": 32.45833333333333,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 16,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 3836527426,
+            "maxDepth": 5
+          },
+          "move": 28,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1581.3282999999356,
+          "tacticalMs": 8.31809999991674,
+          "searchMs": 1573.0102000000188,
+          "exhausted": true,
+          "pv": [
+            28,
+            1,
+            3,
+            14
+          ],
+          "score": -32.45833333333333,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 17,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 2195995891,
+            "maxDepth": 8
+          },
+          "move": 6,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9612.239799999981,
+          "tacticalMs": 10.479599999962375,
+          "searchMs": 9601.760200000019,
+          "exhausted": true,
+          "pv": [
+            6,
+            18,
+            27,
+            9,
+            34
+          ],
+          "score": 30.249999999999986,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 18,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 555464356,
+            "maxDepth": 5
+          },
+          "move": 18,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1950.440100000007,
+          "tacticalMs": 12.27510000008624,
+          "searchMs": 1938.1649999999208,
+          "exhausted": true,
+          "pv": [
+            18,
+            27,
+            9,
+            34
+          ],
+          "score": -30.249999999999986,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 19,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 3209900117,
+            "maxDepth": 8
+          },
+          "move": 19,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 9055.254799999995,
+          "tacticalMs": 8.99930000002496,
+          "searchMs": 9046.25549999997,
+          "exhausted": true,
+          "pv": [
+            19,
+            22,
+            34,
+            10,
+            13
+          ],
+          "score": 20.975000000000012,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 20,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 1569368582,
+            "maxDepth": 5
+          },
+          "move": 22,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1942.8074999999953,
+          "tacticalMs": 8.507400000002235,
+          "searchMs": 1934.300099999993,
+          "exhausted": true,
+          "pv": [
+            22,
+            34,
+            10,
+            13
+          ],
+          "score": -20.975000000000012,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 21,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 4223804343,
+            "maxDepth": 8
+          },
+          "move": 13,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 11195.12380000006,
+          "tacticalMs": 8.504399999976158,
+          "searchMs": 11186.619400000083,
+          "exhausted": true,
+          "pv": [
+            13,
+            27,
+            14,
+            25,
+            16
+          ],
+          "score": 55.841666666666654,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 22,
+          "player": "X",
+          "agent": "normal",
+          "budget": {
+            "maxNodes": 8000,
+            "timeMs": null,
+            "seed": 2583272808,
+            "maxDepth": 5
+          },
+          "move": 27,
+          "depth": 4,
+          "nodes": 8000,
+          "tacticalNodes": 600,
+          "elapsedMs": 1728.0625,
+          "tacticalMs": 9.133499999996275,
+          "searchMs": 1718.9290000000037,
+          "exhausted": true,
+          "pv": [
+            27,
+            14,
+            25,
+            16
+          ],
+          "score": -55.841666666666654,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        {
+          "ply": 23,
+          "player": "O",
+          "agent": "hard",
+          "budget": {
+            "maxNodes": 60000,
+            "timeMs": null,
+            "seed": 942741273,
+            "maxDepth": 8
+          },
+          "move": 14,
+          "depth": 5,
+          "nodes": 60000,
+          "tacticalNodes": 600,
+          "elapsedMs": 12446.886700000032,
+          "tacticalMs": 9.61040000000503,
+          "searchMs": 12437.276300000027,
+          "exhausted": true,
+          "pv": [
+            14,
+            25,
+            4,
+            9,
+            15
+          ],
+          "score": 105.68333333333335,
+          "safeMoves": 24,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      ]
+    }
+  ],
+  "mistakes": [],
+  "auditScope": "Every generated move: missed stable one-ply win or allowed one-ply win when safe reply exists; not a multi-ply perfect oracle."
+}

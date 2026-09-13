@@ -1,0 +1,5128 @@
+{
+  "schemaVersion": 1,
+  "definition": "Sampled every8th ply, up to8 distinct prefixes per batch; compare actual tactical/normal/hard research choices, diagnostics, heuristic-after-move and opponent mate-in3 checks (2000 nodes each).",
+  "scannedPrefixes": 10491,
+  "detected": 30,
+  "bySource": {
+    "experiment": 28,
+    "reference-fixture": 2
+  },
+  "saved": 30,
+  "storagePolicy": "all-detected",
+  "entries": [
+    {
+      "id": "64be2b9d355c0b8b9cd2522b948486b976d289a19e7418541216b9b917790b89",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-01/20260929/false/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          1,
+          29,
+          7,
+          25,
+          10,
+          26,
+          27,
+          9,
+          4
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 2,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 7.304899999999975,
+            "tacticalMs": 7.304899999999975,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              2
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 23.75
+          },
+          "normal": {
+            "move": 11,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 23.3193,
+            "tacticalMs": 5.544499999999971,
+            "searchMs": 17.774800000000027,
+            "exhausted": true,
+            "pv": [
+              11,
+              17
+            ],
+            "score": 3.4083333333333368,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 15.083333333333345
+          },
+          "hard": {
+            "move": 16,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 132.19779999999992,
+            "tacticalMs": 5.746200000000044,
+            "searchMs": 126.45159999999987,
+            "exhausted": true,
+            "pv": [
+              16,
+              21,
+              14
+            ],
+            "score": 48.33333333333333,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 2.4833333333333396
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 24.48109999999997,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 20.55880000000002,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 19.83719999999994,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "5a2c02457912d93bd2a47a87e05f4a8f15d3a38cda9379ec9848417aa038f69f",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-01/20260929/false/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          1,
+          29,
+          7,
+          25,
+          10,
+          26,
+          27,
+          9,
+          4,
+          11,
+          17,
+          22,
+          16,
+          14,
+          20,
+          7,
+          8
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 28,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 10.092000000000098,
+            "tacticalMs": 10.092000000000098,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              28
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 120.83333333333329
+          },
+          "normal": {
+            "move": 25,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 31.836299999999937,
+            "tacticalMs": 9.929899999999861,
+            "searchMs": 21.906400000000076,
+            "exhausted": true,
+            "pv": [
+              25,
+              13
+            ],
+            "score": 28.058333333333334,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 58.49999999999999
+          },
+          "hard": {
+            "move": 25,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 133.8306,
+            "tacticalMs": 8.11200000000008,
+            "searchMs": 125.71859999999992,
+            "exhausted": true,
+            "pv": [
+              25,
+              21,
+              13
+            ],
+            "score": 127.08333333333331,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 58.49999999999999
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 19.209299999999985,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 22.45620000000008,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 14.456899999999905,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "376c3131858c3d52b9d5e6024a924ff5e24f93353aae86db61101e9a68d13290",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-01/20260929/false/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          1,
+          29,
+          7,
+          25,
+          10,
+          26,
+          27,
+          9,
+          4,
+          11,
+          17,
+          22,
+          16,
+          14,
+          20,
+          7,
+          8,
+          25,
+          13,
+          27,
+          28,
+          4,
+          24,
+          3,
+          1
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 15,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 8.30359999999996,
+            "tacticalMs": 8.30359999999996,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              15
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 60.66666666666665
+          },
+          "normal": {
+            "move": 15,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 30.19270000000006,
+            "tacticalMs": 5.773500000000013,
+            "searchMs": 24.419200000000046,
+            "exhausted": true,
+            "pv": [
+              15,
+              21
+            ],
+            "score": -1.750000000000007,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 60.66666666666665
+          },
+          "hard": {
+            "move": 21,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 127.97829999999999,
+            "tacticalMs": 6.21309999999994,
+            "searchMs": 121.76520000000005,
+            "exhausted": true,
+            "pv": [
+              21,
+              15,
+              16
+            ],
+            "score": -9.224999999999998,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 40.66666666666668
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 16.18250000000012,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 16.467699999999923,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 18.517299999999977,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "9c98931a2345e974b8721a6922ec25884fb775fc7a577b78c979d328519e9d7c",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-01/20260929/false/60",
+        "ply": 40
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          1,
+          29,
+          7,
+          25,
+          10,
+          26,
+          27,
+          9,
+          4,
+          11,
+          17,
+          22,
+          16,
+          14,
+          20,
+          7,
+          8,
+          25,
+          13,
+          27,
+          28,
+          4,
+          24,
+          3,
+          1,
+          15,
+          21,
+          14,
+          20,
+          19,
+          16,
+          31,
+          34
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 13,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 8.785600000000159,
+            "tacticalMs": 8.785600000000159,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              13
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 41.60833333333333
+          },
+          "normal": {
+            "move": 13,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 25.107799999999997,
+            "tacticalMs": 6.509299999999939,
+            "searchMs": 18.598500000000058,
+            "exhausted": true,
+            "pv": [
+              13,
+              7
+            ],
+            "score": -14.350000000000001,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 41.60833333333333
+          },
+          "hard": {
+            "move": 28,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 128.95229999999992,
+            "tacticalMs": 7.149699999999939,
+            "searchMs": 121.80259999999998,
+            "exhausted": true,
+            "pv": [
+              28,
+              13,
+              27
+            ],
+            "score": 48.81666666666666,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 4.524999999999999
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 19.07809999999995,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 22.675300000000107,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 19.36310000000003,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "3be101f44dc62092e533621cca9aabd1c6455bf478d48ab71fc51759e58b9e58",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-01/20260929/false/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          1,
+          29,
+          7,
+          25,
+          10,
+          26,
+          27,
+          9,
+          4,
+          11,
+          17,
+          22,
+          16,
+          14,
+          20,
+          7,
+          8,
+          25,
+          13,
+          27,
+          28,
+          4,
+          24,
+          3,
+          1,
+          15,
+          21,
+          14,
+          20,
+          19,
+          16,
+          31,
+          34,
+          13,
+          7,
+          24,
+          9,
+          10,
+          27,
+          21,
+          29,
+          20,
+          25,
+          26,
+          22,
+          8,
+          14,
+          11,
+          16
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 7,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 10.582700000000159,
+            "tacticalMs": 10.582700000000159,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              7
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 8.983333333333341
+          },
+          "normal": {
+            "move": 7,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 20.64429999999993,
+            "tacticalMs": 6.85329999999999,
+            "searchMs": 13.79099999999994,
+            "exhausted": true,
+            "pv": [
+              7
+            ],
+            "score": 8.983333333333345,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 8.983333333333341
+          },
+          "hard": {
+            "move": 13,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 114.59260000000017,
+            "tacticalMs": 6.53449999999998,
+            "searchMs": 108.0581000000002,
+            "exhausted": true,
+            "pv": [
+              13,
+              9,
+              4
+            ],
+            "score": -22.916666666666657,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -16.850000000000005
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 22.619800000000396,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 19.747299999999996,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 27.594300000000203,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "79a8b6198159f6e92157772b55b629a6badada67bf56ddb9b30fe505c1854f2f",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-01/20260929/false/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          28,
+          27,
+          6,
+          15,
+          14,
+          21,
+          9,
+          4,
+          8,
+          20,
+          10,
+          7,
+          22
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 1,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 8.473799999999756,
+            "tacticalMs": 8.473799999999756,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              1
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 41.23333333333335
+          },
+          "normal": {
+            "move": 1,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 20.536799999999857,
+            "tacticalMs": 10.376199999999699,
+            "searchMs": 10.160600000000159,
+            "exhausted": true,
+            "pv": [
+              1
+            ],
+            "score": 41.23333333333334,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 41.23333333333335
+          },
+          "hard": {
+            "move": 28,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 160.5607,
+            "tacticalMs": 10.46979999999985,
+            "searchMs": 150.09090000000015,
+            "exhausted": true,
+            "pv": [
+              28,
+              29
+            ],
+            "score": 32.56666666666668,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 27.416666666666668
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 27.351700000000164,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 17.027399999999943,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 16.341199999999844,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "082ceb92d4ce63e25e1f09cd47bd29fb49b68171476b66d589ce5ac49fac0de9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-01/20260929/false/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          28,
+          27,
+          6,
+          15,
+          14,
+          21,
+          9,
+          4,
+          8,
+          20,
+          10,
+          7,
+          22,
+          28,
+          29,
+          1,
+          0,
+          14,
+          35,
+          13,
+          19
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 15,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 9.146200000000135,
+            "tacticalMs": 9.146200000000135,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              15
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 101.49999999999999
+          },
+          "normal": {
+            "move": 15,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 40.062299999999595,
+            "tacticalMs": 9.32049999999981,
+            "searchMs": 30.741799999999785,
+            "exhausted": true,
+            "pv": [
+              15,
+              16
+            ],
+            "score": -0.16666666666666696,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 101.49999999999999
+          },
+          "hard": {
+            "move": 8,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 192.47049999999945,
+            "tacticalMs": 7.876399999999194,
+            "searchMs": 184.59410000000025,
+            "exhausted": true,
+            "pv": [
+              8,
+              20,
+              15
+            ],
+            "score": 90.35000000000001,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 17.21666666666666
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 29.396499999999833,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 23.54450000000088,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 29.08299999999963,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "f6c085c89527ec000c46b681122db239880dd1dca4a6d5273d229d297de32e03",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/false/60",
+        "ply": 8
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          11,
+          13,
+          9,
+          3
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 18,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 289,
+            "elapsedMs": 5.448800000000119,
+            "tacticalMs": 5.448800000000119,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              18
+            ],
+            "score": null,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 2
+          },
+          "normal": {
+            "move": 18,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 289,
+            "elapsedMs": 21.882800000000316,
+            "tacticalMs": 4.012700000000223,
+            "searchMs": 17.870100000000093,
+            "exhausted": true,
+            "pv": [
+              18,
+              1
+            ],
+            "score": -18.110000000000003,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 2
+          },
+          "hard": {
+            "move": 8,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 289,
+            "elapsedMs": 102.8781999999992,
+            "tacticalMs": 2.990099999999984,
+            "searchMs": 99.88809999999921,
+            "exhausted": true,
+            "pv": [
+              8,
+              4,
+              16
+            ],
+            "score": 3.9999999999999982,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -0.2749999999999986
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 497,
+            "elapsedMs": 5.984999999999673,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 497,
+            "elapsedMs": 5.571100000000115,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 497,
+            "elapsedMs": 7.59690000000046,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "31dc331f109a67440e1d0e5f0432c9fb6323532ed8df5d3d7c8e41a5e6d3ee76",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/false/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          11,
+          13,
+          9,
+          3,
+          8,
+          4,
+          1,
+          16,
+          12,
+          7,
+          18,
+          6
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 11,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 240,
+            "elapsedMs": 3.480199999999968,
+            "tacticalMs": 3.480199999999968,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              11
+            ],
+            "score": null,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 36.87
+          },
+          "normal": {
+            "move": 21,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 240,
+            "elapsedMs": 15.824099999999817,
+            "tacticalMs": 2.9625999999998385,
+            "searchMs": 12.861499999999978,
+            "exhausted": true,
+            "pv": [
+              21,
+              11
+            ],
+            "score": 1.0400000000000023,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 15.87
+          },
+          "hard": {
+            "move": 11,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 240,
+            "elapsedMs": 116.1844000000001,
+            "tacticalMs": 2.4179000000003725,
+            "searchMs": 113.76649999999972,
+            "exhausted": true,
+            "pv": [
+              11,
+              13,
+              5
+            ],
+            "score": 2.7600000000000016,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 36.87
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "forced-win",
+            "distance": 3,
+            "bestMove": 9,
+            "principalVariation": [
+              9,
+              10,
+              8
+            ],
+            "nodes": 102,
+            "elapsedMs": 1.2620999999999185,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "forced-win",
+            "distance": 3,
+            "bestMove": 9,
+            "principalVariation": [
+              9,
+              0,
+              8
+            ],
+            "nodes": 102,
+            "elapsedMs": 0.9382000000005064,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "forced-win",
+            "distance": 3,
+            "bestMove": 9,
+            "principalVariation": [
+              9,
+              10,
+              8
+            ],
+            "nodes": 102,
+            "elapsedMs": 1.6668999999992593,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "1d6b608e57a469799e1ea39837eb79329b58996bf3239dd0a4a4eaf018d4ecae",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/true/60",
+        "ply": 8
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          16,
+          8,
+          13,
+          11
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 1,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 289,
+            "elapsedMs": 3.418999999999869,
+            "tacticalMs": 3.418999999999869,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              1
+            ],
+            "score": null,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 57.425
+          },
+          "normal": {
+            "move": 5,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 289,
+            "elapsedMs": 15.16780000000017,
+            "tacticalMs": 3.084200000000237,
+            "searchMs": 12.083599999999933,
+            "exhausted": true,
+            "pv": [
+              5,
+              1
+            ],
+            "score": -2.7755575615628914e-16,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 25.925
+          },
+          "hard": {
+            "move": 5,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 289,
+            "elapsedMs": 103.39510000000064,
+            "tacticalMs": 4.74330000000009,
+            "searchMs": 98.65180000000055,
+            "exhausted": true,
+            "pv": [
+              5,
+              0,
+              1
+            ],
+            "score": 18.44,
+            "safeMoves": 17,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 25.925
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 202,
+            "elapsedMs": 3.9484999999995125,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 497,
+            "elapsedMs": 8.431300000000192,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 497,
+            "elapsedMs": 8.006899999999405,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "46efa2041f9a7132d38db7fecd716ee3d42e6eba7c67a761d30ed89f48a06f02",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          16,
+          8,
+          13,
+          11,
+          5,
+          0,
+          20,
+          12,
+          15,
+          10,
+          18,
+          16
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 8,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 240,
+            "elapsedMs": 6.411700000000565,
+            "tacticalMs": 6.411700000000565,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              8
+            ],
+            "score": null,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 4.489999999999999
+          },
+          "normal": {
+            "move": 7,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 240,
+            "elapsedMs": 16.358799999999974,
+            "tacticalMs": 3.3289999999997235,
+            "searchMs": 13.02980000000025,
+            "exhausted": true,
+            "pv": [
+              7,
+              13
+            ],
+            "score": -83,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -22.959999999999997
+          },
+          "hard": {
+            "move": 8,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 240,
+            "elapsedMs": 135.24299999999948,
+            "tacticalMs": 3.886899999999514,
+            "searchMs": 131.35609999999997,
+            "exhausted": true,
+            "pv": [
+              8,
+              13,
+              11
+            ],
+            "score": 13.199999999999998,
+            "safeMoves": 15,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 4.489999999999999
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 498,
+            "elapsedMs": 6.6512000000002445,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 513,
+            "elapsedMs": 6.976999999999862,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 498,
+            "elapsedMs": 6.085100000000239,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "7d3cf8bd4cbf524564506761f83040ac50bb6fb060aa10b48d3c447f449ba5d9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-01/20260929/false/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          16,
+          27,
+          6,
+          21,
+          15,
+          14,
+          28,
+          20,
+          22,
+          8,
+          26,
+          10,
+          7,
+          25,
+          5,
+          15,
+          30,
+          21,
+          9,
+          22,
+          20
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 8,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 702,
+            "elapsedMs": 13.339899999999034,
+            "tacticalMs": 13.339899999999034,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              8
+            ],
+            "score": null,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 65.18
+          },
+          "normal": {
+            "move": 14,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 702,
+            "elapsedMs": 30.290100000000166,
+            "tacticalMs": 8.42109999999957,
+            "searchMs": 21.869000000000597,
+            "exhausted": true,
+            "pv": [
+              14,
+              13
+            ],
+            "score": 29.299999999999997,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 40.87999999999999
+          },
+          "hard": {
+            "move": 14,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 702,
+            "elapsedMs": 192.77649999999994,
+            "tacticalMs": 8.069999999999709,
+            "searchMs": 184.70650000000023,
+            "exhausted": true,
+            "pv": [
+              14,
+              13
+            ],
+            "score": 29.299999999999997,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 40.87999999999999
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 31.589900000000853,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 29.76800000000003,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 20.876000000000204,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "c6dd3a6752dfdd05a1c0bc1cc5368c3ddd4de77cd499ea2acd79170438c48038",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-01/20260929/false/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          16,
+          27,
+          6,
+          21,
+          15,
+          14,
+          28,
+          20,
+          22,
+          8,
+          26,
+          10,
+          7,
+          25,
+          5,
+          15,
+          30,
+          21,
+          9,
+          22,
+          20,
+          14,
+          13,
+          7,
+          28,
+          27,
+          15,
+          10,
+          8,
+          1,
+          31,
+          20,
+          21,
+          16,
+          34,
+          33,
+          7,
+          14,
+          15,
+          8,
+          26,
+          25,
+          4,
+          21,
+          22
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 10,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 702,
+            "elapsedMs": 12.711800000000949,
+            "tacticalMs": 12.711800000000949,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              10
+            ],
+            "score": null,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -3.54
+          },
+          "normal": {
+            "move": 10,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 702,
+            "elapsedMs": 34.216599999999744,
+            "tacticalMs": 8.780800000000454,
+            "searchMs": 25.43579999999929,
+            "exhausted": true,
+            "pv": [
+              10,
+              9
+            ],
+            "score": 12.640000000000002,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -3.54
+          },
+          "hard": {
+            "move": 28,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 702,
+            "elapsedMs": 187.55509999999958,
+            "tacticalMs": 9.031600000000253,
+            "searchMs": 178.52349999999933,
+            "exhausted": true,
+            "pv": [
+              28,
+              0,
+              7
+            ],
+            "score": 78.03,
+            "safeMoves": 26,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -3.54
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 33.802599999999074,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 22.61909999999989,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1379,
+            "elapsedMs": 33.8109000000004,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "c6bb50459e7d27a8fed8b31db8d3c568252a8fded743bc13c4757051ebbcf595",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/false/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          16,
+          28,
+          26,
+          14
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 21,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 8.421500000000378,
+            "tacticalMs": 8.421500000000378,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              21
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 51.13333333333334
+          },
+          "normal": {
+            "move": 7,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 33.5619999999999,
+            "tacticalMs": 7.581900000001042,
+            "searchMs": 25.980099999998856,
+            "exhausted": true,
+            "pv": [
+              7,
+              9
+            ],
+            "score": -18.333333333333332,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -5.2666666666666675
+          },
+          "hard": {
+            "move": 21,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 152.47929999999906,
+            "tacticalMs": 10.54320000000007,
+            "searchMs": 141.936099999999,
+            "exhausted": true,
+            "pv": [
+              21,
+              31,
+              33
+            ],
+            "score": 20.150000000000002,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 51.13333333333334
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 17.626399999999194,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 18.053899999998976,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 18.91779999999926,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "12df62ebbed98fcbfa4e180831d8055d6580753de15758952be6db99c80f3e66",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/false/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          16,
+          28,
+          26,
+          14,
+          21,
+          31,
+          33,
+          9,
+          1,
+          19,
+          4,
+          7
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 2,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 10.550600000000486,
+            "tacticalMs": 10.550600000000486,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              2
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 26.241666666666674
+          },
+          "normal": {
+            "move": 2,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 24.473500000000058,
+            "tacticalMs": 6.809699999999793,
+            "searchMs": 17.663800000000265,
+            "exhausted": true,
+            "pv": [
+              2
+            ],
+            "score": 26.241666666666685,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 26.241666666666674
+          },
+          "hard": {
+            "move": 25,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 167.39980000000105,
+            "tacticalMs": 7.584399999999732,
+            "searchMs": 159.81540000000132,
+            "exhausted": true,
+            "pv": [
+              25,
+              10,
+              8
+            ],
+            "score": 51.44166666666668,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 5.4750000000000005
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1497,
+            "elapsedMs": 32.98409999999967,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1497,
+            "elapsedMs": 28.251899999999296,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 23.41139999999905,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "fc1cc03b1c99423b4cbe294a1d70955370508c144756083c860879c25caba74b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/false/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          16,
+          28,
+          26,
+          14,
+          21,
+          31,
+          33,
+          9,
+          1,
+          19,
+          4,
+          7,
+          25,
+          10,
+          8,
+          3,
+          28,
+          26,
+          15,
+          29
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 13,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 11.24829999999929,
+            "tacticalMs": 11.24829999999929,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              13
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 26.933333333333326
+          },
+          "normal": {
+            "move": 13,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 20.328700000000026,
+            "tacticalMs": 9.92410000000018,
+            "searchMs": 10.404599999999846,
+            "exhausted": true,
+            "pv": [
+              13
+            ],
+            "score": 26.93333333333333,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 26.933333333333326
+          },
+          "hard": {
+            "move": 21,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 154.3191999999999,
+            "tacticalMs": 10.821099999999205,
+            "searchMs": 143.4981000000007,
+            "exhausted": true,
+            "pv": [
+              21,
+              33,
+              14
+            ],
+            "score": 41.23333333333334,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 17.599999999999998
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 25.75760000000082,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 18.53650000000016,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 23.22309999999925,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "4d739b226aa307fab09eb74eea559299cd85af15e17f06586355d4342f3d01d8",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/false/60",
+        "ply": 40
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          16,
+          28,
+          26,
+          14,
+          21,
+          31,
+          33,
+          9,
+          1,
+          19,
+          4,
+          7,
+          25,
+          10,
+          8,
+          3,
+          28,
+          26,
+          15,
+          29,
+          21,
+          33,
+          14,
+          35,
+          7,
+          0,
+          19,
+          31
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 20,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 15.096199999999953,
+            "tacticalMs": 15.096199999999953,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              20
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 89.93333333333332
+          },
+          "normal": {
+            "move": 34,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 41.867199999998775,
+            "tacticalMs": 11.438399999999092,
+            "searchMs": 30.428799999999683,
+            "exhausted": true,
+            "pv": [
+              34,
+              20
+            ],
+            "score": 45.16666666666667,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 68.7
+          },
+          "hard": {
+            "move": 34,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 151.68089999999938,
+            "tacticalMs": 8.769199999998818,
+            "searchMs": 142.91170000000056,
+            "exhausted": true,
+            "pv": [
+              34,
+              20
+            ],
+            "score": 45.16666666666667,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 68.7
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 34.933100000000195,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 21.10900000000038,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 16.901700000000346,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "623b90927ac6dfca84f3909f707d9cf8b0f4f0f399cc10eca28480de37a0b5c6",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/false/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          16,
+          28,
+          26,
+          14,
+          21,
+          31,
+          33,
+          9,
+          1,
+          19,
+          4,
+          7,
+          25,
+          10,
+          8,
+          3,
+          28,
+          26,
+          15,
+          29,
+          21,
+          33,
+          14,
+          35,
+          7,
+          0,
+          19,
+          31,
+          34,
+          1,
+          20,
+          22,
+          15,
+          4,
+          27,
+          6,
+          10,
+          25,
+          14,
+          21,
+          8,
+          13,
+          19,
+          20
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 11,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 11.63760000000002,
+            "tacticalMs": 11.63760000000002,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              11
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 64.575
+          },
+          "normal": {
+            "move": 9,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 33.830700000000434,
+            "tacticalMs": 7.688299999999799,
+            "searchMs": 26.142400000000634,
+            "exhausted": true,
+            "pv": [
+              9,
+              11
+            ],
+            "score": 55.78333333333332,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 58.65833333333334
+          },
+          "hard": {
+            "move": 9,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 132.6808000000001,
+            "tacticalMs": 9.329100000000835,
+            "searchMs": 123.35169999999925,
+            "exhausted": true,
+            "pv": [
+              9,
+              11
+            ],
+            "score": 55.78333333333332,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 58.65833333333334
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 36.60959999999977,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 23.542499999999563,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 20.672200000000885,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "b47db0eff458cb369f797dd7ffbef3183ed19dc1efca40448730ce6d08114d9b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          7,
+          29,
+          25,
+          11,
+          31,
+          13,
+          17,
+          15,
+          14
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 27,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 11.660600000001068,
+            "tacticalMs": 11.660600000001068,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              27
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 19.708333333333318
+          },
+          "normal": {
+            "move": 20,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 33.217099999999846,
+            "tacticalMs": 9.182999999999083,
+            "searchMs": 24.034100000000763,
+            "exhausted": true,
+            "pv": [
+              20,
+              34
+            ],
+            "score": -5.225000000000005,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 6.866666666666661
+          },
+          "hard": {
+            "move": 20,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 140.23210000000108,
+            "tacticalMs": 7.605900000000474,
+            "searchMs": 132.6262000000006,
+            "exhausted": true,
+            "pv": [
+              20,
+              34
+            ],
+            "score": -5.225000000000005,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 6.866666666666661
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 21.530099999999948,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 20.39799999999923,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 21.96689999999944,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "588ec38a89f2217f413003a6d234011357e719a541449ac04a9c86363ec449d9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-02/20260929/false/60",
+        "ply": 8
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          9,
+          26,
+          11,
+          24
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 7,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 784,
+            "elapsedMs": 9.716500000000451,
+            "tacticalMs": 9.716500000000451,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              7
+            ],
+            "score": null,
+            "safeMoves": 28,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 71.25000000000001
+          },
+          "normal": {
+            "move": 7,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 784,
+            "elapsedMs": 23.6234000000004,
+            "tacticalMs": 9.024999999999636,
+            "searchMs": 14.598400000000765,
+            "exhausted": true,
+            "pv": [
+              7
+            ],
+            "score": 71.25000000000001,
+            "safeMoves": 28,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 71.25000000000001
+          },
+          "hard": {
+            "move": 25,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 784,
+            "elapsedMs": 151.1911999999993,
+            "tacticalMs": 12.402799999999843,
+            "searchMs": 138.78839999999946,
+            "exhausted": true,
+            "pv": [
+              25,
+              6
+            ],
+            "score": -2.8000000000000007,
+            "safeMoves": 28,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 31.75
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1405,
+            "elapsedMs": 24.290899999999965,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1405,
+            "elapsedMs": 18.124100000000908,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1405,
+            "elapsedMs": 26.958800000000338,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "275f960b62af00068fcb548615d44fdebec1ddf1070f0ecea736cb8d769e290b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-01/20260929/false/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          24,
+          28,
+          12,
+          6
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 14,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 506,
+            "elapsedMs": 8.124499999999898,
+            "tacticalMs": 8.124499999999898,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              14
+            ],
+            "score": null,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 57.14285714285714
+          },
+          "normal": {
+            "move": 29,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 506,
+            "elapsedMs": 31.39049999999952,
+            "tacticalMs": 9.265799999999217,
+            "searchMs": 22.124700000000303,
+            "exhausted": true,
+            "pv": [
+              29,
+              14
+            ],
+            "score": -32.85714285714286,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 11.285714285714285
+          },
+          "hard": {
+            "move": 29,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 506,
+            "elapsedMs": 133.29409999999916,
+            "tacticalMs": 6.678400000000693,
+            "searchMs": 126.61569999999847,
+            "exhausted": true,
+            "pv": [
+              29,
+              14
+            ],
+            "score": -32.85714285714286,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 11.285714285714285
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 17.641200000000026,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 22.743599999999788,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 16.720499999999447,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "f49fef49284958074d9826db62391f67bc83351fb12580d1a6b4244447a16265",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-01/20260929/false/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          24,
+          28,
+          12,
+          6,
+          29,
+          14,
+          21,
+          32,
+          31,
+          11,
+          15,
+          8,
+          20,
+          10,
+          9,
+          27,
+          19,
+          22,
+          16,
+          13
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 24,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 506,
+            "elapsedMs": 8.829600000000937,
+            "tacticalMs": 8.829600000000937,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              24
+            ],
+            "score": null,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 63.00000000000001
+          },
+          "normal": {
+            "move": 28,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 506,
+            "elapsedMs": 30.24279999999999,
+            "tacticalMs": 10.135599999999613,
+            "searchMs": 20.107200000000375,
+            "exhausted": true,
+            "pv": [
+              28,
+              4
+            ],
+            "score": 0.7499999999999991,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 18.714285714285715
+          },
+          "hard": {
+            "move": 14,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 506,
+            "elapsedMs": 164.08479999999872,
+            "tacticalMs": 6.313799999999901,
+            "searchMs": 157.77099999999882,
+            "exhausted": true,
+            "pv": [
+              14,
+              24,
+              28
+            ],
+            "score": 21.585714285714285,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 58.28571428571429
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 21.42500000000109,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 19.571100000001024,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 21.098299999999654,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "68dbc1131655325b2bee3cfa6fb3dda448d557e766b616474e39b78168998194",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-01/20260929/false/60",
+        "ply": 48
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          24,
+          28,
+          12,
+          6,
+          29,
+          14,
+          21,
+          32,
+          31,
+          11,
+          15,
+          8,
+          20,
+          10,
+          9,
+          27,
+          19,
+          22,
+          16,
+          13,
+          14,
+          24,
+          21,
+          0,
+          26,
+          11,
+          35,
+          7,
+          8,
+          20,
+          27,
+          15,
+          31,
+          25,
+          10,
+          19
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ],
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 13,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 506,
+            "elapsedMs": 10.384299999999712,
+            "tacticalMs": 10.384299999999712,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              13
+            ],
+            "score": null,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -19.85714285714286
+          },
+          "normal": {
+            "move": 1,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 506,
+            "elapsedMs": 30.011900000001333,
+            "tacticalMs": 8.414600000000064,
+            "searchMs": 21.59730000000127,
+            "exhausted": true,
+            "pv": [
+              1,
+              21
+            ],
+            "score": -122.92857142857144,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -22.392857142857146
+          },
+          "hard": {
+            "move": 13,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 506,
+            "elapsedMs": 146.70609999999942,
+            "tacticalMs": 9.024199999999837,
+            "searchMs": 137.6818999999996,
+            "exhausted": true,
+            "pv": [
+              13,
+              4,
+              22
+            ],
+            "score": -6.242857142857145,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -19.85714285714286
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 21.141900000000533,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 20.34730000000127,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 15.66779999999926,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "83ab55c87eb9b5a819c2c72f05e1e4d6a5bbb11b73200faab6d3da7402230028",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-01/20260929/false/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          21,
+          7,
+          20,
+          8,
+          22,
+          19,
+          10,
+          25,
+          13,
+          34,
+          24,
+          28,
+          12,
+          6,
+          29,
+          14,
+          21,
+          32,
+          31,
+          11,
+          15,
+          8,
+          20,
+          10,
+          9,
+          27,
+          19,
+          22,
+          16,
+          13,
+          14,
+          24,
+          21,
+          0,
+          26,
+          11,
+          35,
+          7,
+          8,
+          20,
+          27,
+          15,
+          31,
+          25,
+          10,
+          19,
+          13,
+          21,
+          22,
+          28,
+          14,
+          9,
+          26,
+          8
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 3,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 506,
+            "elapsedMs": 13.472199999998338,
+            "tacticalMs": 13.472199999998338,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              3
+            ],
+            "score": null,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 4.285714285714281
+          },
+          "normal": {
+            "move": 16,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 506,
+            "elapsedMs": 31.149199999999837,
+            "tacticalMs": 7.319700000000012,
+            "searchMs": 23.829499999999825,
+            "exhausted": true,
+            "pv": [
+              16,
+              27
+            ],
+            "score": 3.571428571428555,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -8.585714285714289
+          },
+          "hard": {
+            "move": 16,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 506,
+            "elapsedMs": 142.89840000000004,
+            "tacticalMs": 7.295399999999063,
+            "searchMs": 135.60300000000097,
+            "exhausted": true,
+            "pv": [
+              16,
+              12,
+              15
+            ],
+            "score": 249.27142857142857,
+            "safeMoves": 22,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -8.585714285714289
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 29.543399999998655,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 23.76090000000113,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 991,
+            "elapsedMs": 21.679400000000896,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "bbc03b648ba7b3e1b9627080cb67ccb1d6a7f5bb703bb239569627e87ee91af5",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-00/20260929/false/60",
+        "ply": 8
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          16,
+          17,
+          31,
+          30,
+          18,
+          25,
+          23
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 9,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 1681,
+            "elapsedMs": 25.98240000000078,
+            "tacticalMs": 25.98240000000078,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              9
+            ],
+            "score": null,
+            "safeMoves": 41,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 108
+          },
+          "normal": {
+            "move": 9,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 1681,
+            "elapsedMs": 44.16029999999955,
+            "tacticalMs": 26.038000000000466,
+            "searchMs": 18.122299999999086,
+            "exhausted": true,
+            "pv": [
+              9
+            ],
+            "score": 108,
+            "safeMoves": 41,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 108
+          },
+          "hard": {
+            "move": 15,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 1681,
+            "elapsedMs": 376.8787999999986,
+            "tacticalMs": 28.34230000000025,
+            "searchMs": 348.53649999999834,
+            "exhausted": true,
+            "pv": [
+              15,
+              9
+            ],
+            "score": -4.199999999999999,
+            "safeMoves": 41,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 45
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 47.0627999999997,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 43.10149999999703,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 38.58899999999994,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "f758365b517329895c3144ddd1df388b13a970344baeceb4d706c64c213eea7c",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-00/20260929/false/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          16,
+          17,
+          31,
+          30,
+          18,
+          25,
+          23,
+          15,
+          9,
+          10,
+          38,
+          40,
+          20,
+          32,
+          16,
+          37,
+          30,
+          19,
+          25,
+          23,
+          33,
+          17,
+          24
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 29,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 1406,
+            "elapsedMs": 26.80870000000141,
+            "tacticalMs": 26.80870000000141,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              29
+            ],
+            "score": null,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 93.00000000000009
+          },
+          "normal": {
+            "move": 29,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 1406,
+            "elapsedMs": 46.41779999999926,
+            "tacticalMs": 31.277200000000448,
+            "searchMs": 15.140599999998813,
+            "exhausted": true,
+            "pv": [
+              29
+            ],
+            "score": 93,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 93.00000000000009
+          },
+          "hard": {
+            "move": 18,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 1406,
+            "elapsedMs": 278.00350000000253,
+            "tacticalMs": 21.52969999999914,
+            "searchMs": 256.4738000000034,
+            "exhausted": true,
+            "pv": [
+              18,
+              29
+            ],
+            "score": 13.275000000000002,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 36.32500000000001
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 46.23749999999927,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 45.17550000000119,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 48.78989999999976,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "3c053fa7a32f7bbe8d54f262ab7353f394695af46879577f5481c2c3eade8a35",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-00/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          16,
+          17,
+          31,
+          25,
+          23,
+          9,
+          33,
+          30,
+          18,
+          15,
+          26,
+          12,
+          10,
+          34,
+          32
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 22,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 1406,
+            "elapsedMs": 29.668900000000576,
+            "tacticalMs": 29.668900000000576,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              22
+            ],
+            "score": null,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -37.09166666666667
+          },
+          "normal": {
+            "move": 22,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 1406,
+            "elapsedMs": 52.80119999999806,
+            "tacticalMs": 25.860599999999977,
+            "searchMs": 26.940599999998085,
+            "exhausted": true,
+            "pv": [
+              22
+            ],
+            "score": -37.0916666666667,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -37.09166666666667
+          },
+          "hard": {
+            "move": 39,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 1406,
+            "elapsedMs": 314.78099999999904,
+            "tacticalMs": 22.987099999998463,
+            "searchMs": 291.7939000000006,
+            "exhausted": true,
+            "pv": [
+              39,
+              24
+            ],
+            "score": -87.03333333333335,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -46.77500000000001
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 53.795099999999366,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 50.79900000000271,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 53.00560000000041,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "0fb68ac9d9651c26466623d32303ada08bcd38815268013915e07d23953619db",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-00/20260929/true/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          16,
+          17,
+          31,
+          25,
+          23,
+          9,
+          33,
+          30,
+          18,
+          15,
+          26,
+          12,
+          10,
+          34,
+          32,
+          22,
+          25,
+          39,
+          24,
+          23,
+          16,
+          8,
+          15
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 40,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 1406,
+            "elapsedMs": 26.640800000001036,
+            "tacticalMs": 26.640800000001036,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              40
+            ],
+            "score": null,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -50.36666666666666
+          },
+          "normal": {
+            "move": 40,
+            "depth": 1,
+            "nodes": 128,
+            "tacticalNodes": 1406,
+            "elapsedMs": 56.86319999999978,
+            "tacticalMs": 28.086699999999837,
+            "searchMs": 28.776499999999942,
+            "exhausted": true,
+            "pv": [
+              40
+            ],
+            "score": -50.366666666666646,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -50.36666666666666
+          },
+          "hard": {
+            "move": 17,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 1406,
+            "elapsedMs": 311.59289999999964,
+            "tacticalMs": 23.196500000001834,
+            "searchMs": 288.3963999999978,
+            "exhausted": true,
+            "pv": [
+              17,
+              40
+            ],
+            "score": -47.99999999999999,
+            "safeMoves": 37,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -62.36666666666665
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 47.730500000001484,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 42.89229999999952,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "unknown",
+            "nodes": 2000,
+            "elapsedMs": 53.637399999999616,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "74ab3661cfc419d8dcf887139427fe0edc936eeee7f70b13b2d416a047c8cb01",
+      "source": {
+        "kind": "reference-fixture",
+        "gameId": "false-five-after-expiry",
+        "ply": 12
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          30,
+          13,
+          32,
+          14,
+          34,
+          15,
+          6,
+          0,
+          8,
+          2,
+          10
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "tactical",
+            "normal"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 7,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 9.249800000001414,
+            "tacticalMs": 9.249800000001414,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              7
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 99.59166666666665
+          },
+          "normal": {
+            "move": 9,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 30.691800000000512,
+            "tacticalMs": 7.678100000000995,
+            "searchMs": 23.013699999999517,
+            "exhausted": true,
+            "pv": [
+              9,
+              16
+            ],
+            "score": -6.691666666666677,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 68.59166666666665
+          },
+          "hard": {
+            "move": 9,
+            "depth": 2,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 119.19780000000173,
+            "tacticalMs": 6.400099999998929,
+            "searchMs": 112.7977000000028,
+            "exhausted": true,
+            "pv": [
+              9,
+              16
+            ],
+            "score": -6.691666666666677,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 68.59166666666665
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 16.400400000002264,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 20.2413000000015,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 14.545099999999366,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    },
+    {
+      "id": "6e09a66bc1f6530d7c64735fd0cee07afd881275f4cd96f049e023786dd63505",
+      "source": {
+        "kind": "reference-fixture",
+        "gameId": "expiry-lock-counterexample",
+        "ply": 12
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          12,
+          0,
+          13,
+          2,
+          15,
+          4,
+          16,
+          24,
+          35,
+          26,
+          30
+        ]
+      },
+      "details": {
+        "budgets": {
+          "normal": {
+            "name": "normal-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 128,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 5
+            }
+          },
+          "hard": {
+            "name": "hard-research",
+            "algorithm": "search",
+            "budget": {
+              "maxNodes": 960,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 8
+            }
+          },
+          "tactical": {
+            "name": "tactical",
+            "algorithm": "tactical",
+            "budget": {
+              "maxNodes": 0,
+              "timeMs": null,
+              "seed": 1,
+              "maxDepth": 0
+            }
+          }
+        },
+        "comparisons": [
+          [
+            "normal",
+            "hard"
+          ]
+        ],
+        "choices": {
+          "tactical": {
+            "move": 1,
+            "depth": 0,
+            "nodes": 0,
+            "tacticalNodes": 600,
+            "elapsedMs": 7.833200000000943,
+            "tacticalMs": 7.833200000000943,
+            "searchMs": 0,
+            "exhausted": false,
+            "pv": [
+              1
+            ],
+            "score": null,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 0.22499999999996145
+          },
+          "normal": {
+            "move": 1,
+            "depth": 2,
+            "nodes": 128,
+            "tacticalNodes": 600,
+            "elapsedMs": 33.35080000000016,
+            "tacticalMs": 5.6942999999992026,
+            "searchMs": 27.65650000000096,
+            "exhausted": true,
+            "pv": [
+              1,
+              14
+            ],
+            "score": -41.83333333333333,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": 0.22499999999996145
+          },
+          "hard": {
+            "move": 25,
+            "depth": 3,
+            "nodes": 960,
+            "tacticalNodes": 600,
+            "elapsedMs": 187.3822,
+            "tacticalMs": 7.220600000000559,
+            "searchMs": 180.16159999999945,
+            "exhausted": true,
+            "pv": [
+              25,
+              27,
+              14
+            ],
+            "score": 58.45,
+            "safeMoves": 24,
+            "algorithmVersion": "fifo-ab-1-order-cache",
+            "heuristicAfter": -13.94166666666668
+          }
+        },
+        "opponentMateAfterChoice": {
+          "tactical": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 28.460900000001857,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "normal": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 15.264999999999418,
+            "maxPly": 3,
+            "attacker": "O"
+          },
+          "hard": {
+            "result": "not-found",
+            "nodes": 1177,
+            "elapsedMs": 20.103299999998853,
+            "maxPly": 3,
+            "attacker": "O"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+
+> fifo-five@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.0 .
+
+
+ Test Files  11 passed (11)
+      Tests  100 passed (100)
+   Start at  17:16:08
+   Duration  5.47s (tests 77%, transform 17%, import 5%, worker 1%)
+
+

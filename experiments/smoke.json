@@ -1,0 +1,141 @@
+[
+  {
+    "rules": {
+      "rulesVersion": "1",
+      "boardSize": 6,
+      "winLength": 5,
+      "retention": {
+        "kind": "fifo",
+        "maxStones": 6
+      },
+      "repetitionThreshold": 3,
+      "matchPlyLimit": null
+    },
+    "seeds": [20260912],
+    "cutoff": 40,
+    "agents": [
+      {
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 100,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 2
+        }
+      },
+      {
+        "algorithm": "random",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 2,
+          "maxDepth": 0
+        }
+      }
+    ]
+  },
+  {
+    "rules": {
+      "rulesVersion": "1",
+      "boardSize": 3,
+      "winLength": 3,
+      "retention": {
+        "kind": "permanent"
+      },
+      "repetitionThreshold": 3,
+      "matchPlyLimit": null
+    },
+    "seeds": [20260912],
+    "cutoff": 9,
+    "agents": [
+      {
+        "algorithm": "tactical",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 0
+        }
+      },
+      {
+        "algorithm": "random",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 2,
+          "maxDepth": 0
+        }
+      }
+    ]
+  },
+  {
+    "rules": {
+      "rulesVersion": "1",
+      "boardSize": 6,
+      "winLength": 5,
+      "retention": {
+        "kind": "fifo",
+        "maxStones": 6
+      },
+      "repetitionThreshold": 3,
+      "matchPlyLimit": null
+    },
+    "seeds": [20260912],
+    "cutoff": 16,
+    "agents": [
+      {
+        "algorithm": "random",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 2,
+          "maxDepth": 0
+        }
+      },
+      {
+        "algorithm": "random",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 2,
+          "maxDepth": 0
+        }
+      }
+    ]
+  },
+  {
+    "rules": {
+      "rulesVersion": "1",
+      "boardSize": 6,
+      "winLength": 5,
+      "retention": {
+        "kind": "fifo",
+        "maxStones": 6
+      },
+      "repetitionThreshold": 3,
+      "matchPlyLimit": 2
+    },
+    "seeds": [20260912],
+    "cutoff": 4,
+    "agents": [
+      {
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 100,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 2
+        }
+      },
+      {
+        "algorithm": "random",
+        "budget": {
+          "maxNodes": 0,
+          "timeMs": null,
+          "seed": 2,
+          "maxDepth": 0
+        }
+      }
+    ]
+  }
+]

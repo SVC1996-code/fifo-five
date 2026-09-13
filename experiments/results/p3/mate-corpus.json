@@ -1,0 +1,715 @@
+{
+  "method": "Reference fixtures and explicitly labelled regression cases, all legal from start. N counts all atomic actions, not attacker turns. Distance is upper bound, not minimal. Budget per query 50000 generated states, no time limit.",
+  "sourceFiles": [
+    "fixtures/rule-cases.json",
+    "tests/mate.test.ts"
+  ],
+  "queries": 45,
+  "results": [
+    {
+      "id": "ordinary-direct-five",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          30,
+          1,
+          32,
+          2,
+          34,
+          3,
+          6
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "forced-win",
+          "distance": 1,
+          "bestMove": 4,
+          "principalVariation": [
+            4
+          ],
+          "nodes": 2,
+          "elapsedMs": 0.2821999999999889,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 1,
+          "bestMove": 4,
+          "principalVariation": [
+            4
+          ],
+          "nodes": 2,
+          "elapsedMs": 0.0544999999999618,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 1,
+          "bestMove": 4,
+          "principalVariation": [
+            4
+          ],
+          "nodes": 2,
+          "elapsedMs": 0.02810000000005175,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 1,
+          "bestMove": 4,
+          "principalVariation": [
+            4
+          ],
+          "nodes": 2,
+          "elapsedMs": 0.13650000000001228,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 1,
+          "bestMove": 4,
+          "principalVariation": [
+            4
+          ],
+          "nodes": 2,
+          "elapsedMs": 0.03699999999997772,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    },
+    {
+      "id": "ordinary-open-four-fork",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          13,
+          0,
+          14,
+          2,
+          15,
+          30
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 31,
+          "elapsedMs": 0.5611999999999853,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 61,
+          "elapsedMs": 1.6817000000000348,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 16,
+          "principalVariation": [
+            16,
+            1,
+            12
+          ],
+          "nodes": 526,
+          "elapsedMs": 9.450800000000015,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 16,
+          "principalVariation": [
+            16,
+            1,
+            12
+          ],
+          "nodes": 2010,
+          "elapsedMs": 33.654499999999985,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 16,
+          "principalVariation": [
+            16,
+            1,
+            12
+          ],
+          "nodes": 37682,
+          "elapsedMs": 626.4604999999999,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    },
+    {
+      "id": "ordinary-one-defense",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          30,
+          2,
+          31,
+          6,
+          32,
+          8,
+          33
+        ]
+      },
+      "attacker": "O",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 2,
+          "elapsedMs": 0.03600000000005821,
+          "maxPly": 1,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 732,
+          "elapsedMs": 8.125499999999874,
+          "maxPly": 2,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 759,
+          "elapsedMs": 10.145800000000008,
+          "maxPly": 3,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 2784,
+          "elapsedMs": 50.205900000000156,
+          "maxPly": 5,
+          "attacker": "O"
+        },
+        {
+          "result": "unknown",
+          "nodes": 50000,
+          "elapsedMs": 1032.6888,
+          "maxPly": 7,
+          "attacker": "O"
+        }
+      ]
+    },
+    {
+      "id": "fixture-expiry-lock",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          35,
+          0,
+          12,
+          2,
+          13,
+          4,
+          15,
+          24,
+          16,
+          26,
+          30
+        ]
+      },
+      "attacker": "O",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 2,
+          "elapsedMs": 0.04379999999991924,
+          "maxPly": 1,
+          "attacker": "O"
+        },
+        {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            14
+          ],
+          "nodes": 256,
+          "elapsedMs": 4.457800000000134,
+          "maxPly": 2,
+          "attacker": "O"
+        },
+        {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            14
+          ],
+          "nodes": 256,
+          "elapsedMs": 3.9011999999997897,
+          "maxPly": 3,
+          "attacker": "O"
+        },
+        {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            14
+          ],
+          "nodes": 256,
+          "elapsedMs": 4.770600000000286,
+          "maxPly": 5,
+          "attacker": "O"
+        },
+        {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            14
+          ],
+          "nodes": 256,
+          "elapsedMs": 5.3607999999999265,
+          "maxPly": 7,
+          "attacker": "O"
+        }
+      ]
+    },
+    {
+      "id": "defender-expiry-mate3",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          14,
+          2,
+          35,
+          12,
+          30,
+          13,
+          32,
+          15,
+          6,
+          16,
+          8
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 25,
+          "elapsedMs": 0.3944000000001324,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 49,
+          "elapsedMs": 1.050000000000182,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            7,
+            14
+          ],
+          "nodes": 257,
+          "elapsedMs": 4.10570000000007,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            7,
+            14
+          ],
+          "nodes": 257,
+          "elapsedMs": 4.6667999999999665,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 3,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            7,
+            14
+          ],
+          "nodes": 257,
+          "elapsedMs": 4.640100000000075,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    },
+    {
+      "id": "same-occupancy-different-age",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          2,
+          14,
+          12,
+          30,
+          13,
+          32,
+          15,
+          6,
+          16,
+          8
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 25,
+          "elapsedMs": 0.33159999999998035,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 49,
+          "elapsedMs": 0.6176000000000386,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 1177,
+          "elapsedMs": 15.76989999999978,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "unknown",
+          "nodes": 50000,
+          "elapsedMs": 823.3910999999998,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "unknown",
+          "nodes": 50000,
+          "elapsedMs": 893.1095,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    },
+    {
+      "id": "fixture-false-five",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          30,
+          13,
+          32,
+          14,
+          34,
+          15,
+          6,
+          0,
+          8,
+          2,
+          10
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 25,
+          "elapsedMs": 0.42390000000023065,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 49,
+          "elapsedMs": 0.8816999999999098,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 1177,
+          "elapsedMs": 19.987300000000232,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 6891,
+          "elapsedMs": 124.38710000000037,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "unknown",
+          "nodes": 50000,
+          "elapsedMs": 882.2310000000002,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    },
+    {
+      "id": "fixture-counterexample",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          12,
+          0,
+          13,
+          2,
+          15,
+          4,
+          16,
+          24,
+          35,
+          26,
+          30
+        ]
+      },
+      "attacker": "O",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 2,
+          "elapsedMs": 0.04429999999956635,
+          "maxPly": 1,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 49,
+          "elapsedMs": 0.9832000000005792,
+          "maxPly": 2,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 73,
+          "elapsedMs": 1.4794999999994616,
+          "maxPly": 3,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 1777,
+          "elapsedMs": 34.195199999999204,
+          "maxPly": 5,
+          "attacker": "O"
+        },
+        {
+          "result": "not-found",
+          "nodes": 42673,
+          "elapsedMs": 886.4152000000004,
+          "maxPly": 7,
+          "attacker": "O"
+        }
+      ]
+    },
+    {
+      "id": "classic-fork-mate5",
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 3,
+          "winLength": 3,
+          "retention": {
+            "kind": "permanent"
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          1
+        ]
+      },
+      "attacker": "X",
+      "proofs": [
+        {
+          "result": "not-found",
+          "nodes": 8,
+          "elapsedMs": 0.06390000000010332,
+          "maxPly": 1,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 15,
+          "elapsedMs": 0.11990000000059808,
+          "maxPly": 2,
+          "attacker": "X"
+        },
+        {
+          "result": "not-found",
+          "nodes": 123,
+          "elapsedMs": 1.2758999999996377,
+          "maxPly": 3,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 5,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            6,
+            4,
+            7,
+            5
+          ],
+          "nodes": 48,
+          "elapsedMs": 0.3764999999993961,
+          "maxPly": 5,
+          "attacker": "X"
+        },
+        {
+          "result": "forced-win",
+          "distance": 5,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            6,
+            4,
+            7,
+            5
+          ],
+          "nodes": 48,
+          "elapsedMs": 0.29280000000017026,
+          "maxPly": 7,
+          "attacker": "X"
+        }
+      ]
+    }
+  ]
+}

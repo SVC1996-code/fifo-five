@@ -1,0 +1,6344 @@
+{
+  "schemaVersion": 1,
+  "definition": "Defender-to-move full FIFO queue; oldest blocks a geometric enemy win line. Full 2-total-ply proof certifies enemy win against every legal defender action. Candidates not proved are stored separately.",
+  "scannedPrefixes": 10491,
+  "detected": 74,
+  "bySource": {
+    "experiment": 73,
+    "reference-fixture": 1
+  },
+  "saved": 74,
+  "storagePolicy": "all-detected",
+  "entries": [
+    {
+      "id": "29e0b14061102fa421b3ea4398511dc7e2a769b02c98bf168231c0acc31278c3",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-02/20260929/true/60",
+        "ply": 30
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          26,
+          8,
+          27,
+          29,
+          1,
+          6,
+          25,
+          24,
+          7,
+          19,
+          4,
+          18,
+          12,
+          20,
+          21,
+          14,
+          8,
+          9,
+          1,
+          15,
+          25,
+          13,
+          16,
+          27,
+          4,
+          3
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 21,
+        "targetLines": [
+          [
+            3,
+            9,
+            15,
+            21,
+            27
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 10,
+          "principalVariation": [
+            10,
+            21
+          ],
+          "nodes": 325,
+          "elapsedMs": 4.561499999999796,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "f5167734354130d5f9e30edf95f6b5c6e7ed068abdeb5fb826d2b93ae082db1e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-05/20260929/true/60",
+        "ply": 36
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          31,
+          5,
+          2,
+          33,
+          12,
+          19,
+          14,
+          20,
+          15,
+          21,
+          16,
+          13,
+          22,
+          34,
+          6,
+          1,
+          10,
+          4,
+          7,
+          9,
+          24,
+          3,
+          2,
+          15,
+          21,
+          14,
+          13,
+          19,
+          6,
+          20,
+          10,
+          8,
+          26,
+          22,
+          24,
+          18
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 21,
+        "targetLines": [
+          [
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 25,
+          "principalVariation": [
+            25,
+            21
+          ],
+          "nodes": 348,
+          "elapsedMs": 4.2611000000001695,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5cd71eec0bdf1373cdbdab5e9993949e2699c494464d030fa1f4a527410948f4",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-06/20260929/true/60",
+        "ply": 50
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          9,
+          30,
+          27,
+          34,
+          26,
+          7,
+          19,
+          25,
+          21,
+          15,
+          20,
+          22,
+          8,
+          14,
+          16,
+          31,
+          6,
+          9,
+          34,
+          27,
+          24,
+          21,
+          15,
+          18,
+          22,
+          28,
+          29,
+          14,
+          1,
+          8,
+          7,
+          20,
+          26,
+          13,
+          16,
+          21,
+          19,
+          27,
+          34,
+          15,
+          9,
+          10,
+          24,
+          14,
+          20,
+          28,
+          7,
+          16,
+          13,
+          22
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 34,
+        "targetLines": [
+          [
+            10,
+            16,
+            22,
+            28,
+            34
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            4
+          ],
+          "nodes": 159,
+          "elapsedMs": 2.166200000000117,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "f0f04849e81b6579a5c004525da8a1fdb3b064c9b823997f987cde40fb0478e5",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-08/20260929/true/60",
+        "ply": 52
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          1,
+          10,
+          7,
+          35,
+          26,
+          23,
+          24,
+          3,
+          14,
+          8,
+          28,
+          25,
+          21,
+          0,
+          4,
+          7,
+          10,
+          22,
+          13,
+          15,
+          1,
+          2,
+          14,
+          27,
+          9,
+          24,
+          26,
+          20,
+          7,
+          6,
+          21,
+          13,
+          34,
+          0,
+          12,
+          28,
+          15,
+          27,
+          25,
+          10,
+          22,
+          8,
+          7,
+          19,
+          14,
+          13,
+          6,
+          21,
+          24,
+          18,
+          27,
+          20
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 22,
+        "targetLines": [
+          [
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 25,
+          "principalVariation": [
+            25,
+            22
+          ],
+          "nodes": 348,
+          "elapsedMs": 5.335100000000239,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "9e2e2412e56ff5be2ba51a164ba42b68b78e59bf5e0d67ae5388d7a9efdb420b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-10/20260929/true/60",
+        "ply": 22
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          29,
+          23,
+          20,
+          0,
+          24,
+          3,
+          27,
+          13,
+          30,
+          4,
+          11,
+          34,
+          1,
+          16,
+          15,
+          10,
+          22,
+          8,
+          21,
+          9,
+          19,
+          7
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 11,
+        "targetLines": [
+          [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 18,
+          "principalVariation": [
+            18,
+            6
+          ],
+          "nodes": 164,
+          "elapsedMs": 1.7215000000001055,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "ad744bb489dda5d750f4139646f3d2025343f75bf921ef20806b7c40fa383963",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/normal-tactical/opening-16/20260929/true/60",
+        "ply": 51
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          4,
+          32,
+          29,
+          3,
+          16,
+          12,
+          34,
+          11,
+          2,
+          27,
+          23,
+          28,
+          22,
+          19,
+          7,
+          35,
+          30,
+          31,
+          25,
+          32,
+          15,
+          34,
+          33,
+          20,
+          27,
+          21,
+          26,
+          28,
+          22,
+          7,
+          14,
+          10,
+          8,
+          15,
+          25,
+          2,
+          32,
+          20,
+          34,
+          31,
+          27,
+          28,
+          19,
+          14,
+          26,
+          7,
+          21,
+          15,
+          16,
+          22,
+          11
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 31,
+        "targetLines": [
+          [
+            11,
+            16,
+            21,
+            26,
+            31
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            31
+          ],
+          "nodes": 509,
+          "elapsedMs": 13.746700000000146,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "9ac052cbd9c99ae7d53166876bf0ccc96af20cf9e2ea409a6b01efb4f25ac609",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-03/20260929/false/60",
+        "ply": 55
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          1,
+          34,
+          31,
+          28,
+          4,
+          2,
+          7,
+          25,
+          26,
+          10,
+          15,
+          16,
+          22,
+          29,
+          21,
+          20,
+          14,
+          27,
+          6,
+          7,
+          24,
+          25,
+          12,
+          18,
+          19,
+          9,
+          15,
+          11,
+          8,
+          29,
+          14,
+          17,
+          23,
+          20,
+          16,
+          13,
+          28,
+          34,
+          27,
+          25,
+          7,
+          10,
+          21,
+          14,
+          22,
+          15,
+          20,
+          19,
+          16,
+          24,
+          4,
+          26,
+          28
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 10,
+        "targetLines": [
+          [
+            4,
+            10,
+            16,
+            22,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            10
+          ],
+          "nodes": 256,
+          "elapsedMs": 4.876299999999901,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "99e2704df0b1e101b90a35ea6171fb05e336f03e365166dfe2570e5d119b9d6e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-03/20260929/true/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          1,
+          34,
+          4,
+          2,
+          14,
+          31,
+          32,
+          20,
+          19,
+          9,
+          13,
+          15,
+          25,
+          7,
+          27,
+          28,
+          10,
+          29,
+          21,
+          22,
+          1,
+          11,
+          17,
+          14,
+          15,
+          9,
+          25,
+          20,
+          7,
+          19,
+          24,
+          26,
+          8,
+          21,
+          22,
+          16,
+          11,
+          15,
+          9,
+          14,
+          10,
+          7,
+          13,
+          28,
+          35,
+          20,
+          21,
+          26,
+          8,
+          27,
+          25,
+          34,
+          22,
+          6
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 13,
+        "targetLines": [
+          [
+            6,
+            13,
+            20,
+            27,
+            34
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            13
+          ],
+          "nodes": 302,
+          "elapsedMs": 5.237200000000485,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "19b8b637a594bad54f9eba5d8e1ec91e09d8f3cb6b4dcaf2e64409a3960a220f",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-04/20260929/false/60",
+        "ply": 29
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          17,
+          15,
+          11,
+          33,
+          30,
+          28,
+          21,
+          29,
+          26,
+          16,
+          10,
+          8,
+          20,
+          25,
+          13,
+          22,
+          1,
+          6,
+          0,
+          3,
+          14,
+          15,
+          9,
+          28,
+          10,
+          24,
+          8,
+          26,
+          7
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 6,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 25,
+          "principalVariation": [
+            25,
+            6
+          ],
+          "nodes": 141,
+          "elapsedMs": 2.136899999999514,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "669255d030139b227d790722eefd070f1b094984bac636509d9fb74ae8ef15e8",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-04/20260929/true/60",
+        "ply": 28
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          17,
+          15,
+          11,
+          33,
+          30,
+          28,
+          29,
+          23,
+          21,
+          31,
+          20,
+          19,
+          13,
+          14,
+          27,
+          34,
+          15,
+          33,
+          32,
+          9,
+          24,
+          10,
+          28,
+          25,
+          8,
+          20,
+          21,
+          5
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 15,
+        "targetLines": [
+          [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            15
+          ],
+          "nodes": 302,
+          "elapsedMs": 4.5572000000001935,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "49e0e5223baa4f5a1c9c53701ff31009681f088fc3a3bd6c8c6f50ce93c0cd64",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-07/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          23,
+          19,
+          16,
+          35,
+          8,
+          33,
+          21,
+          32,
+          31,
+          26,
+          10,
+          9,
+          28,
+          14,
+          22,
+          20
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            8,
+            14,
+            20,
+            26,
+            32
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 4,
+          "principalVariation": [
+            4,
+            8
+          ],
+          "nodes": 233,
+          "elapsedMs": 2.7076999999999316,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "f4fe749518b8cccaff5199c655ba0e38cb51a37749786843c433d92802dfa15d",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-08/20260929/true/60",
+        "ply": 36
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          1,
+          10,
+          7,
+          35,
+          26,
+          23,
+          24,
+          3,
+          14,
+          8,
+          28,
+          25,
+          21,
+          0,
+          4,
+          7,
+          10,
+          22,
+          13,
+          15,
+          1,
+          2,
+          14,
+          27,
+          9,
+          19,
+          20,
+          8,
+          28,
+          7,
+          16,
+          10,
+          13,
+          6,
+          15,
+          14
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 9,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            9
+          ],
+          "nodes": 187,
+          "elapsedMs": 2.813199999999597,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "a02045f85912747b7082cba927aea8a9dcb1d5415f33df851dac44fdb7049bb4",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-10/20260929/true/60",
+        "ply": 39
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          29,
+          23,
+          20,
+          0,
+          24,
+          3,
+          27,
+          13,
+          30,
+          4,
+          11,
+          34,
+          1,
+          16,
+          15,
+          8,
+          10,
+          20,
+          14,
+          27,
+          13,
+          7,
+          24,
+          19,
+          18,
+          12,
+          16,
+          15,
+          21,
+          31,
+          10,
+          28,
+          25,
+          8,
+          1,
+          13,
+          20,
+          14,
+          5
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 15,
+        "targetLines": [
+          [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 12,
+          "principalVariation": [
+            12,
+            15
+          ],
+          "nodes": 256,
+          "elapsedMs": 4.003999999999905,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "637400513b1606b7323605912ae2a43ecbb361bd0536bf548273634ab724273e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-12/20260929/false/60",
+        "ply": 44
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          21,
+          2,
+          0,
+          3,
+          23,
+          18,
+          30,
+          26,
+          9,
+          35,
+          28,
+          19,
+          8,
+          12,
+          21,
+          7,
+          15,
+          27,
+          14,
+          13,
+          31,
+          20,
+          34,
+          25,
+          28,
+          1,
+          19,
+          4,
+          10,
+          3,
+          2,
+          22,
+          8,
+          9,
+          27,
+          26,
+          13,
+          20,
+          21,
+          14,
+          24,
+          25,
+          15,
+          32
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            8,
+            14,
+            20,
+            26,
+            32
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            8
+          ],
+          "nodes": 233,
+          "elapsedMs": 4.117500000000291,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "3cddb0d2acc61b2973599611ffac1f9ff0bef46aa2001e8881471f0715cae6d7",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-13/20260929/false/60",
+        "ply": 45
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          34,
+          27,
+          24,
+          2,
+          3,
+          8,
+          30,
+          29,
+          33,
+          14,
+          17,
+          12,
+          4,
+          6,
+          15,
+          20,
+          26,
+          21,
+          18,
+          22,
+          19,
+          34,
+          25,
+          28,
+          10,
+          7,
+          14,
+          15,
+          20,
+          8,
+          1,
+          21,
+          4,
+          9,
+          27,
+          2,
+          6,
+          34,
+          24,
+          28,
+          10,
+          14,
+          7,
+          20,
+          8
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 9,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            9
+          ],
+          "nodes": 164,
+          "elapsedMs": 3.4965999999994892,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "cd1bd882dc75e6968536f6cb7f281203105b094b9fe25dabe796997a2a088dd2",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-14/20260929/true/60",
+        "ply": 25
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          17,
+          15,
+          2,
+          21,
+          33,
+          31,
+          0,
+          24,
+          30,
+          8,
+          7,
+          35,
+          32,
+          18,
+          25,
+          20,
+          21,
+          14,
+          27,
+          26,
+          2,
+          15,
+          13,
+          8
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 32,
+        "targetLines": [
+          [
+            8,
+            14,
+            20,
+            26,
+            32
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            32
+          ],
+          "nodes": 532,
+          "elapsedMs": 6.811800000000403,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "81db89f5a028909d8731c38500fa4264825359bbc31cc1c2663d811c3c4a619b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-15/20260929/true/60",
+        "ply": 28
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          26,
+          6,
+          4,
+          3,
+          35,
+          22,
+          32,
+          7,
+          14,
+          13,
+          33,
+          0,
+          28,
+          26,
+          30,
+          27,
+          31,
+          34,
+          20,
+          10,
+          21,
+          19,
+          14,
+          7,
+          16,
+          13,
+          26,
+          25
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 31,
+        "targetLines": [
+          [
+            7,
+            13,
+            19,
+            25,
+            31
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 2,
+          "principalVariation": [
+            2,
+            1
+          ],
+          "nodes": 91,
+          "elapsedMs": 2.050799999999981,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5d29f1a48ca8139c3f48b813fcaf10e9a094c70f20c9007167d50b6529741943",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-tactical/opening-16/20260929/true/60",
+        "ply": 44
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          4,
+          32,
+          29,
+          3,
+          16,
+          12,
+          34,
+          11,
+          2,
+          27,
+          23,
+          28,
+          22,
+          19,
+          7,
+          35,
+          30,
+          31,
+          25,
+          10,
+          15,
+          29,
+          14,
+          16,
+          28,
+          27,
+          21,
+          7,
+          8,
+          20,
+          6,
+          25,
+          19,
+          15,
+          10,
+          4,
+          12,
+          24,
+          28,
+          16,
+          7,
+          9,
+          21,
+          14
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 19,
+        "targetLines": [
+          [
+            4,
+            9,
+            14,
+            19,
+            24
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            19
+          ],
+          "nodes": 302,
+          "elapsedMs": 4.885400000000118,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "1b3dcb03821b0a8ff6362de632ac701d740dfeb7087ce18621285431ae7fd03e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/false/60",
+        "ply": 20
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          11,
+          13,
+          9,
+          3,
+          8,
+          4,
+          1,
+          16,
+          12,
+          7,
+          18,
+          6,
+          11,
+          13,
+          5,
+          19
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 1,
+        "targetLines": [
+          [
+            1,
+            7,
+            13,
+            19
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 17,
+          "principalVariation": [
+            17,
+            1
+          ],
+          "nodes": 45,
+          "elapsedMs": 1.113800000000083,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "f89a39b774f39969e60abca6cdeeb20a62b53cf84e8013f34bdb91040e506411",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-00/20260929/true/60",
+        "ply": 24
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          6,
+          7,
+          17,
+          16,
+          8,
+          13,
+          11,
+          5,
+          0,
+          20,
+          12,
+          15,
+          10,
+          18,
+          16,
+          7,
+          8,
+          4,
+          21,
+          6,
+          13,
+          9,
+          23
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 18,
+        "targetLines": [
+          [
+            8,
+            13,
+            18,
+            23
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 14,
+          "principalVariation": [
+            14,
+            18
+          ],
+          "nodes": 185,
+          "elapsedMs": 2.1275000000005093,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "740070c8c35cbc00b05a544e46f487627f8b68c07314a4fb33d23b1c96a403c0",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-03/20260929/false/60",
+        "ply": 21
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          24,
+          1,
+          23,
+          12,
+          21,
+          22,
+          17,
+          16,
+          8,
+          13,
+          11,
+          7,
+          1,
+          23,
+          24,
+          12,
+          2,
+          17,
+          22,
+          5
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 11,
+        "targetLines": [
+          [
+            5,
+            11,
+            17,
+            23
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            11
+          ],
+          "nodes": 129,
+          "elapsedMs": 2.085599999999431,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "3ab229c0f2f3880f49f96d463c534eb77d70ffacb305f20e21e27142bbde5ba1",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-07/20260929/true/60",
+        "ply": 22
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          22,
+          4,
+          15,
+          8,
+          16,
+          21,
+          23,
+          13,
+          17,
+          18,
+          3,
+          12,
+          11,
+          5,
+          6,
+          16,
+          8,
+          15,
+          9,
+          7,
+          18,
+          3
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 11,
+        "targetLines": [
+          [
+            3,
+            7,
+            11,
+            15
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            11
+          ],
+          "nodes": 101,
+          "elapsedMs": 2.0727999999999156,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5dc0f5592585e2cdca425c6ea2a7b7eb10fa56a6c87ea3cb246363d5a3d77c21",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-08/20260929/true/60",
+        "ply": 13
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          6,
+          22,
+          9,
+          8,
+          2,
+          15,
+          24,
+          19,
+          13,
+          11,
+          3,
+          16,
+          18
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            3,
+            8,
+            13,
+            18
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            8
+          ],
+          "nodes": 115,
+          "elapsedMs": 1.1743999999998778,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "4d83a7f284456853456b5d4ce068c2e7f2f414831845f7fdb8eeb36a43caab6e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-09/20260929/false/60",
+        "ply": 23
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          16,
+          14,
+          1,
+          9,
+          15,
+          6,
+          0,
+          24,
+          19,
+          7,
+          8,
+          16,
+          11,
+          13,
+          12,
+          17,
+          18,
+          6,
+          9,
+          5,
+          23,
+          15,
+          8
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 13,
+        "targetLines": [
+          [
+            8,
+            13,
+            18,
+            23
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            13
+          ],
+          "nodes": 143,
+          "elapsedMs": 2.0313999999998487,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "9ea6889a1c690208539249e98991f044540fb0765a4df3032068047dba71ee04",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-10/20260929/false/60",
+        "ply": 27
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          1,
+          8,
+          19,
+          10,
+          0,
+          24,
+          2,
+          4,
+          9,
+          7,
+          3,
+          1,
+          13,
+          8,
+          12,
+          11,
+          6,
+          18,
+          17,
+          22,
+          2,
+          7,
+          3,
+          1,
+          8,
+          12,
+          13
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 18,
+        "targetLines": [
+          [
+            3,
+            8,
+            13,
+            18
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            18
+          ],
+          "nodes": 171,
+          "elapsedMs": 2.235200000000077,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "2caf0b9dd297236c8b7fbd91f54acba5486e5694dbfa3e9193afc15422b4f79d",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-12/20260929/false/60",
+        "ply": 31
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          20,
+          16,
+          4,
+          10,
+          24,
+          9,
+          2,
+          11,
+          18,
+          3,
+          6,
+          12,
+          13,
+          23,
+          7,
+          8,
+          16,
+          19,
+          11,
+          21,
+          15,
+          3,
+          10,
+          5,
+          18,
+          17,
+          12,
+          6,
+          8,
+          16,
+          13
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 3,
+        "targetLines": [
+          [
+            3,
+            8,
+            13,
+            18
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            3
+          ],
+          "nodes": 73,
+          "elapsedMs": 0.7988999999997759,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "362910a716f423b7119d6081b12a72b15ac3bff448e8524099a35178f7fd9013",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-12/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          20,
+          16,
+          4,
+          10,
+          24,
+          9,
+          2,
+          11,
+          18,
+          3,
+          6,
+          12,
+          13,
+          7,
+          15,
+          17
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 2,
+        "targetLines": [
+          [
+            2,
+            7,
+            12,
+            17
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 8,
+          "principalVariation": [
+            8,
+            2
+          ],
+          "nodes": 59,
+          "elapsedMs": 0.8271000000004278,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "7e25e85322ad55146b53ea902f7e32462acf5b71918e79d6546560bcc4c2ded3",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-13/20260929/true/60",
+        "ply": 14
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          5,
+          10,
+          22,
+          11,
+          12,
+          2,
+          3,
+          16,
+          13,
+          17,
+          24,
+          4,
+          18,
+          8
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 12,
+        "targetLines": [
+          [
+            4,
+            8,
+            12,
+            16
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            12
+          ],
+          "nodes": 143,
+          "elapsedMs": 1.9558999999999287,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "c8ad8843c7cda728a15e0f03eee0c19478e2d06f9c3c6e17234906f50901f246",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-14/20260929/false/60",
+        "ply": 17
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          15,
+          2,
+          14,
+          10,
+          23,
+          20,
+          4,
+          17,
+          3,
+          0,
+          18,
+          24,
+          19,
+          5,
+          13,
+          8,
+          16
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 17,
+        "targetLines": [
+          [
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            17
+          ],
+          "nodes": 185,
+          "elapsedMs": 2.2163000000000466,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "0259cacf772e17ef849618075636cc5b6f5b880f6693d8aaf7811d3f1d4f1d0c",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-14/20260929/true/60",
+        "ply": 22
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          15,
+          2,
+          14,
+          10,
+          23,
+          20,
+          4,
+          17,
+          3,
+          0,
+          18,
+          24,
+          19,
+          5,
+          15,
+          16,
+          8,
+          11,
+          6,
+          17,
+          23,
+          18
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 19,
+        "targetLines": [
+          [
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 7,
+          "principalVariation": [
+            7,
+            19
+          ],
+          "nodes": 185,
+          "elapsedMs": 3.146299999999428,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "40256c23a6db3f1aba675ff28213e1ab3e160e3ec3a168e3d9a60dc40b23bc47",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-17/20260929/false/60",
+        "ply": 11
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          19,
+          5,
+          17,
+          11,
+          7,
+          24,
+          6,
+          3,
+          8,
+          12,
+          21
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 5,
+        "targetLines": [
+          [
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 10,
+          "principalVariation": [
+            10,
+            5
+          ],
+          "nodes": 87,
+          "elapsedMs": 0.8828999999996086,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "824ce60da4fcf26a81b152dc0f1987681e38e8d6793fe237c942a113fb4506cb",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-17/20260929/true/60",
+        "ply": 26
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          19,
+          5,
+          17,
+          11,
+          7,
+          24,
+          6,
+          3,
+          8,
+          12,
+          21,
+          13,
+          10,
+          17,
+          22,
+          14,
+          16,
+          0,
+          20,
+          6,
+          18,
+          8,
+          7,
+          11,
+          17,
+          21
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 16,
+        "targetLines": [
+          [
+            6,
+            11,
+            16,
+            21
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 2,
+          "principalVariation": [
+            2,
+            16
+          ],
+          "nodes": 185,
+          "elapsedMs": 2.9213999999992666,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "70f664bdd94d5d5bee742fafe971e1315dd3b73f092175a6dc4de287ea0434c8",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-18/20260929/false/60",
+        "ply": 25
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          3,
+          2,
+          20,
+          14,
+          4,
+          6,
+          7,
+          5,
+          0,
+          24,
+          15,
+          17,
+          8,
+          11,
+          19,
+          14,
+          1,
+          7,
+          9,
+          0,
+          13,
+          21,
+          12,
+          10,
+          11
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 14,
+        "targetLines": [
+          [
+            11,
+            12,
+            13,
+            14
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 5,
+          "principalVariation": [
+            5,
+            14
+          ],
+          "nodes": 115,
+          "elapsedMs": 2.033400000000256,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "398791694776bb41a716e03e2ffc145c95a5cec526253df5723a12f0b45c6d75",
+      "source": {
+        "kind": "experiment",
+        "gameId": "A/hard-normal/opening-19/20260929/true/60",
+        "ply": 25
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 5,
+          "winLength": 4,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          13,
+          16,
+          3,
+          12,
+          5,
+          9,
+          10,
+          14,
+          20,
+          6,
+          7,
+          0,
+          4,
+          11,
+          17,
+          19,
+          23,
+          10,
+          9,
+          1,
+          24,
+          20,
+          21,
+          22,
+          14
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 19,
+        "targetLines": [
+          [
+            9,
+            14,
+            19,
+            24
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 5,
+          "principalVariation": [
+            5,
+            19
+          ],
+          "nodes": 241,
+          "elapsedMs": 3.4160000000001673,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "8460ae932c196352431973f35d0d56f91975a16e22479bd2424810aaa0c8f857",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-02/20260929/true/60",
+        "ply": 54
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          21,
+          26,
+          8,
+          27,
+          29,
+          1,
+          24,
+          4,
+          2,
+          13,
+          7,
+          14,
+          15,
+          10,
+          22,
+          29,
+          21,
+          20,
+          26,
+          11,
+          17,
+          25,
+          30,
+          15,
+          10,
+          13,
+          7,
+          14,
+          16,
+          9,
+          24,
+          27,
+          21,
+          26,
+          28,
+          20,
+          8,
+          34,
+          7,
+          6,
+          13,
+          25,
+          15,
+          14,
+          24,
+          29,
+          26,
+          21,
+          28,
+          22,
+          27
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 25,
+        "targetLines": [
+          [
+            24,
+            25,
+            26,
+            27,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 18,
+          "principalVariation": [
+            18,
+            25
+          ],
+          "nodes": 553,
+          "elapsedMs": 11.686899999998786,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "66d9de57cbc7e65f6faa9fbedd8fa76e589ed8b6affb103154e76cf203a8ae6e",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-09/20260929/true/60",
+        "ply": 14
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          15,
+          34,
+          31,
+          0,
+          7,
+          13,
+          25,
+          9,
+          20,
+          10,
+          14,
+          8,
+          21,
+          11
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 7,
+        "targetLines": [
+          [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            7
+          ],
+          "nodes": 228,
+          "elapsedMs": 3.120999999999185,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "97cf205958dfae1c58df3c400c096a3c7ce7dd6a43e28d2021ab5eee817b3948",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-10/20260929/false/60",
+        "ply": 52
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          29,
+          23,
+          20,
+          0,
+          24,
+          3,
+          27,
+          13,
+          30,
+          4,
+          1,
+          16,
+          15,
+          10,
+          28,
+          8,
+          7,
+          21,
+          20,
+          25,
+          11,
+          4,
+          27,
+          34,
+          14,
+          2,
+          3,
+          15,
+          28,
+          7,
+          20,
+          9,
+          10,
+          21,
+          27,
+          25,
+          14,
+          13,
+          19,
+          11,
+          32,
+          20,
+          7,
+          10,
+          15,
+          28,
+          16,
+          14,
+          26,
+          21,
+          22,
+          0
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 7,
+        "targetLines": [
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            7
+          ],
+          "nodes": 203,
+          "elapsedMs": 4.629399999999805,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "fd8fdee67029a87e783b47e5dd1eafe2dcff29128a545d0726555690ae330bab",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-16/20260929/true/60",
+        "ply": 34
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          4,
+          32,
+          29,
+          3,
+          16,
+          12,
+          34,
+          11,
+          2,
+          27,
+          23,
+          28,
+          22,
+          20,
+          6,
+          33,
+          15,
+          29,
+          14,
+          13,
+          9,
+          27,
+          4,
+          19,
+          7,
+          10,
+          20,
+          28,
+          26,
+          14,
+          16,
+          21,
+          27,
+          0
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 7,
+        "targetLines": [
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            7
+          ],
+          "nodes": 203,
+          "elapsedMs": 4.265699999999924,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5e626d358438c659ac2c4f2722f37fb7ced1bdaa62115b248944e2f33f2d1ce9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "B/hard-normal/opening-17/20260929/false/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 5
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          18,
+          21,
+          20,
+          4,
+          33,
+          1,
+          0,
+          16,
+          29,
+          9,
+          14,
+          24,
+          21,
+          15,
+          20,
+          3,
+          1,
+          4,
+          26,
+          22,
+          28,
+          14,
+          9,
+          25,
+          10,
+          7,
+          13,
+          21,
+          16,
+          34,
+          15,
+          12,
+          28,
+          22,
+          20,
+          25,
+          14,
+          7,
+          13,
+          8,
+          9,
+          15,
+          29,
+          10,
+          5,
+          20,
+          25,
+          28,
+          16,
+          7,
+          14,
+          13,
+          9,
+          19,
+          21,
+          1
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 25,
+        "targetLines": [
+          [
+            1,
+            7,
+            13,
+            19,
+            25
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            25
+          ],
+          "nodes": 478,
+          "elapsedMs": 10.159299999999348,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "3e46373bcc7488ef119482ae1025b96ab37470fef12c5dfef34dfca3ca78a695",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-01/20260929/true/60",
+        "ply": 21
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          15,
+          20,
+          8,
+          21,
+          22,
+          28,
+          7,
+          29,
+          25,
+          11,
+          31,
+          13,
+          17,
+          15,
+          14,
+          20,
+          27,
+          10,
+          28,
+          30
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 25,
+        "targetLines": [
+          [
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            25
+          ],
+          "nodes": 463,
+          "elapsedMs": 8.14509999999973,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "6eec673f599dbc053ccc7dde4fb6dc5939a69f1ce9711d138ad969bfbbef5f06",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-06/20260929/false/60",
+        "ply": 29
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          9,
+          30,
+          27,
+          34,
+          26,
+          7,
+          19,
+          25,
+          14,
+          15,
+          24,
+          20,
+          10,
+          9,
+          21,
+          29,
+          28,
+          22,
+          7,
+          35,
+          19,
+          14,
+          15,
+          25,
+          8,
+          10,
+          1,
+          34,
+          29
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 22,
+        "targetLines": [
+          [
+            1,
+            8,
+            15,
+            22,
+            29
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 16,
+          "principalVariation": [
+            16,
+            22
+          ],
+          "nodes": 394,
+          "elapsedMs": 7.759200000000419,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "a2fa62cff42d0697ee7895c27be815ccdafb723db2a04c5ec96d3d9269ccff76",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-07/20260929/true/60",
+        "ply": 16
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          23,
+          19,
+          16,
+          35,
+          8,
+          33,
+          21,
+          32,
+          31,
+          26,
+          15,
+          27,
+          25,
+          20,
+          13,
+          14
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            8,
+            14,
+            20,
+            26,
+            32
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 7,
+          "principalVariation": [
+            7,
+            8
+          ],
+          "nodes": 233,
+          "elapsedMs": 3.4584999999988213,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "68d4d1ce8bcd2c01325890e585a75ec53388a43bfc6697a90fa9e48c9808f753",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-08/20260929/true/60",
+        "ply": 37
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          1,
+          10,
+          7,
+          35,
+          26,
+          23,
+          24,
+          3,
+          14,
+          8,
+          28,
+          25,
+          21,
+          0,
+          4,
+          7,
+          10,
+          22,
+          13,
+          15,
+          1,
+          2,
+          26,
+          28,
+          20,
+          21,
+          14,
+          32,
+          9,
+          34,
+          10,
+          31,
+          33,
+          8,
+          15,
+          25,
+          27
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 21,
+        "targetLines": [
+          [
+            9,
+            15,
+            21,
+            27,
+            33
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 7,
+          "principalVariation": [
+            7,
+            21
+          ],
+          "nodes": 417,
+          "elapsedMs": 6.817800000000716,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "7213c440f43d36372b10dddb9db02a26c915774070781815511200dd660ea2ae",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-09/20260929/false/60",
+        "ply": 43
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          15,
+          34,
+          31,
+          0,
+          7,
+          13,
+          25,
+          9,
+          3,
+          23,
+          20,
+          10,
+          26,
+          14,
+          4,
+          1,
+          28,
+          27,
+          21,
+          7,
+          19,
+          22,
+          11,
+          15,
+          29,
+          17,
+          14,
+          10,
+          4,
+          9,
+          20,
+          21,
+          27,
+          8,
+          7,
+          13,
+          1,
+          2,
+          28,
+          26,
+          14,
+          11,
+          35
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 21,
+        "targetLines": [
+          [
+            7,
+            14,
+            21,
+            28,
+            35
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 16,
+          "principalVariation": [
+            16,
+            21
+          ],
+          "nodes": 371,
+          "elapsedMs": 7.0077000000001135,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "384925b50f9ee865744b23f950ff6a30bce7260dac78fe16f6651feb8a208a18",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-11/20260929/false/60",
+        "ply": 41
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          14,
+          11,
+          1,
+          5,
+          29,
+          28,
+          21,
+          19,
+          20,
+          2,
+          30,
+          15,
+          6,
+          13,
+          12,
+          24,
+          14,
+          7,
+          25,
+          21,
+          27,
+          26,
+          16,
+          22,
+          20,
+          15,
+          34,
+          6,
+          1,
+          0,
+          24,
+          7,
+          9,
+          19,
+          28,
+          25,
+          31,
+          20,
+          15,
+          13
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 1,
+        "targetLines": [
+          [
+            1,
+            7,
+            13,
+            19,
+            25
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            1
+          ],
+          "nodes": 49,
+          "elapsedMs": 0.6341000000011263,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "a298dd52f88e24899875853e68e79138c2ec0da64da106904cd34efcd6749fa1",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-14/20260929/false/60",
+        "ply": 49
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          17,
+          15,
+          2,
+          21,
+          33,
+          31,
+          0,
+          24,
+          30,
+          8,
+          7,
+          35,
+          32,
+          18,
+          25,
+          15,
+          1,
+          21,
+          19,
+          13,
+          14,
+          24,
+          27,
+          26,
+          11,
+          10,
+          29,
+          23,
+          15,
+          22,
+          21,
+          9,
+          16,
+          14,
+          6,
+          7,
+          26,
+          11,
+          10,
+          25,
+          13,
+          28,
+          0,
+          35,
+          20,
+          29,
+          14,
+          27
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 26,
+        "targetLines": [
+          [
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 2,
+          "principalVariation": [
+            2,
+            26
+          ],
+          "nodes": 486,
+          "elapsedMs": 12.257599999999002,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "87872580385266a83e1d125d5a3aa755b7f7af39d4277d7512b8a221d19cf7fa",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-15/20260929/true/60",
+        "ply": 37
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          26,
+          6,
+          4,
+          3,
+          35,
+          22,
+          32,
+          7,
+          14,
+          13,
+          33,
+          0,
+          28,
+          26,
+          30,
+          27,
+          31,
+          34,
+          6,
+          15,
+          12,
+          24,
+          9,
+          7,
+          25,
+          22,
+          29,
+          28,
+          21,
+          27,
+          16,
+          11,
+          20,
+          14,
+          19,
+          24,
+          18
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 22,
+        "targetLines": [
+          [
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 25,
+          "principalVariation": [
+            25,
+            22
+          ],
+          "nodes": 394,
+          "elapsedMs": 6.8216999999986,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "14297dd79a32df6d66b478b13e705f083ce8d1a203ac232d3c50df3800cc3f4c",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-17/20260929/true/60",
+        "ply": 56
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          18,
+          21,
+          20,
+          4,
+          33,
+          1,
+          0,
+          16,
+          29,
+          9,
+          14,
+          24,
+          22,
+          13,
+          21,
+          3,
+          2,
+          6,
+          25,
+          19,
+          28,
+          7,
+          10,
+          20,
+          27,
+          26,
+          22,
+          16,
+          8,
+          15,
+          14,
+          25,
+          21,
+          28,
+          19,
+          24,
+          20,
+          18,
+          26,
+          23,
+          11,
+          8,
+          16,
+          31,
+          15,
+          14,
+          28,
+          10,
+          9,
+          20,
+          27,
+          21,
+          26,
+          25,
+          19,
+          5
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 15,
+        "targetLines": [
+          [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            15
+          ],
+          "nodes": 302,
+          "elapsedMs": 9.363299999999072,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "971a6d9a46cc0d1ce9e1e5e1c3a232dd7033b45bbfd173fb085af2e9088aa7f9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-18/20260929/true/60",
+        "ply": 40
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          32,
+          10,
+          9,
+          4,
+          15,
+          27,
+          1,
+          23,
+          19,
+          25,
+          5,
+          17,
+          14,
+          8,
+          33,
+          6,
+          7,
+          12,
+          9,
+          13,
+          23,
+          31,
+          27,
+          15,
+          16,
+          24,
+          10,
+          28,
+          8,
+          14,
+          21,
+          7,
+          19,
+          20,
+          26,
+          11,
+          15,
+          9,
+          29,
+          10
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            8
+          ],
+          "nodes": 210,
+          "elapsedMs": 3.0195999999996275,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "2ba48a22cab0e42cd134ec86051624f10c2098cb026f69ffb950a0c804ca4995",
+      "source": {
+        "kind": "experiment",
+        "gameId": "C/hard-normal/opening-19/20260929/false/60",
+        "ply": 43
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          10,
+          0,
+          35,
+          6,
+          30,
+          17,
+          3,
+          27,
+          9,
+          5,
+          31,
+          12,
+          13,
+          1,
+          10,
+          11,
+          16,
+          21,
+          29,
+          3,
+          25,
+          26,
+          24,
+          23,
+          19,
+          15,
+          9,
+          14,
+          13,
+          7,
+          20,
+          22,
+          28,
+          27,
+          29,
+          11,
+          31,
+          10,
+          8,
+          26,
+          15,
+          13,
+          1
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 22,
+        "targetLines": [
+          [
+            1,
+            8,
+            15,
+            22,
+            29
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            22
+          ],
+          "nodes": 417,
+          "elapsedMs": 10.156000000000859,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "ed22fa8c40a1138096885b5a1f20ba4ab3ee101874f12cddc61732c0f825c367",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-03/20260929/false/60",
+        "ply": 22
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          1,
+          34,
+          31,
+          28,
+          4,
+          2,
+          7,
+          25,
+          26,
+          10,
+          16,
+          21,
+          14,
+          15,
+          20,
+          8,
+          29,
+          9,
+          27,
+          6
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 7,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 5,
+          "principalVariation": [
+            5,
+            7
+          ],
+          "nodes": 171,
+          "elapsedMs": 1.9911000000029162,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "212e3effc0f1d886f5e54f979f4f2a29ed58ed7d95d9aff74dd6eda69a3c75c0",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-03/20260929/true/60",
+        "ply": 47
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          0,
+          35,
+          1,
+          34,
+          4,
+          2,
+          14,
+          31,
+          32,
+          20,
+          19,
+          9,
+          13,
+          15,
+          25,
+          7,
+          27,
+          26,
+          10,
+          21,
+          28,
+          22,
+          11,
+          29,
+          1,
+          20,
+          19,
+          13,
+          14,
+          9,
+          6,
+          15,
+          3,
+          27,
+          21,
+          10,
+          25,
+          22,
+          28,
+          8,
+          1,
+          2,
+          7,
+          14,
+          26,
+          13,
+          24
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 27,
+        "targetLines": [
+          [
+            24,
+            25,
+            26,
+            27,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 12,
+          "principalVariation": [
+            12,
+            27
+          ],
+          "nodes": 360,
+          "elapsedMs": 6.471099999998842,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "99e30f380d91b9c9afc99e641ac34bf2aef1f16bc4cf19b8f230aa29a427c06b",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-05/20260929/true/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          31,
+          5,
+          2,
+          33,
+          12,
+          19,
+          14,
+          20,
+          15,
+          16,
+          22,
+          7,
+          1,
+          8,
+          9,
+          31,
+          25,
+          34,
+          21,
+          27,
+          19,
+          32,
+          33,
+          20,
+          13,
+          14,
+          26,
+          7,
+          10,
+          28,
+          0,
+          35
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 21,
+        "targetLines": [
+          [
+            7,
+            14,
+            21,
+            28,
+            35
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            21
+          ],
+          "nodes": 339,
+          "elapsedMs": 6.23149999999805,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "22926d88dff7ce538dc4223387bf62e07b0b63ee561e774908778632cc080e88",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-06/20260929/false/60",
+        "ply": 57
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          9,
+          30,
+          27,
+          34,
+          26,
+          7,
+          19,
+          25,
+          14,
+          15,
+          4,
+          24,
+          20,
+          8,
+          1,
+          9,
+          21,
+          10,
+          22,
+          18,
+          7,
+          19,
+          2,
+          14,
+          26,
+          4,
+          24,
+          15,
+          16,
+          27,
+          9,
+          21,
+          20,
+          8,
+          29,
+          7,
+          28,
+          34,
+          5,
+          31,
+          11,
+          32,
+          33,
+          17,
+          25,
+          27,
+          14,
+          20,
+          21,
+          6,
+          7,
+          28,
+          13,
+          19,
+          16,
+          12,
+          15
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 17,
+        "targetLines": [
+          [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            17
+          ],
+          "nodes": 255,
+          "elapsedMs": 4.321900000002643,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "91600fe5ed6b4d78382ad81d220a4ac067b04bb1a61ea9fcfbce254c02ca0866",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-07/20260929/false/60",
+        "ply": 23
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          23,
+          19,
+          16,
+          35,
+          8,
+          33,
+          21,
+          32,
+          31,
+          26,
+          10,
+          28,
+          25,
+          15,
+          20,
+          7,
+          13,
+          19,
+          14,
+          6,
+          8,
+          21,
+          2
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 26,
+        "targetLines": [
+          [
+            2,
+            8,
+            14,
+            20,
+            26
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 3,
+          "principalVariation": [
+            3,
+            26
+          ],
+          "nodes": 339,
+          "elapsedMs": 4.752800000002026,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "b4d88d860b26400a799357ec0e11ab4a9e97c712f74c2692a2e61345a6dd53ad",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-08/20260929/false/60",
+        "ply": 31
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          1,
+          10,
+          7,
+          35,
+          26,
+          23,
+          24,
+          3,
+          14,
+          8,
+          31,
+          13,
+          28,
+          27,
+          21,
+          0,
+          11,
+          7,
+          34,
+          16,
+          19,
+          20,
+          35,
+          15,
+          14,
+          10,
+          25,
+          9,
+          28,
+          8,
+          21
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 7,
+        "targetLines": [
+          [
+            7,
+            14,
+            21,
+            28,
+            35
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            7
+          ],
+          "nodes": 192,
+          "elapsedMs": 3.650899999996909,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "04b037c1e78b5569a5fc6fd39d6212081becce6ad98fa2277624e1bc6094b9e9",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-10/20260929/false/60",
+        "ply": 30
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          29,
+          23,
+          20,
+          0,
+          24,
+          3,
+          27,
+          13,
+          30,
+          4,
+          11,
+          34,
+          17,
+          22,
+          25,
+          28,
+          10,
+          20,
+          21,
+          8,
+          15,
+          14,
+          26,
+          9,
+          31,
+          11,
+          4,
+          7,
+          6,
+          29
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 10,
+        "targetLines": [
+          [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            10
+          ],
+          "nodes": 150,
+          "elapsedMs": 2.1385000000009313,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5a3f7cf2a6f7a3d902f4247ff9a9207e15cb1a6c5810dfd834be6d8380e98427",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-11/20260929/false/60",
+        "ply": 41
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          7,
+          14,
+          11,
+          1,
+          5,
+          29,
+          28,
+          21,
+          19,
+          20,
+          2,
+          30,
+          15,
+          18,
+          16,
+          12,
+          24,
+          14,
+          1,
+          8,
+          26,
+          7,
+          28,
+          25,
+          10,
+          22,
+          19,
+          15,
+          3,
+          4,
+          16,
+          21,
+          33,
+          6,
+          8,
+          24,
+          12,
+          28,
+          14,
+          20,
+          13
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 15,
+        "targetLines": [
+          [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 18,
+          "principalVariation": [
+            18,
+            15
+          ],
+          "nodes": 213,
+          "elapsedMs": 5.854600000002392,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "600ccc34443b7f8c7c16c9cb2e5d7a4b5bd0ce80c8f81bdbec7c2413bfe0805d",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-13/20260929/true/60",
+        "ply": 50
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          34,
+          27,
+          24,
+          2,
+          3,
+          8,
+          30,
+          29,
+          33,
+          14,
+          17,
+          12,
+          4,
+          6,
+          10,
+          23,
+          34,
+          16,
+          15,
+          20,
+          18,
+          26,
+          21,
+          27,
+          8,
+          29,
+          25,
+          7,
+          24,
+          6,
+          13,
+          4,
+          16,
+          15,
+          34,
+          28,
+          14,
+          1,
+          3,
+          20,
+          10,
+          22,
+          8,
+          19,
+          21,
+          9,
+          7,
+          24,
+          11,
+          4
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 14,
+        "targetLines": [
+          [
+            4,
+            9,
+            14,
+            19,
+            24
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            14
+          ],
+          "nodes": 171,
+          "elapsedMs": 3.406599999998434,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "5b6e40027abbd337a8d7c30e112f6446ed3a2022d68c6447656c30b3ac2a0ebc",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-14/20260929/false/60",
+        "ply": 45
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          17,
+          15,
+          2,
+          21,
+          33,
+          31,
+          0,
+          24,
+          30,
+          8,
+          7,
+          35,
+          32,
+          19,
+          25,
+          17,
+          14,
+          29,
+          15,
+          10,
+          21,
+          28,
+          16,
+          11,
+          23,
+          12,
+          20,
+          27,
+          26,
+          19,
+          8,
+          14,
+          4,
+          7,
+          25,
+          21,
+          28,
+          15,
+          16,
+          9,
+          22,
+          10,
+          27,
+          6
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 8,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 24,
+          "principalVariation": [
+            24,
+            8
+          ],
+          "nodes": 150,
+          "elapsedMs": 2.963900000002468,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "9d688fc5d1363c9a5b132002e18351363bd45cb2866d8bf342d9791583b46692",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-14/20260929/true/60",
+        "ply": 29
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          12,
+          17,
+          15,
+          2,
+          21,
+          33,
+          31,
+          0,
+          24,
+          30,
+          8,
+          7,
+          35,
+          32,
+          19,
+          25,
+          17,
+          14,
+          28,
+          15,
+          20,
+          21,
+          27,
+          34,
+          16,
+          4,
+          29,
+          1,
+          26
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 25,
+        "targetLines": [
+          [
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 0,
+          "principalVariation": [
+            0,
+            25
+          ],
+          "nodes": 402,
+          "elapsedMs": 5.639800000000832,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "47adc3260e30cb1f523bd429a2b641ab71c5146cce5a6e86a52a5c9e89f01bf6",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-15/20260929/false/60",
+        "ply": 33
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          26,
+          6,
+          4,
+          3,
+          35,
+          22,
+          32,
+          7,
+          14,
+          13,
+          33,
+          0,
+          28,
+          25,
+          30,
+          29,
+          21,
+          20,
+          15,
+          9,
+          35,
+          31,
+          6,
+          14,
+          8,
+          24,
+          1,
+          19,
+          4,
+          25,
+          7,
+          26,
+          10
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 9,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 27,
+          "principalVariation": [
+            27,
+            9
+          ],
+          "nodes": 129,
+          "elapsedMs": 2.3453999999983353,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "ebb7fb6a0277e1c10948ac3c410a1e2dea7676d8d5d235fd641cc19df2470f9d",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-15/20260929/true/60",
+        "ply": 46
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          26,
+          6,
+          4,
+          3,
+          35,
+          22,
+          32,
+          7,
+          14,
+          13,
+          33,
+          0,
+          28,
+          25,
+          30,
+          29,
+          21,
+          20,
+          19,
+          34,
+          27,
+          15,
+          10,
+          8,
+          22,
+          14,
+          26,
+          31,
+          28,
+          16,
+          13,
+          25,
+          6,
+          20,
+          24,
+          30,
+          15,
+          9,
+          21,
+          8,
+          14,
+          7,
+          11,
+          31,
+          16,
+          10
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 6,
+        "targetLines": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 12,
+          "principalVariation": [
+            12,
+            6
+          ],
+          "nodes": 171,
+          "elapsedMs": 2.583600000001752,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "107282b6b22df82908462015e286822e357e2c514fb5f48a439ff17340c031ed",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-16/20260929/true/60",
+        "ply": 36
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          4,
+          32,
+          29,
+          3,
+          16,
+          12,
+          34,
+          11,
+          2,
+          27,
+          23,
+          28,
+          22,
+          19,
+          8,
+          35,
+          31,
+          30,
+          0,
+          24,
+          26,
+          15,
+          14,
+          20,
+          10,
+          21,
+          9,
+          22,
+          19,
+          7,
+          29,
+          4,
+          27,
+          28,
+          35,
+          0
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 14,
+        "targetLines": [
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 11,
+          "principalVariation": [
+            11,
+            14
+          ],
+          "nodes": 234,
+          "elapsedMs": 3.7976999999991676,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "09a03d108aecd3afb7b56feaad455ea0bb8b9f4590f62abcd42940b2b6bb5b69",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-17/20260929/false/60",
+        "ply": 41
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          18,
+          21,
+          20,
+          4,
+          33,
+          1,
+          0,
+          16,
+          29,
+          9,
+          14,
+          24,
+          22,
+          13,
+          23,
+          3,
+          2,
+          7,
+          25,
+          20,
+          18,
+          0,
+          27,
+          28,
+          9,
+          14,
+          21,
+          15,
+          16,
+          11,
+          1,
+          5,
+          10,
+          7,
+          29,
+          20,
+          22,
+          34,
+          28,
+          4,
+          8
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 15,
+        "targetLines": [
+          [
+            1,
+            8,
+            15,
+            22,
+            29
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 6,
+          "principalVariation": [
+            6,
+            15
+          ],
+          "nodes": 213,
+          "elapsedMs": 4.017200000002049,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "15c0cbac423ed49b0be6202bdf8d9494da25c341a2823839b8ac503cc2a0274d",
+      "source": {
+        "kind": "experiment",
+        "gameId": "D/hard-normal/opening-19/20260929/false/60",
+        "ply": 49
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 7
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          10,
+          0,
+          35,
+          6,
+          30,
+          17,
+          3,
+          27,
+          9,
+          5,
+          31,
+          12,
+          13,
+          1,
+          11,
+          14,
+          16,
+          21,
+          28,
+          4,
+          24,
+          26,
+          27,
+          22,
+          6,
+          10,
+          20,
+          13,
+          1,
+          12,
+          9,
+          16,
+          34,
+          15,
+          14,
+          4,
+          26,
+          8,
+          28,
+          25,
+          10,
+          21,
+          27,
+          1,
+          22,
+          2,
+          16,
+          34,
+          3
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 4,
+        "targetLines": [
+          [
+            4,
+            10,
+            16,
+            22,
+            28
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 7,
+          "principalVariation": [
+            7,
+            4
+          ],
+          "nodes": 66,
+          "elapsedMs": 1.2199999999975262,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "221910ffeba58d59ccb731265457796f22254544f13de69c1d90a839ad0e8b9f",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-00/20260929/false/60",
+        "ply": 27
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          16,
+          17,
+          31,
+          30,
+          18,
+          25,
+          23,
+          15,
+          9,
+          10,
+          38,
+          40,
+          20,
+          32,
+          16,
+          37,
+          30,
+          19,
+          25,
+          23,
+          33,
+          17,
+          24,
+          18,
+          29,
+          15
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 16,
+        "targetLines": [
+          [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 31,
+          "principalVariation": [
+            31,
+            16
+          ],
+          "nodes": 615,
+          "elapsedMs": 12.516999999999825,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "0959daabf21856c4c956bfe7003f18918c65c92c30095f84073fdf6b6035e0f7",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-02/20260929/false/60",
+        "ply": 43
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          24,
+          25,
+          31,
+          32,
+          18,
+          17,
+          30,
+          12,
+          9,
+          36,
+          23,
+          16,
+          8,
+          40,
+          7,
+          39,
+          38,
+          10,
+          32,
+          22,
+          28,
+          26,
+          24,
+          18,
+          34,
+          16,
+          17,
+          31,
+          23,
+          19,
+          25,
+          33,
+          22,
+          40,
+          26,
+          24,
+          32,
+          18,
+          30,
+          38,
+          31,
+          37,
+          29
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 33,
+        "targetLines": [
+          [
+            29,
+            30,
+            31,
+            32,
+            33
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 36,
+          "principalVariation": [
+            36,
+            28
+          ],
+          "nodes": 939,
+          "elapsedMs": 24.209100000000035,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "c9f68acae1d184b5703a4f49c4d1a6c7a491f5a6da967693ba17dca888166d35",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-05/20260929/true/60",
+        "ply": 50
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          30,
+          25,
+          43,
+          27,
+          47,
+          28,
+          24,
+          18,
+          32,
+          16,
+          17,
+          31,
+          23,
+          22,
+          11,
+          29,
+          9,
+          8,
+          15,
+          30,
+          33,
+          32,
+          25,
+          17,
+          31,
+          24,
+          16,
+          19,
+          18,
+          38,
+          10,
+          26,
+          23,
+          33,
+          12,
+          9,
+          47,
+          31,
+          30,
+          24,
+          17,
+          16,
+          32,
+          25,
+          22,
+          23,
+          26,
+          44,
+          15,
+          37
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 30,
+        "targetLines": [
+          [
+            16,
+            23,
+            30,
+            37,
+            44
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            30
+          ],
+          "nodes": 867,
+          "elapsedMs": 15.793399999998655,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "1f0b14dcbe9022db7e33d585b9915c65b7dde4658ff286a1163d166ddcff9236",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-07/20260929/true/60",
+        "ply": 54
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          19,
+          45,
+          14,
+          29,
+          43,
+          1,
+          16,
+          10,
+          18,
+          17,
+          24,
+          23,
+          32,
+          8,
+          40,
+          48,
+          30,
+          29,
+          11,
+          15,
+          22,
+          39,
+          31,
+          24,
+          16,
+          10,
+          37,
+          25,
+          23,
+          30,
+          18,
+          17,
+          33,
+          38,
+          26,
+          19,
+          31,
+          2,
+          39,
+          15,
+          32,
+          29,
+          25,
+          18,
+          16,
+          24,
+          30,
+          22,
+          8,
+          23,
+          17,
+          26,
+          9,
+          21
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 25,
+        "targetLines": [
+          [
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          [
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            25
+          ],
+          "nodes": 651,
+          "elapsedMs": 19.427800000001298,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "559a589c7a37cb03f0f430e47be55ae355842936d5abe967aa6bafb2bafbc94f",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-12/20260929/false/60",
+        "ply": 27
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          16,
+          22,
+          41,
+          33,
+          10,
+          28,
+          25,
+          0,
+          37,
+          42,
+          15,
+          39,
+          17,
+          3,
+          19,
+          31,
+          33,
+          18,
+          26,
+          12,
+          30,
+          25,
+          32,
+          47,
+          29,
+          23,
+          28
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 31,
+        "targetLines": [
+          [
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          [
+            29,
+            30,
+            31,
+            32,
+            33
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 15,
+          "principalVariation": [
+            15,
+            31
+          ],
+          "nodes": 903,
+          "elapsedMs": 21.472600000000966,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "16e1481904b27f98a8a86be99c0205b6451187d66f8ffff2bc1b6e0afaf80354",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-18/20260929/true/60",
+        "ply": 32
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          32,
+          33,
+          4,
+          39,
+          1,
+          42,
+          35,
+          45,
+          2,
+          24,
+          31,
+          29,
+          22,
+          48,
+          25,
+          30,
+          27,
+          13,
+          28,
+          16,
+          10,
+          38,
+          23,
+          24,
+          18,
+          32,
+          8,
+          31,
+          11,
+          17,
+          45,
+          3
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 10,
+        "targetLines": [
+          [
+            3,
+            10,
+            17,
+            24,
+            31
+          ],
+          [
+            10,
+            17,
+            24,
+            31,
+            38
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 7,
+          "principalVariation": [
+            7,
+            10
+          ],
+          "nodes": 363,
+          "elapsedMs": 6.894199999998818,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    },
+    {
+      "id": "ceef25425a6ebafd823e35be01d5097c56c517adbdebab2b8bc17259c9a95129",
+      "source": {
+        "kind": "experiment",
+        "gameId": "E/hard-normal/opening-19/20260929/false/60",
+        "ply": 49
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 7,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          2,
+          19,
+          39,
+          38,
+          24,
+          27,
+          37,
+          4,
+          35,
+          48,
+          18,
+          22,
+          16,
+          40,
+          43,
+          34,
+          36,
+          23,
+          8,
+          7,
+          14,
+          28,
+          47,
+          27,
+          24,
+          16,
+          30,
+          18,
+          17,
+          10,
+          31,
+          34,
+          26,
+          38,
+          25,
+          37,
+          39,
+          23,
+          16,
+          32,
+          29,
+          22,
+          17,
+          18,
+          24,
+          31,
+          11,
+          34,
+          35
+        ]
+      },
+      "details": {
+        "defender": "O",
+        "attacker": "X",
+        "removedCell": 23,
+        "targetLines": [
+          [
+            11,
+            17,
+            23,
+            29,
+            35
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 30,
+          "principalVariation": [
+            30,
+            23
+          ],
+          "nodes": 723,
+          "elapsedMs": 14.240399999998772,
+          "maxPly": 2,
+          "attacker": "X"
+        }
+      }
+    },
+    {
+      "id": "703d0842cb10c4da5be538bc462391f27cef0f16ff1485aaff56a4770fce2a1c",
+      "source": {
+        "kind": "reference-fixture",
+        "gameId": "expiry-lock",
+        "ply": 12
+      },
+      "record": {
+        "schemaVersion": 1,
+        "rules": {
+          "rulesVersion": "1",
+          "boardSize": 6,
+          "winLength": 5,
+          "retention": {
+            "kind": "fifo",
+            "maxStones": 6
+          },
+          "repetitionThreshold": 3,
+          "matchPlyLimit": null
+        },
+        "moves": [
+          14,
+          35,
+          0,
+          12,
+          2,
+          13,
+          4,
+          15,
+          24,
+          16,
+          26,
+          30
+        ]
+      },
+      "details": {
+        "defender": "X",
+        "attacker": "O",
+        "removedCell": 14,
+        "targetLines": [
+          [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        ],
+        "proof": {
+          "result": "forced-win",
+          "distance": 2,
+          "bestMove": 1,
+          "principalVariation": [
+            1,
+            14
+          ],
+          "nodes": 256,
+          "elapsedMs": 3.051100000000588,
+          "maxPly": 2,
+          "attacker": "O"
+        }
+      }
+    }
+  ]
+}

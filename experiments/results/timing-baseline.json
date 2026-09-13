@@ -1,0 +1,1049 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-13T08:16:54.575Z",
+  "version": "fifo-ab-1",
+  "sourceHash": "2544d49354674ec860b4e4092c83bd7f027990e4acc5a3b41be7699c452db54c",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 H 260 w/ Radeon 780M Graphics",
+    "logicalCpus": 16,
+    "memoryBytes": 33602605056
+  },
+  "complete": true,
+  "repeats": 3,
+  "sampleCount": 18,
+  "method": "Node synchronous chooseMove, fixed nodes, timeMs:null; one 100-node warmup per cell; three observations per cell; P95 nearest rank, with n=3 equals max. Not browser/end-to-end latency or stability evidence.",
+  "groups": [
+    {
+      "scenario": "6-opening",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 19.53140000000002,
+        "p95": 25.619700000000194,
+        "max": 25.619700000000194
+      },
+      "search": {
+        "samples": 3,
+        "median": 472.88419999999996,
+        "p95": 491.19799999999987,
+        "max": 491.19799999999987
+      },
+      "total": {
+        "samples": 3,
+        "median": 492.4156,
+        "p95": 516.8177000000001,
+        "max": 516.8177000000001
+      }
+    },
+    {
+      "scenario": "6-midgame",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 10.71180000000004,
+        "p95": 14.028400000000147,
+        "max": 14.028400000000147
+      },
+      "search": {
+        "samples": 3,
+        "median": 328.1495,
+        "p95": 335.20820000000003,
+        "max": 335.20820000000003
+      },
+      "total": {
+        "samples": 3,
+        "median": 338.8613,
+        "p95": 345.2959000000001,
+        "max": 345.2959000000001
+      }
+    },
+    {
+      "scenario": "6-age-lock",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 7.772400000000289,
+        "p95": 8.245899999999892,
+        "max": 8.245899999999892
+      },
+      "search": {
+        "samples": 3,
+        "median": 362.1599000000001,
+        "p95": 372.8121000000001,
+        "max": 372.8121000000001
+      },
+      "total": {
+        "samples": 3,
+        "median": 370.4058,
+        "p95": 380.5845000000004,
+        "max": 380.5845000000004
+      }
+    },
+    {
+      "scenario": "9-opening",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 174.05419999999867,
+        "p95": 187.0073000000002,
+        "max": 187.0073000000002
+      },
+      "search": {
+        "samples": 3,
+        "median": 8848.8105,
+        "p95": 9035.425599999999,
+        "max": 9035.425599999999
+      },
+      "total": {
+        "samples": 3,
+        "median": 9022.864699999998,
+        "p95": 9222.4329,
+        "max": 9222.4329
+      }
+    },
+    {
+      "scenario": "9-midgame",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 198.36680000000342,
+        "p95": 207.47400000000198,
+        "max": 207.47400000000198
+      },
+      "search": {
+        "samples": 3,
+        "median": 5063.352899999998,
+        "p95": 5859.615399999995,
+        "max": 5859.615399999995
+      },
+      "total": {
+        "samples": 3,
+        "median": 5261.7197000000015,
+        "p95": 6034.919899999997,
+        "max": 6034.919899999997
+      }
+    },
+    {
+      "scenario": "9-age-lock",
+      "agent": "probe-500",
+      "tactical": {
+        "samples": 3,
+        "median": 74.62030000000959,
+        "p95": 110.21600000000035,
+        "max": 110.21600000000035
+      },
+      "search": {
+        "samples": 3,
+        "median": 11772.544500000004,
+        "p95": 11938.771,
+        "max": 11938.771
+      },
+      "total": {
+        "samples": 3,
+        "median": 11844.014900000002,
+        "p95": 12048.987000000001,
+        "max": 12048.987000000001
+      }
+    }
+  ],
+  "samples": [
+    {
+      "scenario": "6-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 14,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1296,
+      "elapsedMs": 492.4156,
+      "tacticalMs": 19.53140000000002,
+      "searchMs": 472.88419999999996,
+      "exhausted": true,
+      "pv": [
+        14,
+        15
+      ],
+      "score": 0,
+      "safeMoves": 36,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 14,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1296,
+      "elapsedMs": 453.30449999999996,
+      "tacticalMs": 17.32860000000005,
+      "searchMs": 435.9758999999999,
+      "exhausted": true,
+      "pv": [
+        14,
+        15
+      ],
+      "score": 0,
+      "safeMoves": 36,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 14,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1296,
+      "elapsedMs": 516.8177000000001,
+      "tacticalMs": 25.619700000000194,
+      "searchMs": 491.19799999999987,
+      "exhausted": true,
+      "pv": [
+        14,
+        15
+      ],
+      "score": 0,
+      "safeMoves": 36,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        12,
+        30,
+        13,
+        32,
+        14,
+        34,
+        15,
+        6,
+        0,
+        8,
+        2,
+        10
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 9,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 600,
+      "elapsedMs": 338.8613,
+      "tacticalMs": 10.71180000000004,
+      "searchMs": 328.1495,
+      "exhausted": true,
+      "pv": [
+        9,
+        16
+      ],
+      "score": -6.691666666666677,
+      "safeMoves": 24,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        12,
+        30,
+        13,
+        32,
+        14,
+        34,
+        15,
+        6,
+        0,
+        8,
+        2,
+        10
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 9,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 600,
+      "elapsedMs": 345.2959000000001,
+      "tacticalMs": 10.08770000000004,
+      "searchMs": 335.20820000000003,
+      "exhausted": true,
+      "pv": [
+        9,
+        16
+      ],
+      "score": -6.691666666666677,
+      "safeMoves": 24,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        12,
+        30,
+        13,
+        32,
+        14,
+        34,
+        15,
+        6,
+        0,
+        8,
+        2,
+        10
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 9,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 600,
+      "elapsedMs": 335.28729999999996,
+      "tacticalMs": 14.028400000000147,
+      "searchMs": 321.2588999999998,
+      "exhausted": true,
+      "pv": [
+        9,
+        16
+      ],
+      "score": -6.691666666666677,
+      "safeMoves": 24,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        14,
+        35,
+        0,
+        12,
+        2,
+        13,
+        4,
+        15,
+        24,
+        16,
+        26,
+        30
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 1,
+      "depth": 3,
+      "nodes": 500,
+      "tacticalNodes": 255,
+      "elapsedMs": 370.4058,
+      "tacticalMs": 8.245899999999892,
+      "searchMs": 362.1599000000001,
+      "exhausted": true,
+      "pv": [
+        1,
+        14
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        14,
+        35,
+        0,
+        12,
+        2,
+        13,
+        4,
+        15,
+        24,
+        16,
+        26,
+        30
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 1,
+      "depth": 3,
+      "nodes": 500,
+      "tacticalNodes": 255,
+      "elapsedMs": 380.5845000000004,
+      "tacticalMs": 7.772400000000289,
+      "searchMs": 372.8121000000001,
+      "exhausted": true,
+      "pv": [
+        1,
+        14
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "6-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 6,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        14,
+        35,
+        0,
+        12,
+        2,
+        13,
+        4,
+        15,
+        24,
+        16,
+        26,
+        30
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 1,
+      "depth": 3,
+      "nodes": 500,
+      "tacticalNodes": 255,
+      "elapsedMs": 334.6064000000001,
+      "tacticalMs": 6.341600000000199,
+      "searchMs": 328.2647999999999,
+      "exhausted": true,
+      "pv": [
+        1,
+        14
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 40,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 6561,
+      "elapsedMs": 9222.4329,
+      "tacticalMs": 187.0073000000002,
+      "searchMs": 9035.425599999999,
+      "exhausted": true,
+      "pv": [
+        40,
+        31
+      ],
+      "score": 15,
+      "safeMoves": 81,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 40,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 6561,
+      "elapsedMs": 9022.864699999998,
+      "tacticalMs": 174.05419999999867,
+      "searchMs": 8848.8105,
+      "exhausted": true,
+      "pv": [
+        40,
+        31
+      ],
+      "score": 15,
+      "safeMoves": 81,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-opening",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 40,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 6561,
+      "elapsedMs": 8932.471000000001,
+      "tacticalMs": 168.09080000000176,
+      "searchMs": 8764.3802,
+      "exhausted": true,
+      "pv": [
+        40,
+        31
+      ],
+      "score": 15,
+      "safeMoves": 81,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        18,
+        45,
+        19,
+        47,
+        20,
+        49,
+        21,
+        9,
+        0,
+        11,
+        2,
+        13
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 12,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 4830,
+      "elapsedMs": 6034.919899999997,
+      "tacticalMs": 175.304500000002,
+      "searchMs": 5859.615399999995,
+      "exhausted": true,
+      "pv": [
+        12,
+        40
+      ],
+      "score": -103.69166666666666,
+      "safeMoves": 69,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        18,
+        45,
+        19,
+        47,
+        20,
+        49,
+        21,
+        9,
+        0,
+        11,
+        2,
+        13
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 12,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 4830,
+      "elapsedMs": 5261.7197000000015,
+      "tacticalMs": 198.36680000000342,
+      "searchMs": 5063.352899999998,
+      "exhausted": true,
+      "pv": [
+        12,
+        40
+      ],
+      "score": -103.69166666666666,
+      "safeMoves": 69,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-midgame",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        18,
+        45,
+        19,
+        47,
+        20,
+        49,
+        21,
+        9,
+        0,
+        11,
+        2,
+        13
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 12,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 4830,
+      "elapsedMs": 4916.013200000001,
+      "tacticalMs": 207.47400000000198,
+      "searchMs": 4708.539199999999,
+      "exhausted": true,
+      "pv": [
+        12,
+        40
+      ],
+      "score": -103.69166666666666,
+      "safeMoves": 69,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        20,
+        50,
+        0,
+        18,
+        2,
+        19,
+        4,
+        21,
+        36,
+        22,
+        38,
+        45
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 0,
+      "move": 3,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1158,
+      "elapsedMs": 12048.987000000001,
+      "tacticalMs": 110.21600000000035,
+      "searchMs": 11938.771,
+      "exhausted": true,
+      "pv": [
+        3,
+        20
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        20,
+        50,
+        0,
+        18,
+        2,
+        19,
+        4,
+        21,
+        36,
+        22,
+        38,
+        45
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 1,
+      "move": 3,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1158,
+      "elapsedMs": 11844.014900000002,
+      "tacticalMs": 71.47039999999834,
+      "searchMs": 11772.544500000004,
+      "exhausted": true,
+      "pv": [
+        3,
+        20
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    },
+    {
+      "scenario": "9-age-lock",
+      "rules": {
+        "rulesVersion": "1",
+        "boardSize": 9,
+        "winLength": 5,
+        "retention": {
+          "kind": "fifo",
+          "maxStones": 6
+        },
+        "repetitionThreshold": 3,
+        "matchPlyLimit": null
+      },
+      "opening": [
+        20,
+        50,
+        0,
+        18,
+        2,
+        19,
+        4,
+        21,
+        36,
+        22,
+        38,
+        45
+      ],
+      "agent": {
+        "name": "probe-500",
+        "algorithm": "search",
+        "budget": {
+          "maxNodes": 500,
+          "timeMs": null,
+          "seed": 1,
+          "maxDepth": 8
+        }
+      },
+      "repeat": 2,
+      "move": 3,
+      "depth": 2,
+      "nodes": 500,
+      "tacticalNodes": 1158,
+      "elapsedMs": 10518.565700000006,
+      "tacticalMs": 74.62030000000959,
+      "searchMs": 10443.945399999997,
+      "exhausted": true,
+      "pv": [
+        3,
+        20
+      ],
+      "score": -1000000,
+      "safeMoves": 0,
+      "algorithmVersion": "fifo-ab-1"
+    }
+  ]
+}

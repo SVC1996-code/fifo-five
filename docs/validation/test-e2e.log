@@ -1,0 +1,20 @@
+npm notice run fifo-five@1.0.0 test:e2e
+npm notice run playwright test
+[WebServer] (node:6036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:12848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\game.spec.ts:27:1 › 同机完成对局、键盘落子、终局禁止落子、回放与棋谱导出 (3.4s)
+  ok 2 tests\e2e\game.spec.ts:55:1 › 真实 Worker 完成人机对局，后手选择触发 AI 开局 (880ms)
+  ok 3 tests\e2e\game.spec.ts:74:1 › 真实 Worker 重开、悔棋、换规则、导入与回放保持新局面 (3.2s)
+  ok 4 tests\e2e\game.spec.ts:98:1 › 棋龄提示、导入错误与手机布局 (683ms)
+  ok 5 tests\e2e\game.spec.ts:123:1 › 默认 FIFO 规则真实人机对局到终局 (1.4s)
+  ok 6 tests\e2e\game.spec.ts:137:1 › 非法自定义规则保留当前对局并给出中文原因 (644ms)
+  ok 7 tests\e2e\lifecycle.spec.ts:11:1 › FIFO 满额只标双方最老棋，永久棋隐藏棋龄 (748ms)
+  ok 8 tests\e2e\lifecycle.spec.ts:38:1 › 人为迟到 Worker 响应不能修改重开/悔棋/换规则/导入后的对局 (4.3s)
+  ok 9 tests\e2e\lifecycle.spec.ts:101:1 › 人机 AI 已落子与玩家刚获胜时悔棋 (694ms)
+
+  9 passed (22.8s)

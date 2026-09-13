@@ -1,0 +1,1392 @@
+{
+  "rules": {
+    "rulesVersion": "1",
+    "boardSize": 6,
+    "winLength": 5,
+    "retention": {
+      "kind": "fifo",
+      "maxStones": 6
+    },
+    "repetitionThreshold": 3,
+    "matchPlyLimit": null
+  },
+  "budgets": {
+    "normal": {
+      "name": "normal-research",
+      "algorithm": "search",
+      "budget": {
+        "maxNodes": 128,
+        "timeMs": null,
+        "seed": 1,
+        "maxDepth": 5
+      }
+    },
+    "hard": {
+      "name": "hard-research",
+      "algorithm": "search",
+      "budget": {
+        "maxNodes": 960,
+        "timeMs": null,
+        "seed": 1,
+        "maxDepth": 8
+      }
+    },
+    "tactical": {
+      "name": "tactical",
+      "algorithm": "tactical",
+      "budget": {
+        "maxNodes": 0,
+        "timeMs": null,
+        "seed": 1,
+        "maxDepth": 0
+      }
+    }
+  },
+  "method": "Six D4 first-move orbits. Representative only, two role-swapped games each at60 cutoff. Static score is X heuristic; search response score is O perspective. Neither is a solved value. Ordering tie-breaks may be orientation dependent; no symmetry score TT used.",
+  "classes": [
+    {
+      "representative": 0,
+      "cells": [
+        0,
+        5,
+        30,
+        35
+      ],
+      "representativeCoordinate": [
+        0,
+        0
+      ],
+      "coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "heuristicForX": 15,
+      "responses": {
+        "normal": {
+          "move": 14,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 68.3476,
+          "tacticalMs": 22.47230000000002,
+          "searchMs": 45.87529999999998,
+          "exhausted": true,
+          "pv": [
+            14
+          ],
+          "score": 20,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 14,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 165.05320000000006,
+          "tacticalMs": 14.89870000000002,
+          "searchMs": 150.15450000000004,
+          "exhausted": true,
+          "pv": [
+            14,
+            15
+          ],
+          "score": -14,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 0,
+          "O": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 2
+        },
+        "cutoff": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 60,
+          "median": 60,
+          "min": 60,
+          "max": 60
+        },
+        "terminalLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "terminalContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 48,
+          "median": 48,
+          "min": 48,
+          "max": 48
+        },
+        "deletionsNonCutoff": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "fifoActivation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "winsAfterDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "firstDeletionToTerminal": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-0/20260913/false/60",
+        "C/hard-normal/orbit-0/20260913/true/60"
+      ]
+    },
+    {
+      "representative": 1,
+      "cells": [
+        1,
+        4,
+        6,
+        11,
+        24,
+        29,
+        31,
+        34
+      ],
+      "representativeCoordinate": [
+        0,
+        1
+      ],
+      "coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "heuristicForX": 20,
+      "responses": {
+        "normal": {
+          "move": 14,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 37.24969999999996,
+          "tacticalMs": 15.805600000000027,
+          "searchMs": 21.444099999999935,
+          "exhausted": true,
+          "pv": [
+            14
+          ],
+          "score": 15,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 15,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 155.80240000000003,
+          "tacticalMs": 14.683700000000044,
+          "searchMs": 141.1187,
+          "exhausted": true,
+          "pv": [
+            15,
+            7
+          ],
+          "score": -21.5,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 1,
+          "O": 1,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 0
+        },
+        "cutoff": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 18.5,
+          "median": 18.5,
+          "min": 18,
+          "max": 19
+        },
+        "terminalLengths": {
+          "n": 2,
+          "mean": 18.5,
+          "median": 18.5,
+          "min": 18,
+          "max": 19
+        },
+        "decisiveLengths": {
+          "n": 2,
+          "mean": 18.5,
+          "median": 18.5,
+          "min": 18,
+          "max": 19
+        },
+        "terminalContinuationLengths": {
+          "n": 2,
+          "mean": 17.5,
+          "median": 17.5,
+          "min": 17,
+          "max": 18
+        },
+        "decisiveContinuationLengths": {
+          "n": 2,
+          "mean": 17.5,
+          "median": 17.5,
+          "min": 17,
+          "max": 18
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 6.5,
+          "median": 6.5,
+          "min": 6,
+          "max": 7
+        },
+        "deletionsNonCutoff": {
+          "n": 2,
+          "mean": 6.5,
+          "median": 6.5,
+          "min": 6,
+          "max": 7
+        },
+        "fifoActivation": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "winsAfterDeletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "firstDeletionToTerminal": {
+          "n": 2,
+          "mean": 5.5,
+          "median": 5.5,
+          "min": 5,
+          "max": 6
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-1/20260913/false/60",
+        "C/hard-normal/orbit-1/20260913/true/60"
+      ]
+    },
+    {
+      "representative": 2,
+      "cells": [
+        2,
+        3,
+        12,
+        17,
+        18,
+        23,
+        32,
+        33
+      ],
+      "representativeCoordinate": [
+        0,
+        2
+      ],
+      "coordinates": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "heuristicForX": 15,
+      "responses": {
+        "normal": {
+          "move": 14,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 49.88619999999992,
+          "tacticalMs": 13.727199999999925,
+          "searchMs": 36.15899999999999,
+          "exhausted": true,
+          "pv": [
+            14
+          ],
+          "score": 20,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 14,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 144.43690000000015,
+          "tacticalMs": 11.945400000000063,
+          "searchMs": 132.4915000000001,
+          "exhausted": true,
+          "pv": [
+            14,
+            1
+          ],
+          "score": -15,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 0,
+          "O": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 2
+        },
+        "cutoff": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 60,
+          "median": 60,
+          "min": 60,
+          "max": 60
+        },
+        "terminalLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "terminalContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 48,
+          "median": 48,
+          "min": 48,
+          "max": 48
+        },
+        "deletionsNonCutoff": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "fifoActivation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "winsAfterDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "firstDeletionToTerminal": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-2/20260913/false/60",
+        "C/hard-normal/orbit-2/20260913/true/60"
+      ]
+    },
+    {
+      "representative": 7,
+      "cells": [
+        7,
+        10,
+        25,
+        28
+      ],
+      "representativeCoordinate": [
+        1,
+        1
+      ],
+      "coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "heuristicForX": 30,
+      "responses": {
+        "normal": {
+          "move": 14,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 49.17360000000008,
+          "tacticalMs": 13.00630000000001,
+          "searchMs": 36.16730000000007,
+          "exhausted": true,
+          "pv": [
+            14
+          ],
+          "score": 5,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 14,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 154.5661,
+          "tacticalMs": 12.737499999999955,
+          "searchMs": 141.82860000000005,
+          "exhausted": true,
+          "pv": [
+            14,
+            10
+          ],
+          "score": -39,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 1,
+          "O": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 1
+        },
+        "cutoff": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 42.5,
+          "median": 42.5,
+          "min": 25,
+          "max": 60
+        },
+        "terminalLengths": {
+          "n": 1,
+          "mean": 25,
+          "median": 25,
+          "min": 25,
+          "max": 25
+        },
+        "decisiveLengths": {
+          "n": 1,
+          "mean": 25,
+          "median": 25,
+          "min": 25,
+          "max": 25
+        },
+        "terminalContinuationLengths": {
+          "n": 1,
+          "mean": 24,
+          "median": 24,
+          "min": 24,
+          "max": 24
+        },
+        "decisiveContinuationLengths": {
+          "n": 1,
+          "mean": 24,
+          "median": 24,
+          "min": 24,
+          "max": 24
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 30.5,
+          "median": 30.5,
+          "min": 13,
+          "max": 48
+        },
+        "deletionsNonCutoff": {
+          "n": 1,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "fifoActivation": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "winsAfterDeletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "firstDeletionToTerminal": {
+          "n": 1,
+          "mean": 12,
+          "median": 12,
+          "min": 12,
+          "max": 12
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-3/20260913/false/60",
+        "C/hard-normal/orbit-3/20260913/true/60"
+      ]
+    },
+    {
+      "representative": 8,
+      "cells": [
+        8,
+        9,
+        13,
+        16,
+        19,
+        22,
+        26,
+        27
+      ],
+      "representativeCoordinate": [
+        1,
+        2
+      ],
+      "coordinates": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "heuristicForX": 25,
+      "responses": {
+        "normal": {
+          "move": 14,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 46.881200000000035,
+          "tacticalMs": 15.196699999999964,
+          "searchMs": 31.68450000000007,
+          "exhausted": true,
+          "pv": [
+            14
+          ],
+          "score": 10,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 14,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 175.83619999999996,
+          "tacticalMs": 12.04379999999992,
+          "searchMs": 163.79240000000004,
+          "exhausted": true,
+          "pv": [
+            14,
+            7
+          ],
+          "score": -34.5,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 0,
+          "O": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 2
+        },
+        "cutoff": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 60,
+          "median": 60,
+          "min": 60,
+          "max": 60
+        },
+        "terminalLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "terminalContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "decisiveContinuationLengths": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 48,
+          "median": 48,
+          "min": 48,
+          "max": 48
+        },
+        "deletionsNonCutoff": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "fifoActivation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "winsAfterDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "firstDeletionToTerminal": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-4/20260913/false/60",
+        "C/hard-normal/orbit-4/20260913/true/60"
+      ]
+    },
+    {
+      "representative": 14,
+      "cells": [
+        14,
+        15,
+        20,
+        21
+      ],
+      "representativeCoordinate": [
+        2,
+        2
+      ],
+      "coordinates": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "heuristicForX": 35,
+      "responses": {
+        "normal": {
+          "move": 15,
+          "depth": 1,
+          "nodes": 128,
+          "tacticalNodes": 1225,
+          "elapsedMs": 47.929800000000114,
+          "tacticalMs": 13.042400000000043,
+          "searchMs": 34.88740000000007,
+          "exhausted": true,
+          "pv": [
+            15
+          ],
+          "score": 0,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        },
+        "hard": {
+          "move": 15,
+          "depth": 2,
+          "nodes": 960,
+          "tacticalNodes": 1225,
+          "elapsedMs": 252.70119999999997,
+          "tacticalMs": 11.617799999999988,
+          "searchMs": 241.08339999999998,
+          "exhausted": true,
+          "pv": [
+            15,
+            20
+          ],
+          "score": -48.5,
+          "safeMoves": 35,
+          "algorithmVersion": "fifo-ab-1-order-cache"
+        }
+      },
+      "outcomes": {
+        "executed": 2,
+        "uniqueTrajectories": 2,
+        "symmetryUnique": 2,
+        "counts": {
+          "X": 1,
+          "O": 0,
+          "repetition": 0,
+          "no-moves": 0,
+          "ply-limit": 0,
+          "cutoff": 1
+        },
+        "cutoff": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "allLengthsIncludingCutoffs": {
+          "n": 2,
+          "mean": 41.5,
+          "median": 41.5,
+          "min": 23,
+          "max": 60
+        },
+        "terminalLengths": {
+          "n": 1,
+          "mean": 23,
+          "median": 23,
+          "min": 23,
+          "max": 23
+        },
+        "decisiveLengths": {
+          "n": 1,
+          "mean": 23,
+          "median": 23,
+          "min": 23,
+          "max": 23
+        },
+        "terminalContinuationLengths": {
+          "n": 1,
+          "mean": 22,
+          "median": 22,
+          "min": 22,
+          "max": 22
+        },
+        "decisiveContinuationLengths": {
+          "n": 1,
+          "mean": 22,
+          "median": 22,
+          "min": 22,
+          "max": 22
+        },
+        "firstDeletionPly": {
+          "n": 2,
+          "mean": 13,
+          "median": 13,
+          "min": 13,
+          "max": 13
+        },
+        "deletionsAll": {
+          "n": 2,
+          "mean": 29.5,
+          "median": 29.5,
+          "min": 11,
+          "max": 48
+        },
+        "deletionsNonCutoff": {
+          "n": 1,
+          "mean": 11,
+          "median": 11,
+          "min": 11,
+          "max": 11
+        },
+        "fifoActivation": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "activationFromPreDeletionOpenings": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "newDeletionDuringContinuation": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "winsAfterDeletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "bothPlayersReachedDeletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "deletionChangedGeometricCompletions": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1
+        },
+        "firstDeletionToTerminal": {
+          "n": 1,
+          "mean": 10,
+          "median": 10,
+          "min": 10,
+          "max": 10
+        },
+        "byOpeningPhase": {
+          "empty": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "centre": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "edge-corner": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "early": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "age-pressure": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          },
+          "post-deletion": {
+            "games": 0,
+            "terminal": 0,
+            "cutoff": 0
+          }
+        }
+      },
+      "gameIds": [
+        "C/hard-normal/orbit-5/20260913/false/60",
+        "C/hard-normal/orbit-5/20260913/true/60"
+      ]
+    }
+  ]
+}

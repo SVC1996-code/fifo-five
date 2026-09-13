@@ -1,0 +1,45 @@
+{
+  "name": "fifo-five",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "experiment": "tsx experiments/run.ts",
+    "test:e2e": "playwright test",
+    "p2:strength": "tsx experiments/p2/run.ts strength",
+    "p2:timing": "tsx experiments/p2/run.ts timing",
+    "p2:browser-timing": "tsx experiments/p2/browser-timing.ts",
+    "p2:report": "tsx experiments/p2/report.ts",
+    "p3:run": "tsx experiments/p3/run.ts",
+    "p3:late": "tsx experiments/p3/late.ts",
+    "p3:extend": "tsx experiments/p3/extend.ts",
+    "p3:proof": "tsx experiments/p3/proof-corpus.ts",
+    "p3:mine": "tsx experiments/p3/mine.ts",
+    "p3:first": "tsx experiments/p3/first-moves.ts",
+    "p3:report": "tsx experiments/p3/report.ts"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "sourceHash": "7d69fbb0a4713dd31d63a985063c822d2692dca98c0276948177b4226614a04b",
+  "method": "Only the first up-to-four distinct 60-ply cutoffs per batch if cutoff share >=25%; same opening/seed/roles, rerun to100. Conditional follow-up, NOT pooled with the original60 sample.",
+  "eligibleCutoffs": 1,
+  "selected": [],
+  "games": [],
+  "summary": {
+    "executed": 0,
+    "unique": 0,
+    "symmetryUnique": 0,
+    "all": {
+      "X": 0,
+      "O": 0,
+      "repetition": 0,
+      "no-moves": 0,
+      "ply-limit": 0,
+      "cutoff": 0
+    },
+    "deduplicated": {
+      "X": 0,
+      "O": 0,
+      "repetition": 0,
+      "no-moves": 0,
+      "ply-limit": 0,
+      "cutoff": 0
+    }
+  }
+}

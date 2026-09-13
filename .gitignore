@@ -1,0 +1,41 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+
+dev-server*.log
+
+# Local tools, caches and browser profiles
+.release-tools/
+.cache/
+.vite/
+.npm/
+.pnpm-store/
+.playwright/
+ms-playwright/
+browser-profile*/
+coverage/
+*.tsbuildinfo
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+.vscode/
+.idea/
+.codex/
+.agents/
+
+# Research JSON and docs/validation logs are intentional release evidence.

@@ -1,0 +1,146 @@
+import {
+  applyMove,
+  legalMoves,
+  lines,
+  other,
+  type Player,
+  type State,
+} from "../core";
+export interface MateBudget {
+  maxPly: number;
+  maxNodes: number;
+  timeMs: number | null;
+  attacker?: Player;
+}
+export interface MateResult {
+  result: "forced-win" | "not-found" | "unknown";
+  distance?: number;
+  bestMove?: number;
+  principalVariation?: number[];
+  nodes: number;
+  elapsedMs: number;
+  maxPly: number;
+  attacker: Player;
+}
+interface Proof {
+  win: boolean;
+  distance: number;
+  pv: number[];
+}
+/** N is TOTAL further atomic actions, both players included, from the supplied
+ * state. Default attacker is side-to-move (win-in-1/3/5/7). An explicit attacker
+ * supports defender-to-move queries without forging turn/history. Distance is
+ * a certified worst-case upper bound for the found strategy, NOT minimum mate.
+ * No score/TT reuse, no selective move pruning. Horizon failure is bounded only.
+ * Nodes count the root and every generated legal successor, including ordering.
+ */
+export function proveMate(state: State, budget: MateBudget): MateResult {
+  if (
+    !Number.isInteger(budget.maxPly) ||
+    budget.maxPly < 0 ||
+    budget.maxPly > 7 ||
+    !Number.isSafeInteger(budget.maxNodes) ||
+    budget.maxNodes < 0 ||
+    (budget.timeMs !== null &&
+      (!Number.isFinite(budget.timeMs) || budget.timeMs < 0)) ||
+    (budget.attacker !== undefined && !["X", "O"].includes(budget.attacker))
+  )
+    throw Error("Invalid mate budget (ply 0..7, nonnegative finite budgets)");
+  const start = performance.now(),
+    attacker = budget.attacker ?? state.turn,
+    STOP = Symbol("unknown");
+  let nodes = 0;
+  function spend() {
+    if (
+      nodes >= budget.maxNodes ||
+      (budget.timeMs !== null && performance.now() - start >= budget.timeMs)
+    )
+      throw STOP;
+    nodes++;
+  }
+  const no: Proof = { win: false, distance: 0, pv: [] };
+  function terminal(s: State): Proof | null {
+    return s.result
+      ? {
+          win: s.result.kind === "win" && s.result.winner === attacker,
+          distance: 0,
+          pv: [],
+        }
+      : null;
+  }
+  function search(s: State, depth: number): Proof {
+    const end = terminal(s);
+    if (end) return end;
+    if (depth === 0) return no;
+    const attackTurn = s.turn === attacker;
+    const children: { move: number; state: State; order: number }[] = [];
+    for (const move of legalMoves(s)) {
+      spend();
+      const next = applyMove(s, move).state,
+        t = terminal(next);
+      if (t && ((attackTurn && t.win) || (!attackTurn && !t.win)))
+        return { ...t, distance: t.win ? 1 : 0, pv: [move] };
+      if (depth === 1) {
+        if (attackTurn) continue;
+        if (!t?.win) return no;
+      }
+      const occupied = new Set(next.queues[s.turn]),
+        enemy = new Set(next.queues[other(s.turn)]);
+      const order = lines(next.rules).reduce(
+        (best, line) =>
+          line.some((c) => enemy.has(c))
+            ? best
+            : Math.max(best, line.filter((c) => occupied.has(c)).length),
+        0,
+      );
+      children.push({ move, state: next, order });
+    }
+    if (attackTurn && depth === 1) return no;
+    children.sort((a, b) => b.order - a.order);
+    let longest: Proof = { win: true, distance: 0, pv: [] };
+    for (const child of children) {
+      const proof = search(child.state, depth - 1);
+      if (attackTurn && proof.win)
+        return {
+          win: true,
+          distance: proof.distance + 1,
+          pv: [child.move, ...proof.pv],
+        };
+      if (!attackTurn && !proof.win) return no;
+      if (!attackTurn && proof.distance + 1 > longest.distance)
+        longest = {
+          win: true,
+          distance: proof.distance + 1,
+          pv: [child.move, ...proof.pv],
+        };
+    }
+    return attackTurn || !children.length ? no : longest;
+  }
+  try {
+    spend();
+    const proof = search(state, budget.maxPly);
+    return {
+      result: proof.win ? "forced-win" : "not-found",
+      ...(proof.win
+        ? {
+            distance: proof.distance,
+            bestMove: proof.pv[0],
+            principalVariation: proof.pv,
+          }
+        : {}),
+      nodes,
+      elapsedMs: performance.now() - start,
+      maxPly: budget.maxPly,
+      attacker,
+    };
+  } catch (e) {
+    if (e !== STOP) throw e;
+    return {
+      result: "unknown",
+      nodes,
+      elapsedMs: performance.now() - start,
+      maxPly: budget.maxPly,
+      attacker,
+    };
+  }
+}
