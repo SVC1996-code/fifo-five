@@ -38,4 +38,10 @@ Thumbs.db
 .codex/
 .agents/
 
-# Research JSON and docs/validation logs are intentional release evidence.
+# Required research fixtures and reproducible evidence remain tracked.
+
+# Regenerable historical diagnostics (archived in v0.1.0)
+experiments/results/p2-analysis.json
+experiments/results/tactical-findings.json
+experiments/results/timing-baseline-full-partial.json
+experiments/results/timing-browser.json

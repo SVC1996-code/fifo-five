@@ -200,29 +200,6 @@ writeFileSync(
   "positions/unproved-expiry-locks.json",
   JSON.stringify({ entries: unprovedLocks }, null, 2),
 );
-const ascii = (record: RecordFile) => {
-  const s = replay(record.rules, record.moves).at(-1)!,
-    n = s.rules.boardSize;
-  return Array.from({ length: n }, (_, r) =>
-    Array.from({ length: n }, (_, c) => {
-      const cell = r * n + c,
-        p = s.queues.X.includes(cell)
-          ? "X"
-          : s.queues.O.includes(cell)
-            ? "O"
-            : null;
-      return p ? `${p}${s.queues[p].indexOf(cell) + 1}` : ". ";
-    }).join(" "),
-  ).join("\n");
-};
-let md =
-  "# P3 战术局面样例\n\n棋龄1最老，坐标从0开始。所有权威输入都是完整合法moves；参考附件与实验发现分开标注。保存全部已检测例，Markdown展示每类前三例。几何威胁变化不是强制杀证明。\n";
-for (const [kind, entries] of Object.entries(libraries)) {
-  md += `\n## ${kind}\n\nDetected ${counts[kind]}, saved ${entries.length}.\n`;
-  for (const e of entries.slice(0, 3))
-    md += `\n### ${e.source.kind}: ${e.source.gameId} / ply ${e.source.ply}\n\nMoves: ${JSON.stringify(e.record.moves)}\n\n\`\`\`text\n${ascii(e.record)}\n\`\`\`\n\n详情见 [${kind}.json](../positions/${kind}.json)，id=${e.id}。\n`;
-}
-writeFileSync("docs/P3_POSITIONS.md", md);
 console.log({
   scanned,
   counts,
