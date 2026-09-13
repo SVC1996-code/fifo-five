@@ -4,6 +4,10 @@ A connect-in-a-row game where stones have an age — and your oldest stone event
 
 一种带有棋子寿命机制的连子棋。每方只能保留有限数量的棋子；放入新棋后，最老的棋子会消失，进攻与防守也随时间变化。
 
+## Play Online
+
+[**Play Online / 在线试玩**](https://svc1996-code.github.io/fifo-five/)
+
 ![Classic 主界面](docs/images/classic.png)
 
 ## Mini / Classic
@@ -59,7 +63,7 @@ npm run build
 npm exec vite preview -- --host 127.0.0.1
 ```
 
-`dist/` 需通过 HTTP(S) 服务访问。尚未部署 GitHub Pages，没有在线游玩地址。
+`dist/` 需通过 HTTP(S) 服务访问。在线试玩无需安装 Node.js。
 
 ## 技术栈
 
